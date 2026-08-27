@@ -1,0 +1,163 @@
+{
+ "paper": "arxiv_submission/tnf_paper.tex",
+ "record_files_searched": 2014,
+ "search_dirs": [
+  "research",
+  "fpga",
+  "conformance",
+  "docs"
+ ],
+ "search_exts": [
+  ".md",
+  ".py"
+ ],
+ "match": "delimited, not substring",
+ "frequency_literals": 44,
+ "traced": 32,
+ "untraced": 12,
+ "untraced_literals": [
+  "28.16",
+  "40.38",
+  "44.33",
+  "46.78",
+  "58.96",
+  "63.30",
+  "66.28",
+  "66.91",
+  "67.02",
+  "71.15",
+  "72.16",
+  "83.19"
+ ],
+ "traced_literals": {
+  "11.00": [
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "11.4": [
+   "docs/reports/FPGA_LOOP_CLOSEOUT_W582_2026-07-07.md",
+   "docs/reports/STATUS-BOARD-W910.md",
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/reports/upstream/SEVEN-WAVES-SUMMARY.md"
+  ],
+  "33.1": [
+   "docs/phd/ch33.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "33.23": [
+   "docs/PUBLICATION_AUDIT.md",
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "36.8": [
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "43.04": [
+   "docs/reports/upstream/TNF-FINDINGS-LEDGER.md",
+   "docs/theory/IGLA-FORMAL-RESULTS.md"
+  ],
+  "48.20": [
+   "docs/PUBLICATION_AUDIT.md",
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "49.0": [
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md"
+  ],
+  "53.26": [
+   "docs/PUBLICATION_AUDIT.md",
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "62.13": [
+   "docs/theory/IGLA-FORMAL-RESULTS.md"
+  ],
+  "67.06": [
+   "docs/theory/IGLA-FORMAL-RESULTS.md"
+  ],
+  "73.51": [
+   "docs/theory/IGLA-FORMAL-RESULTS.md"
+  ],
+  "77.00": [
+   "docs/theory/IGLA-FORMAL-RESULTS.md"
+  ],
+  "78.83": [
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/IGLA-FORMAL-RESULTS.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "81.35": [
+   "docs/PUBLICATION_AUDIT.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "83.27": [
+   "docs/PUBLICATION_AUDIT.md",
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/IGLA-FORMAL-RESULTS.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "96.4": [
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "111.36": [
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "126.73": [
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "131.73": [
+   "docs/PUBLICATION_AUDIT.md",
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "136.44": [
+   "docs/PUBLICATION_AUDIT.md",
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "147.32": [
+   "docs/PUBLICATION_AUDIT.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "153.23": [
+   "docs/PUBLICATION_AUDIT.md",
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/IGLA-FORMAL-RESULTS.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "161.11": [
+   "docs/PUBLICATION_AUDIT.md",
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "211.2": [
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "299.94": [
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "307.69": [
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "318.47": [
+   "docs/reports/TNF-ARTICLE-AUDIT-W845.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "388.35": [
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "805.8": [
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "815.66": [
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ],
+  "827.81": [
+   "docs/reports/upstream/PR-603-body.md",
+   "docs/reports/upstream/TNF-FINDINGS-LEDGER.md",
+   "docs/theory/IGLA-FORMAL-RESULTS.md",
+   "docs/theory/TNF_ARTICLE_RU.md"
+  ]
+ }
+}

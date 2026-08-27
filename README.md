@@ -21,6 +21,8 @@ twenty-two theorems, twenty-two `Qed`, and no `Admitted` or `Axiom`.
 | `data/compare_w991.json` | the matched-width comparison against posit and takum |
 | `rtl/` | the formal-equivalence modules for the multiply-free datapath |
 | `verify.py` | every table in the paper, recomputed and asserted |
+| `freq_provenance.py` | which frequency literals in the paper are stated in no record file |
+| `data/freq_provenance.json` | that registry's output on the cited revision |
 
 ## Claim to file
 
@@ -36,6 +38,7 @@ twenty-two theorems, twenty-two `Qed`, and no `Admitted` or `Axiom`.
 | posit is 12× / 4× / 2× finer at unity | `verify.py`, second block |
 | the one-adder family reaches 1.0265 at degree 27 | `verify.py`, fourth block |
 | area falls 2.6–3.6×, throughput per area 2.1–3.1× | `verify.py`, fifth block |
+| 12 of 44 frequency literals are unsourced | `freq_provenance.py`, run against the paper |
 
 ## Two corrections this repository carries
 
