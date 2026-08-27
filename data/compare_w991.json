@@ -1,0 +1,119 @@
+{
+ "wave": "W991",
+ "what": "the competitor comparison, computed from the committed oracles rather than recalled -- the standing brief has asked for it every wave and the web has been unavailable all session",
+ "instrument": "tri compare [PHYSICAL WIDTH]",
+ "the_trap_it_fell_into_first": {
+  "symptom": "`tri compare 16` put TNF16 beside posit16 and fp16 and reported 516096 values from a '16-bit' format",
+  "arithmetic": "516096 is more than 2^16. TNF16's PHYSICAL width is 19 bits: 4 exponent trits become 7 bits, plus 11 mantissa, plus sign",
+  "already_known": "structural_w942.json records tnf16 physical_bits = 19. The tool rediscovered it by contradiction",
+  "fix": "the table is keyed on PHYSICAL width; asking for a width no rung occupies prints the ladder and refuses"
+ },
+ "ladder_physical_widths": {
+  "TNF4": 6,
+  "TNF8": 10,
+  "TNF16": 19,
+  "TNF32": 36,
+  "TNF64": 69,
+  "TNF128": 133,
+  "TNF256": 262,
+  "TNF512": 518,
+  "TNF1024": 1031
+ },
+ "matched_width_results": {
+  "19_bits": {
+   "TNF16 (4t,11m)": {
+    "values": 516096,
+    "binades": 127.0,
+    "median_step_pct": 0.016,
+    "step_at_1_pct": 0.024
+   },
+   "posit19 es=1": {
+    "values": 524286,
+    "binades": 68.0,
+    "median_step_pct": 0.002,
+    "step_at_1_pct": 0.002
+   },
+   "posit19 es=2": {
+    "values": 524286,
+    "binades": 136.0,
+    "median_step_pct": 0.003,
+    "step_at_1_pct": 0.003
+   },
+   "takum19": {
+    "values": 524286,
+    "binades": 510.0,
+    "median_step_pct": 0.024,
+    "step_at_1_pct": 0.003
+   }
+  },
+  "10_bits": {
+   "TNF8 (3t,4m)": {
+    "values": 960,
+    "binades": 31.0,
+    "median_step_pct": 2.174,
+    "step_at_1_pct": 3.125
+   },
+   "posit10 es=1": {
+    "values": 1022,
+    "binades": 32.0,
+    "median_step_pct": 0.781,
+    "step_at_1_pct": 0.781
+   },
+   "posit10 es=2": {
+    "values": 1022,
+    "binades": 64.0,
+    "median_step_pct": 1.562,
+    "step_at_1_pct": 1.562
+   }
+  },
+  "6_bits": {
+   "TNF4 (2t,1m)": {
+    "values": 56,
+    "binades": 14.6,
+    "median_step_pct": 25.0,
+    "step_at_1_pct": 25.0
+   },
+   "posit6 es=1": {
+    "values": 62,
+    "binades": 16.0,
+    "median_step_pct": 12.5,
+    "step_at_1_pct": 12.5
+   },
+   "posit6 es=2": {
+    "values": 62,
+    "binades": 32.0,
+    "median_step_pct": 25.0,
+    "step_at_1_pct": 25.0
+   }
+  }
+ },
+ "the_finding": "at every matched physical width the ladder occupies, TNF has FEWER representable values than posit at the same width and a COARSER step at 1.0 than posit es=1. 19 bits: 516096 against 524286, and 0.024 % against 0.002 % -- a factor of 12. 10 bits: 960 against 1022, 3.125 % against 0.781 % -- a factor of 4. 6 bits: 56 against 62, 25 % against 12.5 %.",
+ "why_the_value_count_is_short": "the ternary exponent does not tile a binary field: 4 trits need 7 bits and use 81 of 128 codes, so 8190 of 2^19 codes are unreachable. That waste is structural, not an encoding accident.",
+ "what_this_does_not_say": "nothing here is a cost figure. TNF's case was never precision-per-bit; it is what the lattice costs in cells, and that lives in the area records. A format can lose every column here and still win a design -- and the reverse.",
+ "honest_caveats": {
+  "takum_worst_column": "takum's worst relative step is astronomically large at every width because its dynamic range makes the smallest positive neighbour ratio explode. The number is arithmetically correct and useless as a comparison; it is printed because suppressing it would hide the shape of the format.",
+  "three_step_columns": "reported together deliberately. The worst is set by the tapered extremes, the median by the bulk. Quoting either alone picks the conclusion in advance."
+ },
+ "die_reads_canonical": [
+  {
+   "design": "gft_signed_dot4",
+   "clauses": "1111",
+   "ok": 1,
+   "wave": "W991",
+   "seed": 1,
+   "site": 2
+  },
+  {
+   "design": "gft_signed_dot4",
+   "clauses": "1111",
+   "ok": 1,
+   "wave": "W991",
+   "seed": 7,
+   "site": 1
+  }
+ ],
+ "dot4_sweep_status": "seeds 1 and 7 confirmed at two distinct BSCAN sites with the identical word 0xa5a530ff; 42 and 1234 still placing",
+ "environment": {
+  "web_search": "unavailable all session -- which is why this was computed"
+ }
+}
