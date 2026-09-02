@@ -1,0 +1,185 @@
+{
+  "schema": "exact-zphi-fanin-synthesis-v1",
+  "generated_utc": "2026-09-02T06:26:23.819872+00:00",
+  "contract": "measurements/exact-zphi-fanin/BENCHMARK_CONTRACT.md",
+  "source_sha256": {
+    "rtl/zphi_dot_tree.v": "a0ddc78831e05306f4423eccb743590e3a4e5d21cd5c7c6a5f69a23f444bdbf1",
+    "tests/zphi_fanin_tb.v": "27335e55df1d64940f98168bf41054e53817990cad6ca08e28c8b2d59b206a04",
+    "tests/test_zphi_fanin_artifact.py": "08b38947acbb570fc26be7546ca20400cf5dcd3c7433c7d46c3c18db1c9c7ecf",
+    "measure_zphi_fanin.py": "0c08f72baa525a39b5299c271e5fcbc07d09afe3937f29ef4383fcdf2c626285",
+    "measurements/exact-zphi-fanin/BENCHMARK_CONTRACT.md": "1cb8e8784e4c157de2632820c18d8c8e2708f3ac4fb8bf97edf98b8cb694b0d9",
+    "measurements/direct-tnf-fanin/result.json": "fbc87a53cdd84e704a10874001315d00144c1e8e8ad213a7f850da0b6e78faac",
+    "measurements/deferred-tnf-fanin/result.json": "906d467f1eefb295d12fc68d9b65d5c817b9612aaa31e0f655090f9fcfe491dd"
+  },
+  "tools": {
+    "yosys": "Yosys 0.67+post (git sha1 b8e7da6f40ae8f552c116bf6c359b07c6533e159, Release, AppleClang clang++ 21.0.0.21000099)",
+    "iverilog": "Icarus Verilog version 12.0 (stable) ()"
+  },
+  "simulation": {
+    "arms": 4,
+    "vectors_per_arm": 96,
+    "errors": 0
+  },
+  "synthesis_policy": "xc7 -flatten -nodsp; documented coarse sequence with share -fast",
+  "arms": [
+    {
+      "fanin": 8,
+      "coordinate_input_bits": 16,
+      "coordinate_output_bits": 20,
+      "input_port_bits": 272,
+      "lut": 1177,
+      "carry4": 130,
+      "muxf7": 303,
+      "muxf8": 84,
+      "ff": 0,
+      "dsp48e1": 0,
+      "synthesis_wall_seconds": 3.353877374989679,
+      "cells_by_type": {
+        "$scopeinfo": 1,
+        "CARRY4": 130,
+        "IBUF": 272,
+        "INV": 264,
+        "LUT2": 172,
+        "LUT3": 3,
+        "LUT4": 619,
+        "LUT5": 78,
+        "LUT6": 305,
+        "MUXF7": 303,
+        "MUXF8": 84,
+        "OBUF": 40
+      },
+      "wrapper_sha256": "59e931e508e07e1be1c4e46f684f8648dab93d4780b71428f71f0613e9ac5939",
+      "raw_log": "measurements/exact-zphi-fanin/zphi-f8/yosys.log.gz",
+      "raw_log_sha256": "bb9c8e8b0d0a5b78624c77a7b1d82967ae43100c3afac4b248856063a4158c7b"
+    },
+    {
+      "fanin": 16,
+      "coordinate_input_bits": 16,
+      "coordinate_output_bits": 21,
+      "input_port_bits": 544,
+      "lut": 2490,
+      "carry4": 284,
+      "muxf7": 554,
+      "muxf8": 186,
+      "ff": 0,
+      "dsp48e1": 0,
+      "synthesis_wall_seconds": 4.0845582079928135,
+      "cells_by_type": {
+        "$scopeinfo": 1,
+        "CARRY4": 284,
+        "IBUF": 544,
+        "INV": 528,
+        "LUT2": 303,
+        "LUT3": 177,
+        "LUT4": 1152,
+        "LUT5": 80,
+        "LUT6": 778,
+        "MUXF7": 554,
+        "MUXF8": 186,
+        "OBUF": 42
+      },
+      "wrapper_sha256": "b28deb438bca011a00a7e28deb12cc878e875f74e7ef520f3c81cb0c48bcc3e2",
+      "raw_log": "measurements/exact-zphi-fanin/zphi-f16/yosys.log.gz",
+      "raw_log_sha256": "608cebe68bb7e25c7807b9f782dc8b7ff4a019f068e7fa5a3bc20d32f5f9dc01"
+    },
+    {
+      "fanin": 32,
+      "coordinate_input_bits": 16,
+      "coordinate_output_bits": 22,
+      "input_port_bits": 1088,
+      "lut": 6152,
+      "carry4": 556,
+      "muxf7": 1676,
+      "muxf8": 637,
+      "ff": 0,
+      "dsp48e1": 0,
+      "synthesis_wall_seconds": 8.191885167005239,
+      "cells_by_type": {
+        "$scopeinfo": 1,
+        "CARRY4": 556,
+        "IBUF": 1088,
+        "INV": 1056,
+        "LUT2": 629,
+        "LUT3": 353,
+        "LUT4": 2789,
+        "LUT5": 68,
+        "LUT6": 2313,
+        "MUXF7": 1676,
+        "MUXF8": 637,
+        "OBUF": 44
+      },
+      "wrapper_sha256": "1b94f2a6831c3221ecf442d67e8dbb7e6cd284126a5e3d8f5456bf3eaf3e467f",
+      "raw_log": "measurements/exact-zphi-fanin/zphi-f32/yosys.log.gz",
+      "raw_log_sha256": "6eb2f85ff50acb70fbad9cb43d1977248d9f5cc7ab02b205f7e394d934dc059b"
+    },
+    {
+      "fanin": 64,
+      "coordinate_input_bits": 16,
+      "coordinate_output_bits": 23,
+      "input_port_bits": 2176,
+      "lut": 13144,
+      "carry4": 1100,
+      "muxf7": 3500,
+      "muxf8": 1336,
+      "ff": 0,
+      "dsp48e1": 0,
+      "synthesis_wall_seconds": 16.547788334006327,
+      "cells_by_type": {
+        "$scopeinfo": 1,
+        "CARRY4": 1100,
+        "IBUF": 2176,
+        "INV": 2112,
+        "LUT2": 1296,
+        "LUT3": 963,
+        "LUT4": 6019,
+        "LUT5": 297,
+        "LUT6": 4569,
+        "MUXF7": 3500,
+        "MUXF8": 1336,
+        "OBUF": 46
+      },
+      "wrapper_sha256": "538c1b8e65de6691570d2bf1d205a5d37e6defadb9642854b81ba53ae0f7247b",
+      "raw_log": "measurements/exact-zphi-fanin/zphi-f64/yosys.log.gz",
+      "raw_log_sha256": "3ecbf38087118e345679800598d1c36f80a83135f85f1169ab26604aea463924"
+    }
+  ],
+  "comparisons": [
+    {
+      "fanin": 8,
+      "direct_packed_lut_over_zphi_lut": 2.8861512319456244,
+      "deferred_packed_lut_over_zphi_lut": 4.572642310960068,
+      "zphi_lut_over_int4_lut": 3.1810810810810812,
+      "zphi_lut_over_int8_lut": 0.7723097112860893,
+      "claim_boundary": "post-synthesis structural only; transport widths and numerical contracts are not matched"
+    },
+    {
+      "fanin": 16,
+      "direct_packed_lut_over_zphi_lut": 2.969477911646586,
+      "deferred_packed_lut_over_zphi_lut": 4.286746987951807,
+      "zphi_lut_over_int4_lut": 3.2046332046332044,
+      "zphi_lut_over_int8_lut": 0.7998715065852875,
+      "claim_boundary": "post-synthesis structural only; transport widths and numerical contracts are not matched"
+    },
+    {
+      "fanin": 32,
+      "direct_packed_lut_over_zphi_lut": 2.512841352405722,
+      "deferred_packed_lut_over_zphi_lut": 4.064856957087126,
+      "zphi_lut_over_int4_lut": 4.314165497896213,
+      "zphi_lut_over_int8_lut": 0.954834704330281,
+      "claim_boundary": "post-synthesis structural only; transport widths and numerical contracts are not matched"
+    },
+    {
+      "fanin": 64,
+      "direct_packed_lut_over_zphi_lut": 2.379336579427876,
+      "deferred_packed_lut_over_zphi_lut": 3.672017650639075,
+      "zphi_lut_over_int4_lut": 4.312335958005249,
+      "zphi_lut_over_int8_lut": 1.095059568441223,
+      "claim_boundary": "post-synthesis structural only; transport widths and numerical contracts are not matched"
+    }
+  ],
+  "negative_results": [
+    "No conversion to or from packed TNF is included.",
+    "The pair representation uses 34 input bits per lane and is not storage-matched to packed TNF, int8, or int4.",
+    "No P&R, timing, power, memory-traffic, nonlinear-activation, or workload claim is made."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schema": "tnf-deferred-normalization-synthesis-v1",
+  "generated_utc": "2026-09-02T06:19:41.300506+00:00",
+  "contract": "measurements/deferred-tnf-fanin/BENCHMARK_CONTRACT.md",
+  "baseline_commit": "d7d13e95d9ded49abf6ab4711acd582e4a183a23",
+  "source_sha256": {
+    "rtl/tnf_deferred_dot.v": "c35f831091d706be941d8dbd44acfefd0cc6e5e945c96ef04389aad8d0e163df",
+    "rtl/tnf_exact_to_packed.v": "3601dc15851c75b33e36c9077fe902633ca4aae19844849631f5d0de4328db03",
+    "tests/tnf_deferred_fanin_tb.v": "45fb52d7722ad61cac4309224a5f9dc7e7442899e39b5e6478454f94c3e81f43",
+    "tests/test_deferred_tnf_artifact.py": "293e294c45ae4a7e841a0855a7815c5cf4ad37f92062579861b4be6e2a8a733c",
+    "oracle/tnf_ref.py": "44a6620f4d889c26801c4c84a39a8e3716626655f243fc6b55b78f225b26e938",
+    "measure_deferred_tnf.py": "0f26f61fc72d307922cc0c83638609c68626c4069bbc6b63d58b3fbf027d6e5f",
+    "measurements/deferred-tnf-fanin/BENCHMARK_CONTRACT.md": "8e55410ebbec96006f180e5f70757e74cdaf66801940567ab3f3df43f5238b28",
+    "measurements/direct-tnf-fanin/result.json": "fbc87a53cdd84e704a10874001315d00144c1e8e8ad213a7f850da0b6e78faac"
+  },
+  "tools": {
+    "yosys": "Yosys 0.67+post (git sha1 b8e7da6f40ae8f552c116bf6c359b07c6533e159, Release, AppleClang clang++ 21.0.0.21000099)",
+    "iverilog": "Icarus Verilog version 12.0 (stable) ()"
+  },
+  "simulation": {
+    "arms": 4,
+    "vectors_per_arm": 96,
+    "errors": 0
+  },
+  "synthesis_policy": "xc7 -flatten -nodsp; documented coarse sequence with share -fast",
+  "arms": [
+    {
+      "fanin": 8,
+      "topology": "fully-unrolled-balanced-exact-tree-one-final-rne",
+      "input_port_bits": 144,
+      "exact_accumulator_bits": 96,
+      "lut": 5382,
+      "carry4": 305,
+      "muxf7": 1636,
+      "muxf8": 388,
+      "ff": 0,
+      "dsp48e1": 0,
+      "synthesis_wall_seconds": 7.568628624998382,
+      "cells_by_type": {
+        "$scopeinfo": 2,
+        "CARRY4": 305,
+        "IBUF": 144,
+        "INV": 209,
+        "LUT1": 251,
+        "LUT2": 796,
+        "LUT3": 850,
+        "LUT4": 1062,
+        "LUT5": 611,
+        "LUT6": 1812,
+        "MUXF7": 1636,
+        "MUXF8": 388,
+        "OBUF": 16
+      },
+      "wrapper_sha256": "5ae859e08cb216f3fc25a8901e52354beb2e227c16096a38f1f07201cf813e91",
+      "raw_log": "measurements/deferred-tnf-fanin/deferred-tnf-f8/yosys.log.gz",
+      "raw_log_sha256": "3a1d05c0749483a36e0406541ccce8c1964fa0b355418344352e5daa95843c1b"
+    },
+    {
+      "fanin": 16,
+      "topology": "fully-unrolled-balanced-exact-tree-one-final-rne",
+      "input_port_bits": 288,
+      "exact_accumulator_bits": 96,
+      "lut": 10674,
+      "carry4": 513,
+      "muxf7": 3218,
+      "muxf8": 1040,
+      "ff": 0,
+      "dsp48e1": 0,
+      "synthesis_wall_seconds": 10.742264957996667,
+      "cells_by_type": {
+        "$scopeinfo": 2,
+        "CARRY4": 513,
+        "IBUF": 288,
+        "INV": 258,
+        "LUT1": 600,
+        "LUT2": 1344,
+        "LUT3": 1428,
+        "LUT4": 2015,
+        "LUT5": 1421,
+        "LUT6": 3866,
+        "MUXF7": 3218,
+        "MUXF8": 1040,
+        "OBUF": 16
+      },
+      "wrapper_sha256": "0e8c0674ba09f7ef90f68abfc74d6d133c86ead5560efb7ebcf04241727a96b1",
+      "raw_log": "measurements/deferred-tnf-fanin/deferred-tnf-f16/yosys.log.gz",
+      "raw_log_sha256": "43842002e20fe201b80234b6174518bffecba319b4e144d16e923e21e511b56b"
+    },
+    {
+      "fanin": 32,
+      "topology": "fully-unrolled-balanced-exact-tree-one-final-rne",
+      "input_port_bits": 576,
+      "exact_accumulator_bits": 96,
+      "lut": 25007,
+      "carry4": 929,
+      "muxf7": 8471,
+      "muxf8": 3215,
+      "ff": 0,
+      "dsp48e1": 0,
+      "synthesis_wall_seconds": 19.231949832988903,
+      "cells_by_type": {
+        "$scopeinfo": 2,
+        "CARRY4": 929,
+        "IBUF": 576,
+        "INV": 354,
+        "LUT1": 4091,
+        "LUT2": 3024,
+        "LUT3": 4019,
+        "LUT4": 2248,
+        "LUT5": 2741,
+        "LUT6": 8884,
+        "MUXF7": 8471,
+        "MUXF8": 3215,
+        "OBUF": 16
+      },
+      "wrapper_sha256": "e1c210739631be96c74c79e72bc5d24c445d8de1d2c0079597fe01980bbd37fd",
+      "raw_log": "measurements/deferred-tnf-fanin/deferred-tnf-f32/yosys.log.gz",
+      "raw_log_sha256": "beb128313cd1f4676f212cd2ed7fce8740004099ffdb6f6a3a0cfdeed7f104b0"
+    },
+    {
+      "fanin": 64,
+      "topology": "fully-unrolled-balanced-exact-tree-one-final-rne",
+      "input_port_bits": 1152,
+      "exact_accumulator_bits": 96,
+      "lut": 48265,
+      "carry4": 1761,
+      "muxf7": 16662,
+      "muxf8": 6357,
+      "ff": 0,
+      "dsp48e1": 0,
+      "synthesis_wall_seconds": 46.14975183301431,
+      "cells_by_type": {
+        "$scopeinfo": 2,
+        "CARRY4": 1761,
+        "IBUF": 1152,
+        "INV": 543,
+        "LUT1": 6423,
+        "LUT2": 6318,
+        "LUT3": 7919,
+        "LUT4": 3608,
+        "LUT5": 6213,
+        "LUT6": 17784,
+        "MUXF7": 16662,
+        "MUXF8": 6357,
+        "OBUF": 16
+      },
+      "wrapper_sha256": "f06c7a0d7bbe54368e43645df6ab674fe1830a19a540ad065a232d5b27712ed9",
+      "raw_log": "measurements/deferred-tnf-fanin/deferred-tnf-f64/yosys.log.gz",
+      "raw_log_sha256": "4f4f62e58b97080889e2ac2569dfe59ec5eb5561d7738f6b666d29bca94f8ca2"
+    }
+  ],
+  "comparisons": [
+    {
+      "fanin": 8,
+      "direct_rne_lut_over_deferred_lut": 0.6311780007432182,
+      "deferred_lut_over_int4_lut": 14.545945945945945,
+      "deferred_lut_over_int8_lut": 3.531496062992126,
+      "claim_boundary": "post-synthesis structural only; numerical formats and physical costs are not matched"
+    },
+    {
+      "fanin": 16,
+      "direct_rne_lut_over_deferred_lut": 0.6927112610080569,
+      "deferred_lut_over_int4_lut": 13.737451737451737,
+      "deferred_lut_over_int8_lut": 3.4288467716029554,
+      "claim_boundary": "post-synthesis structural only; numerical formats and physical costs are not matched"
+    },
+    {
+      "fanin": 32,
+      "direct_rne_lut_over_deferred_lut": 0.6181869076658536,
+      "deferred_lut_over_int4_lut": 17.536465638148666,
+      "deferred_lut_over_int8_lut": 3.8812664907651717,
+      "claim_boundary": "post-synthesis structural only; numerical formats and physical costs are not matched"
+    },
+    {
+      "fanin": 64,
+      "direct_rne_lut_over_deferred_lut": 0.6479643634103388,
+      "deferred_lut_over_int4_lut": 15.83497375328084,
+      "deferred_lut_over_int8_lut": 4.021078063817379,
+      "claim_boundary": "post-synthesis structural only; numerical formats and physical costs are not matched"
+    }
+  ],
+  "negative_results": [
+    "No P&R: the fully exposed fan-in-64 interface exceeds the package I/O budget.",
+    "The comparison is not matched for accuracy, range, storage width, timing, power, or model quality."
+  ]
+}

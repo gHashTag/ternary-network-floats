@@ -10,6 +10,8 @@ coqc -Q proofs Trinity proofs/CorePhi.v    # checks the algebra
 python3 make_vector_manifest.py --check    # verifies the conformance vector digests
 python3 tests/test_direct_tnf_artifact.py  # checks the direct TNF MAC against an exact oracle
 python3 tests/test_tnf_fanin_artifact.py   # checks TNF/int4/int8 fan-in 8/16/32/64 trees
+python3 tests/test_deferred_tnf_artifact.py # checks exact accumulation plus one TNF rounding
+python3 tests/test_zphi_fanin_artifact.py  # checks the exact Z[phi] two-coordinate tree
 ```
 
 `verify.py` exits non-zero if any number moves. `coqc` returns 0 on a file with
@@ -64,6 +66,37 @@ falsifies a universal TNF-area claim for this architecture and turns the next
 question into a concrete one: defer normalization, accumulate exactly in a
 wider or two-coordinate domain, or serialize the adder, then measure again.
 
+### The two follow-up architectures
+
+Both concrete alternatives were implemented and measured under the same
+XC7A200T Yosys `-nodsp` synthesis boundary. Deferring normalization lifts each
+packed TNF input into a signed 96-bit fixed-scale integer, builds an exact tree,
+and rounds once at the root. The exact `Z[phi]` tree instead transports a signed
+pair `(a,b)` denoting `a+b*phi`; multiplying by `+phi` is the theorem-derived
+map `(a,b) -> (b,a+b)`, and accumulation is componentwise.
+
+| fan-in | packed RNE TNF | deferred TNF | exact `Z[phi]` pair | int8 |
+|---:|---:|---:|---:|---:|
+| 8  | 3,397  | 5,382  | 1,177  | 1,524  |
+| 16 | 7,394  | 10,674 | 2,490  | 3,113  |
+| 32 | 15,459 | 25,007 | 6,152  | 6,443  |
+| 64 | 31,274 | 48,265 | 13,144 | 12,003 |
+
+All sixteen arms use zero DSP. Deferred normalization is **1.44--1.62x larger**
+than the direct packed tree: removing repeated rounding does not pay for the
+per-input variable shift into the 96-bit domain and the wide exact adder tree.
+The closure-derived pair tree is **2.38--2.97x smaller** than direct packed TNF
+and **3.67--4.57x smaller** than deferred TNF. It is smaller than the native
+int8 tree at fan-in 8, 16, and 32, then 9.5% larger at 64.
+
+That last comparison is an architectural lead, not a format-win claim. The pair
+tree exposes 34 input bits per lane (two signed 16-bit coordinates plus a
+two-bit weight), versus 18 for packed TNF and 16 for the int8 operand pair; it
+also excludes conversion to and from the pair domain. The defensible conclusion
+is narrower and stronger: the theorem's closed coordinate domain removes the
+packed format's alignment and rounding cost. Transport, conversion, and routed
+timing remain to be measured.
+
 Fresh open-flow result on `xc7a200tsbg484-1`, with a register bank on each side,
 all 54 package pins constrained, DSP inference disabled, and five placement
 seeds:
@@ -90,6 +123,13 @@ Reproduce the fully unrolled TNF/int4/int8 fan-in sweep with:
 
 ```bash
 python3 measure_tnf_fanin.py
+```
+
+Reproduce the deferred-normalization and exact-coordinate sweeps with:
+
+```bash
+python3 measure_deferred_tnf.py
+python3 measure_zphi_fanin.py
 ```
 
 Add five-seed place-and-route when a compatible chip database is available:
@@ -235,6 +275,12 @@ re-running something that had already passed.
 | `tests/test_tnf_fanin_artifact.py` | 12-arm exact-oracle regression at fan-in 8/16/32/64 |
 | `measure_tnf_fanin.py` | common no-DSP synthesis sweep with operand-visibility gates |
 | `measurements/direct-tnf-fanin/` | benchmark contract, result index, raw logs, and checkpoint journal |
+| `rtl/tnf_deferred_dot.v`, `rtl/tnf_exact_to_packed.v` | exact 96-bit accumulation with one packed-TNF rounding at the root |
+| `tests/test_deferred_tnf_artifact.py`, `measure_deferred_tnf.py` | oracle regression and synthesis for deferred normalization |
+| `measurements/deferred-tnf-fanin/` | deferred-normalization contract, result, logs, and checkpoints |
+| `rtl/zphi_dot_tree.v` | exact theorem-derived two-coordinate `Z[phi]` dot-product tree |
+| `tests/test_zphi_fanin_artifact.py`, `measure_zphi_fanin.py` | integer-pair oracle regression and synthesis sweep |
+| `measurements/exact-zphi-fanin/` | exact-coordinate contract, result, logs, and checkpoints |
 | `verify.py` | every table in the paper, recomputed and asserted |
 | `freq_provenance.py` | which frequency literals in the paper are stated in no record file |
 | `data/freq_provenance.json` | that registry's output on the cited revision |
@@ -252,6 +298,8 @@ re-running something that had already passed.
 | direct TNF MAC uses zero DSP in the fresh XC7A200T run | `measurements/direct-tnf-mac-e4m8/result.json` and raw logs |
 | direct TNF trees match the packed oracle at fan-in 8/16/32/64 | `tests/test_tnf_fanin_artifact.py` |
 | fan-in structural synthesis counts and claim boundaries | `measurements/direct-tnf-fanin/result.json` and raw logs |
+| deferred normalization matches one-round exact-oracle semantics and costs 5,382--48,265 LUT | `measurements/deferred-tnf-fanin/result.json` and raw logs |
+| exact `Z[phi]` pair trees match the integer-pair oracle and cost 1,177--13,144 LUT | `measurements/exact-zphi-fanin/result.json` and raw logs |
 | φ² = φ + 1 and φ² + φ⁻² = 3 | `phi_square`, `trinity_identity` |
 | φⁿ = F(n)·φ + F(n−1) | `phi_cubed_fib`, `phi_fourth_fib`, `phi_fifth_fib` |
 | TNF16 (4t,11m) holds 323,584 values across 79 binades | `verify.py`, first block |
