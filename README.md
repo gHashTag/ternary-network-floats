@@ -9,6 +9,7 @@ python3 verify.py                          # recomputes the paper's tables from 
 coqc -Q proofs Trinity proofs/CorePhi.v    # checks the algebra
 python3 make_vector_manifest.py --check    # verifies the conformance vector digests
 python3 tests/test_direct_tnf_artifact.py  # checks the direct TNF MAC against an exact oracle
+python3 tests/test_tnf_fanin_artifact.py   # checks TNF/int4/int8 fan-in 8/16/32/64 trees
 ```
 
 `verify.py` exits non-zero if any number moves. `coqc` returns 0 on a file with
@@ -40,11 +41,28 @@ zero codes; there is no multiplier operator in that path. The adder handles
 zero, the reserved special row, and binary offset codes that have no four-trit
 preimage.
 
-The checked boundary is deliberately narrow and exact: **one weight application
-plus one TNF addition**, not a fan-in neuron and not any of the historical rows
-below. A deterministic test generated 5,000 directed and random cases and
-compared the packed RTL output with an exact rational oracle: **5,000 checked,
-0 errors**.
+The first checked boundary is deliberately narrow and exact: **one weight
+application plus one TNF addition**, not any of the historical rows below. A
+deterministic test generated 5,000 directed and random cases and compared the
+packed RTL output with an exact rational oracle: **5,000 checked, 0 errors**.
+The separate fan-in artifact then composes the same operation in fully unrolled
+balanced trees at fan-in 8, 16, 32, and 64 and tests every tree against the same
+ordered packed-arithmetic oracle.
+
+That direct fan-in result is a negative one for area:
+
+| fan-in | direct TNF LUT | int4 LUT | int8 LUT | TNF/int4 | TNF/int8 |
+|---:|---:|---:|---:|---:|---:|
+| 8  | 3,397  | 370   | 1,524  | 9.18x | 2.23x |
+| 16 | 7,394  | 777   | 3,113  | 9.52x | 2.38x |
+| 32 | 15,459 | 1,426 | 6,443  | 10.84x | 2.40x |
+| 64 | 31,274 | 3,048 | 12,003 | 10.26x | 2.61x |
+
+All 12 arms map with zero DSP. The complete RNE TNF adder at every tree node is
+the cost center; the weight application remains sign-select/zero. This result
+falsifies a universal TNF-area claim for this architecture and turns the next
+question into a concrete one: defer normalization, accumulate exactly in a
+wider or two-coordinate domain, or serialize the adder, then measure again.
 
 Fresh open-flow result on `xc7a200tsbg484-1`, with a register bank on each side,
 all 54 package pins constrained, DSP inference disabled, and five placement
@@ -66,6 +84,12 @@ Reproduce the simulation and synthesis with:
 
 ```bash
 python3 measure_tnf_rtl.py
+```
+
+Reproduce the fully unrolled TNF/int4/int8 fan-in sweep with:
+
+```bash
+python3 measure_tnf_fanin.py
 ```
 
 Add five-seed place-and-route when a compatible chip database is available:
@@ -207,6 +231,10 @@ re-running something that had already passed.
 | `tests/test_direct_tnf_artifact.py` | 5,000-case exact-oracle RTL conformance test |
 | `measure_tnf_rtl.py` | simulation, synthesis, DSP/latch gates, and optional multi-seed P&R |
 | `measurements/direct-tnf-mac-e4m8/` | fresh result JSON, raw synthesis/P&R logs, and checkpoint journal |
+| `rtl/tnf_dot_tree.v`, `rtl/signed_int_dot.v` | fully unrolled balanced TNF and native-integer dot products |
+| `tests/test_tnf_fanin_artifact.py` | 12-arm exact-oracle regression at fan-in 8/16/32/64 |
+| `measure_tnf_fanin.py` | common no-DSP synthesis sweep with operand-visibility gates |
+| `measurements/direct-tnf-fanin/` | benchmark contract, result index, raw logs, and checkpoint journal |
 | `verify.py` | every table in the paper, recomputed and asserted |
 | `freq_provenance.py` | which frequency literals in the paper are stated in no record file |
 | `data/freq_provenance.json` | that registry's output on the cited revision |
@@ -222,6 +250,8 @@ re-running something that had already passed.
 | a layer's linear path is exact | `dot_exact` |
 | direct TNF weight-apply plus RNE accumulation matches the oracle | `tests/test_direct_tnf_artifact.py` |
 | direct TNF MAC uses zero DSP in the fresh XC7A200T run | `measurements/direct-tnf-mac-e4m8/result.json` and raw logs |
+| direct TNF trees match the packed oracle at fan-in 8/16/32/64 | `tests/test_tnf_fanin_artifact.py` |
+| fan-in structural synthesis counts and claim boundaries | `measurements/direct-tnf-fanin/result.json` and raw logs |
 | φ² = φ + 1 and φ² + φ⁻² = 3 | `phi_square`, `trinity_identity` |
 | φⁿ = F(n)·φ + F(n−1) | `phi_cubed_fib`, `phi_fourth_fib`, `phi_fifth_fib` |
 | TNF16 (4t,11m) holds 323,584 values across 79 binades | `verify.py`, first block |
