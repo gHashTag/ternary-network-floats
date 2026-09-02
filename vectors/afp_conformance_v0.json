@@ -1,0 +1,125 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "AFP",
+  "format_name": "AFP (Adaptive Floating-Point)",
+  "bitexact": true,
+  "format_notes": "AFP (Adaptive Floating-Point, Tambe 2020, DAC): 16-bit S1E8M7 radix-2 PAYLOAD (bf16-shaped, bias 127) plus an EXTERNAL per-tensor exponent shift (not part of the 16-bit code). This pack fixes the deterministic payload round-trip; the tensor shift is an external scale applied downstream.. IEEE-style specials at top exponent; external per-tensor shift documented",
+  "catalog": {
+    "id": "afp",
+    "bits": 16,
+    "s": 1,
+    "e": 8,
+    "m": 7,
+    "bias": 127,
+    "storage": "u16_plus_tensor_shift",
+    "cluster": "QuantTuned",
+    "status": "Verified",
+    "standard": "Tambe 2020",
+    "use_case": "efficient training",
+    "gf_relation": "orthogonal",
+    "source": "Tambe 2020 (DAC)",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": 3.0,
+    "expected": 3.0,
+    "ieee754_exact": true,
+    "afp_bits_hex": "0x4040"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "n_vectors": 8,
+  "vectors": [
+    {
+      "name": "pos_zero",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "afp_bits_hex": "0x0000",
+      "afp_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "pos_one",
+      "input_f64": 1.0,
+      "input_f64_hex": "0x3FF0000000000000",
+      "afp_bits_hex": "0x3F80",
+      "afp_bits_int": 16256,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3FF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "afp_bits_hex": "0xBF80",
+      "afp_bits_int": 49024,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_two",
+      "input_f64": 2.0,
+      "input_f64_hex": "0x4000000000000000",
+      "afp_bits_hex": "0x4000",
+      "afp_bits_int": 16384,
+      "decoded_f64": 2.0,
+      "decoded_f64_hex": "0x4000000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_three",
+      "input_f64": 3.0,
+      "input_f64_hex": "0x4008000000000000",
+      "afp_bits_hex": "0x4040",
+      "afp_bits_int": 16448,
+      "decoded_f64": 3.0,
+      "decoded_f64_hex": "0x4008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_half",
+      "input_f64": 0.5,
+      "input_f64_hex": "0x3FE0000000000000",
+      "afp_bits_hex": "0x3F00",
+      "afp_bits_int": 16128,
+      "decoded_f64": 0.5,
+      "decoded_f64_hex": "0x3FE0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_four",
+      "input_f64": 4.0,
+      "input_f64_hex": "0x4010000000000000",
+      "afp_bits_hex": "0x4080",
+      "afp_bits_int": 16512,
+      "decoded_f64": 4.0,
+      "decoded_f64_hex": "0x4010000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_three",
+      "input_f64": -3.0,
+      "input_f64_hex": "0xC008000000000000",
+      "afp_bits_hex": "0xC040",
+      "afp_bits_int": 49216,
+      "decoded_f64": -3.0,
+      "decoded_f64_hex": "0xC008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}

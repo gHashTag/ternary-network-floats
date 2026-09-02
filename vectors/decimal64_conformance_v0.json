@@ -1,0 +1,114 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "DECIMAL64",
+  "format_name": "decimal64",
+  "bitexact": true,
+  "format_notes": "IEEE 754-2008 decimal64 (BID / Binary Integer Decimal): S1 : combination : trailing significand; significand is a plain binary integer, value = coeff * 10^(exp-bias). inf at combo head 11110; nan at 11111; named decimal values f64-exact",
+  "catalog": {
+    "id": "decimal64",
+    "bits": 64,
+    "s": 1,
+    "e": 13,
+    "m": 50,
+    "bias": 398,
+    "storage": "u64",
+    "cluster": "Ieee754Decimal",
+    "status": "Verified",
+    "standard": "IEEE 754-2008",
+    "use_case": "financial databases",
+    "gf_relation": "orthogonal",
+    "source": "IEEE 754-2008",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": 3.0,
+    "expected": 3.0,
+    "ieee754_exact": true,
+    "decimal64_bits_hex": "0x2238000000000003"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "n_vectors": 7,
+  "vectors": [
+    {
+      "name": "pos_one",
+      "input_f64": 1.0,
+      "input_f64_hex": "0x3FF0000000000000",
+      "decimal64_bits_hex": "0x2238000000000001",
+      "decimal64_bits_int": 2465720795985346561,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3FF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "decimal64_bits_hex": "0xA238000000000001",
+      "decimal64_bits_int": 11689092832840122369,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_two",
+      "input_f64": 2.0,
+      "input_f64_hex": "0x4000000000000000",
+      "decimal64_bits_hex": "0x2238000000000002",
+      "decimal64_bits_int": 2465720795985346562,
+      "decoded_f64": 2.0,
+      "decoded_f64_hex": "0x4000000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_three",
+      "input_f64": 3.0,
+      "input_f64_hex": "0x4008000000000000",
+      "decimal64_bits_hex": "0x2238000000000003",
+      "decimal64_bits_int": 2465720795985346563,
+      "decoded_f64": 3.0,
+      "decoded_f64_hex": "0x4008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_half",
+      "input_f64": 0.5,
+      "input_f64_hex": "0x3FE0000000000000",
+      "decimal64_bits_hex": "0x2234000000000005",
+      "decimal64_bits_int": 2464594896078503941,
+      "decoded_f64": 0.5,
+      "decoded_f64_hex": "0x3FE0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_four",
+      "input_f64": 4.0,
+      "input_f64_hex": "0x4010000000000000",
+      "decimal64_bits_hex": "0x2238000000000004",
+      "decimal64_bits_int": 2465720795985346564,
+      "decoded_f64": 4.0,
+      "decoded_f64_hex": "0x4010000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_three",
+      "input_f64": -3.0,
+      "input_f64_hex": "0xC008000000000000",
+      "decimal64_bits_hex": "0xA238000000000003",
+      "decimal64_bits_int": 11689092832840122371,
+      "decoded_f64": -3.0,
+      "decoded_f64_hex": "0xC008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}

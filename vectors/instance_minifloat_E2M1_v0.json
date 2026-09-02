@@ -1,0 +1,195 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "kind": "instance",
+  "family": "minifloat",
+  "instance": "E2M1",
+  "params": {
+    "p1": 2,
+    "p2": 1
+  },
+  "bits_width": 4,
+  "bitexact": true,
+  "independent_decoder": "Fraction (dyadic-exact), abs_error=0",
+  "n_vectors": 16,
+  "canonical_roundtrip": "13/13",
+  "note": "Instance-level bit-exact pack for a fixed parameterization of a catalog-structural family. Does NOT promote the catalog format to bitexact; catalog count stays 75/8 (=83).",
+  "vectors": [
+    {
+      "name": "code_0x0",
+      "bits_int": 0,
+      "bits_width": 4,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "decoded_exact": "0/1",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0x1",
+      "bits_int": 1,
+      "bits_width": 4,
+      "decoded_f64": 0.5,
+      "decoded_f64_hex": "0x3fe0000000000000",
+      "decoded_exact": "1/2",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0x2",
+      "bits_int": 2,
+      "bits_width": 4,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3ff0000000000000",
+      "decoded_exact": "1/1",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0x3",
+      "bits_int": 3,
+      "bits_width": 4,
+      "decoded_f64": 1.5,
+      "decoded_f64_hex": "0x3ff8000000000000",
+      "decoded_exact": "3/2",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0x4",
+      "bits_int": 4,
+      "bits_width": 4,
+      "decoded_f64": 2.0,
+      "decoded_f64_hex": "0x4000000000000000",
+      "decoded_exact": "2/1",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0x5",
+      "bits_int": 5,
+      "bits_width": 4,
+      "decoded_f64": 3.0,
+      "decoded_f64_hex": "0x4008000000000000",
+      "decoded_exact": "3/1",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0x6",
+      "bits_int": 6,
+      "bits_width": 4,
+      "decoded_f64": 4.0,
+      "decoded_f64_hex": "0x4010000000000000",
+      "decoded_exact": "4/1",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0x7",
+      "bits_int": 7,
+      "bits_width": 4,
+      "decoded_f64": 6.0,
+      "decoded_f64_hex": "0x4018000000000000",
+      "decoded_exact": "6/1",
+      "roundtrip_bits_match": false,
+      "category": "reserved_or_saturating",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0x8",
+      "bits_int": 8,
+      "bits_width": 4,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "decoded_exact": "0/1",
+      "roundtrip_bits_match": false,
+      "category": "negative_zero",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0x9",
+      "bits_int": 9,
+      "bits_width": 4,
+      "decoded_f64": -0.5,
+      "decoded_f64_hex": "0xbfe0000000000000",
+      "decoded_exact": "-1/2",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0xa",
+      "bits_int": 10,
+      "bits_width": 4,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xbff0000000000000",
+      "decoded_exact": "-1/1",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0xb",
+      "bits_int": 11,
+      "bits_width": 4,
+      "decoded_f64": -1.5,
+      "decoded_f64_hex": "0xbff8000000000000",
+      "decoded_exact": "-3/2",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0xc",
+      "bits_int": 12,
+      "bits_width": 4,
+      "decoded_f64": -2.0,
+      "decoded_f64_hex": "0xc000000000000000",
+      "decoded_exact": "-2/1",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0xd",
+      "bits_int": 13,
+      "bits_width": 4,
+      "decoded_f64": -3.0,
+      "decoded_f64_hex": "0xc008000000000000",
+      "decoded_exact": "-3/1",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0xe",
+      "bits_int": 14,
+      "bits_width": 4,
+      "decoded_f64": -4.0,
+      "decoded_f64_hex": "0xc010000000000000",
+      "decoded_exact": "-4/1",
+      "roundtrip_bits_match": true,
+      "category": "canonical",
+      "abs_error": 0.0
+    },
+    {
+      "name": "code_0xf",
+      "bits_int": 15,
+      "bits_width": 4,
+      "decoded_f64": -6.0,
+      "decoded_f64_hex": "0xc018000000000000",
+      "decoded_exact": "-6/1",
+      "roundtrip_bits_match": false,
+      "category": "reserved_or_saturating",
+      "abs_error": 0.0
+    }
+  ],
+  "vectors_sha256": "e86a46b1a11bf2c32b23ea503de7bfef064917d5503ef2c342f52661740461fa"
+}

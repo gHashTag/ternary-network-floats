@@ -1,0 +1,70 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "TAKUM16",
+  "format_name": "takum16",
+  "bitexact": true,
+  "format_notes": "Takum logarithmic (Hunhold 2024, arXiv:2404.18603): value = exp(ell/2), exhaustive 65536 codes, correctly-rounded f64 (independent 400-bit witness, min midpoint gap 4.30e-5 ULP). zero at 0x0000; NaR at 0x8000 (MSB-set); exhaustive over all 65536 codes",
+  "catalog": {
+    "id": "takum16",
+    "bits": 16,
+    "s": 1,
+    "e": 0,
+    "m": 0,
+    "bias": 0,
+    "storage": "u16",
+    "cluster": "PositUnumIII",
+    "status": "Verified",
+    "standard": "Hunhold 2024",
+    "use_case": "single-rule ladder counterexample",
+    "gf_relation": "ally",
+    "source": "Hunhold 2024 (arXiv:2404.18603)",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": null,
+    "expected": 3.0,
+    "ieee754_exact": false,
+    "note": "3.0 is not an exact grid point of this format at this width"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "n_vectors": 3,
+  "vectors": [
+    {
+      "name": "pos_zero",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "takum16_bits_hex": "0x0000",
+      "takum16_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "pos_one",
+      "input_f64": 1.0,
+      "input_f64_hex": "0x3FF0000000000000",
+      "takum16_bits_hex": "0x4000",
+      "takum16_bits_int": 16384,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3FF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "takum16_bits_hex": "0xC000",
+      "takum16_bits_int": 49152,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}

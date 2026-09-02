@@ -6,7 +6,7 @@ conformance can name the exact bytes it was checked against.
 Regenerate and verify:
 
 ```bash
-python3 conformance/make_vector_manifest.py --check
+python3 make_vector_manifest.py --check
 ```
 
 Exit status is 0 when every file matches, non-zero on the first mismatch, a

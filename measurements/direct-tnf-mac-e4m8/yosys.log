@@ -1,0 +1,1926 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.67+post (git sha1 b8e7da6f40ae8f552c116bf6c359b07c6533e159, Release, AppleClang clang++ 21.0.0.21000099)
+
+-- Running command `read_verilog -sv rtl/tnf_weight_apply.v rtl/tnf_add_full.v rtl/tnf_mac.v rtl/tnf_mac_e4m8_top.v rtl/tnf_mac_e4m8_pnr_top.v; synth_xilinx -family xc7 -top tnf_mac_e4m8_pnr_top -flatten -nodsp; write_json /var/folders/cm/2n1qdh892xldd1rc2ly1jv8r0000gn/T/tnf-measure-mvtt3n0i/tnf_mac.json; stat' --
+
+1. Executing Verilog-2005 frontend: rtl/tnf_weight_apply.v
+Parsing SystemVerilog input from `rtl/tnf_weight_apply.v' to AST representation.
+Generating RTLIL representation for module `\tnf_weight_apply'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: rtl/tnf_add_full.v
+Parsing SystemVerilog input from `rtl/tnf_add_full.v' to AST representation.
+Generating RTLIL representation for module `\tnf_add_full'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: rtl/tnf_mac.v
+Parsing SystemVerilog input from `rtl/tnf_mac.v' to AST representation.
+Generating RTLIL representation for module `\tnf_mac'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: rtl/tnf_mac_e4m8_top.v
+Parsing SystemVerilog input from `rtl/tnf_mac_e4m8_top.v' to AST representation.
+Generating RTLIL representation for module `\tnf_mac_e4m8_top'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: rtl/tnf_mac_e4m8_pnr_top.v
+Parsing SystemVerilog input from `rtl/tnf_mac_e4m8_pnr_top.v' to AST representation.
+Generating RTLIL representation for module `\tnf_mac_e4m8_pnr_top'.
+Successfully finished Verilog frontend.
+
+6. Executing SYNTH_XILINX pass.
+
+6.1. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/xilinx/cells_sim.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/xilinx/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\IBUF'.
+Generating RTLIL representation for module `\IBUFG'.
+Generating RTLIL representation for module `\OBUF'.
+Generating RTLIL representation for module `\IOBUF'.
+Generating RTLIL representation for module `\OBUFT'.
+Generating RTLIL representation for module `\BUFG'.
+Generating RTLIL representation for module `\BUFGCTRL'.
+Generating RTLIL representation for module `\BUFHCE'.
+Generating RTLIL representation for module `\INV'.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\LUT5'.
+Generating RTLIL representation for module `\LUT6'.
+Generating RTLIL representation for module `\LUT6_2'.
+Generating RTLIL representation for module `\$__ABC9_LUT7'.
+Generating RTLIL representation for module `\$__ABC9_LUT8'.
+Generating RTLIL representation for module `\MUXCY'.
+Generating RTLIL representation for module `\MUXF5'.
+Generating RTLIL representation for module `\MUXF6'.
+Generating RTLIL representation for module `\MUXF7'.
+Generating RTLIL representation for module `\MUXF8'.
+Generating RTLIL representation for module `\MUXF9'.
+Generating RTLIL representation for module `\XORCY'.
+Generating RTLIL representation for module `\CARRY4'.
+Generating RTLIL representation for module `\CARRY8'.
+Generating RTLIL representation for module `\ORCY'.
+Generating RTLIL representation for module `\MULT_AND'.
+Generating RTLIL representation for module `\FDRE'.
+Generating RTLIL representation for module `\FDRE_1'.
+Generating RTLIL representation for module `\FDSE'.
+Generating RTLIL representation for module `\FDSE_1'.
+Generating RTLIL representation for module `\FDRSE'.
+Generating RTLIL representation for module `\FDRSE_1'.
+Generating RTLIL representation for module `\FDCE'.
+Generating RTLIL representation for module `\FDCE_1'.
+Generating RTLIL representation for module `\FDPE'.
+Generating RTLIL representation for module `\FDPE_1'.
+Generating RTLIL representation for module `\FDCPE'.
+Generating RTLIL representation for module `\FDCPE_1'.
+Generating RTLIL representation for module `\LDCE'.
+Generating RTLIL representation for module `\LDPE'.
+Generating RTLIL representation for module `\LDCPE'.
+Generating RTLIL representation for module `\AND2B1L'.
+Generating RTLIL representation for module `\OR2L'.
+Generating RTLIL representation for module `\RAM16X1S'.
+Generating RTLIL representation for module `\RAM16X1S_1'.
+Generating RTLIL representation for module `\RAM32X1S'.
+Generating RTLIL representation for module `\RAM32X1S_1'.
+Generating RTLIL representation for module `\RAM64X1S'.
+Generating RTLIL representation for module `\RAM64X1S_1'.
+Generating RTLIL representation for module `\RAM128X1S'.
+Generating RTLIL representation for module `\RAM128X1S_1'.
+Generating RTLIL representation for module `\RAM256X1S'.
+Generating RTLIL representation for module `\RAM512X1S'.
+Generating RTLIL representation for module `\RAM16X2S'.
+Generating RTLIL representation for module `\RAM32X2S'.
+Generating RTLIL representation for module `\RAM64X2S'.
+Generating RTLIL representation for module `\RAM16X4S'.
+Generating RTLIL representation for module `\RAM32X4S'.
+Generating RTLIL representation for module `\RAM16X8S'.
+Generating RTLIL representation for module `\RAM32X8S'.
+Generating RTLIL representation for module `\RAM16X1D'.
+Generating RTLIL representation for module `\RAM16X1D_1'.
+Generating RTLIL representation for module `\RAM32X1D'.
+Generating RTLIL representation for module `\RAM32X1D_1'.
+Generating RTLIL representation for module `\RAM64X1D'.
+Generating RTLIL representation for module `\RAM64X1D_1'.
+Generating RTLIL representation for module `\RAM128X1D'.
+Generating RTLIL representation for module `\RAM256X1D'.
+Generating RTLIL representation for module `\RAM32M'.
+Generating RTLIL representation for module `\RAM32M16'.
+Generating RTLIL representation for module `\RAM64M'.
+Generating RTLIL representation for module `\RAM64M8'.
+Generating RTLIL representation for module `\RAM32X16DR8'.
+Generating RTLIL representation for module `\RAM64X8SW'.
+Generating RTLIL representation for module `\ROM16X1'.
+Generating RTLIL representation for module `\ROM32X1'.
+Generating RTLIL representation for module `\ROM64X1'.
+Generating RTLIL representation for module `\ROM128X1'.
+Generating RTLIL representation for module `\ROM256X1'.
+Generating RTLIL representation for module `\SRL16'.
+Generating RTLIL representation for module `\SRL16E'.
+Generating RTLIL representation for module `\SRLC16'.
+Generating RTLIL representation for module `\SRLC16E'.
+Generating RTLIL representation for module `\SRLC32E'.
+Generating RTLIL representation for module `\CFGLUT5'.
+Generating RTLIL representation for module `\MULT18X18'.
+Generating RTLIL representation for module `\MULT18X18S'.
+Generating RTLIL representation for module `\MULT18X18SIO'.
+Generating RTLIL representation for module `\DSP48A'.
+Generating RTLIL representation for module `\DSP48A1'.
+Generating RTLIL representation for module `\DSP48'.
+Generating RTLIL representation for module `\DSP48E1'.
+Generating RTLIL representation for module `\RAMB18E1'.
+Generating RTLIL representation for module `\RAMB36E1'.
+Successfully finished Verilog frontend.
+
+6.2. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/xilinx/cells_xtra.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/xilinx/cells_xtra.v' to AST representation.
+Generating RTLIL representation for module `\RAMB4_S1'.
+Generating RTLIL representation for module `\RAMB4_S2'.
+Generating RTLIL representation for module `\RAMB4_S4'.
+Generating RTLIL representation for module `\RAMB4_S8'.
+Generating RTLIL representation for module `\RAMB4_S16'.
+Generating RTLIL representation for module `\RAMB4_S1_S1'.
+Generating RTLIL representation for module `\RAMB4_S1_S2'.
+Generating RTLIL representation for module `\RAMB4_S1_S4'.
+Generating RTLIL representation for module `\RAMB4_S1_S8'.
+Generating RTLIL representation for module `\RAMB4_S1_S16'.
+Generating RTLIL representation for module `\RAMB4_S2_S2'.
+Generating RTLIL representation for module `\RAMB4_S2_S4'.
+Generating RTLIL representation for module `\RAMB4_S2_S8'.
+Generating RTLIL representation for module `\RAMB4_S2_S16'.
+Generating RTLIL representation for module `\RAMB4_S4_S4'.
+Generating RTLIL representation for module `\RAMB4_S4_S8'.
+Generating RTLIL representation for module `\RAMB4_S4_S16'.
+Generating RTLIL representation for module `\RAMB4_S8_S8'.
+Generating RTLIL representation for module `\RAMB4_S8_S16'.
+Generating RTLIL representation for module `\RAMB4_S16_S16'.
+Generating RTLIL representation for module `\RAMB16_S1'.
+Generating RTLIL representation for module `\RAMB16_S2'.
+Generating RTLIL representation for module `\RAMB16_S4'.
+Generating RTLIL representation for module `\RAMB16_S9'.
+Generating RTLIL representation for module `\RAMB16_S18'.
+Generating RTLIL representation for module `\RAMB16_S36'.
+Generating RTLIL representation for module `\RAMB16_S1_S1'.
+Generating RTLIL representation for module `\RAMB16_S1_S2'.
+Generating RTLIL representation for module `\RAMB16_S1_S4'.
+Generating RTLIL representation for module `\RAMB16_S1_S9'.
+Generating RTLIL representation for module `\RAMB16_S1_S18'.
+Generating RTLIL representation for module `\RAMB16_S1_S36'.
+Generating RTLIL representation for module `\RAMB16_S2_S2'.
+Generating RTLIL representation for module `\RAMB16_S2_S4'.
+Generating RTLIL representation for module `\RAMB16_S2_S9'.
+Generating RTLIL representation for module `\RAMB16_S2_S18'.
+Generating RTLIL representation for module `\RAMB16_S2_S36'.
+Generating RTLIL representation for module `\RAMB16_S4_S4'.
+Generating RTLIL representation for module `\RAMB16_S4_S9'.
+Generating RTLIL representation for module `\RAMB16_S4_S18'.
+Generating RTLIL representation for module `\RAMB16_S4_S36'.
+Generating RTLIL representation for module `\RAMB16_S9_S9'.
+Generating RTLIL representation for module `\RAMB16_S9_S18'.
+Generating RTLIL representation for module `\RAMB16_S9_S36'.
+Generating RTLIL representation for module `\RAMB16_S18_S18'.
+Generating RTLIL representation for module `\RAMB16_S18_S36'.
+Generating RTLIL representation for module `\RAMB16_S36_S36'.
+Generating RTLIL representation for module `\RAMB16BWE_S18'.
+Generating RTLIL representation for module `\RAMB16BWE_S36'.
+Generating RTLIL representation for module `\RAMB16BWE_S18_S9'.
+Generating RTLIL representation for module `\RAMB16BWE_S18_S18'.
+Generating RTLIL representation for module `\RAMB16BWE_S36_S9'.
+Generating RTLIL representation for module `\RAMB16BWE_S36_S18'.
+Generating RTLIL representation for module `\RAMB16BWE_S36_S36'.
+Generating RTLIL representation for module `\RAMB16BWER'.
+Generating RTLIL representation for module `\RAMB8BWER'.
+Generating RTLIL representation for module `\FIFO16'.
+Generating RTLIL representation for module `\RAMB16'.
+Generating RTLIL representation for module `\RAMB32_S64_ECC'.
+Generating RTLIL representation for module `\FIFO18'.
+Generating RTLIL representation for module `\FIFO18_36'.
+Generating RTLIL representation for module `\FIFO36'.
+Generating RTLIL representation for module `\FIFO36_72'.
+Generating RTLIL representation for module `\RAMB18'.
+Generating RTLIL representation for module `\RAMB36'.
+Generating RTLIL representation for module `\RAMB18SDP'.
+Generating RTLIL representation for module `\RAMB36SDP'.
+Generating RTLIL representation for module `\FIFO18E1'.
+Generating RTLIL representation for module `\FIFO36E1'.
+Generating RTLIL representation for module `\FIFO18E2'.
+Generating RTLIL representation for module `\FIFO36E2'.
+Generating RTLIL representation for module `\RAMB18E2'.
+Generating RTLIL representation for module `\RAMB36E2'.
+Generating RTLIL representation for module `\URAM288'.
+Generating RTLIL representation for module `\URAM288_BASE'.
+Generating RTLIL representation for module `\DSP48E'.
+Generating RTLIL representation for module `\DSP48E2'.
+Generating RTLIL representation for module `\FDDRCPE'.
+Generating RTLIL representation for module `\FDDRRSE'.
+Generating RTLIL representation for module `\IFDDRCPE'.
+Generating RTLIL representation for module `\IFDDRRSE'.
+Generating RTLIL representation for module `\OFDDRCPE'.
+Generating RTLIL representation for module `\OFDDRRSE'.
+Generating RTLIL representation for module `\OFDDRTCPE'.
+Generating RTLIL representation for module `\OFDDRTRSE'.
+Generating RTLIL representation for module `\IDDR2'.
+Generating RTLIL representation for module `\ODDR2'.
+Generating RTLIL representation for module `\IDDR'.
+Generating RTLIL representation for module `\IDDR_2CLK'.
+Generating RTLIL representation for module `\ODDR'.
+Generating RTLIL representation for module `\IDELAYCTRL'.
+Generating RTLIL representation for module `\IDELAY'.
+Generating RTLIL representation for module `\ISERDES'.
+Generating RTLIL representation for module `\OSERDES'.
+Generating RTLIL representation for module `\IODELAY'.
+Generating RTLIL representation for module `\ISERDES_NODELAY'.
+Generating RTLIL representation for module `\IODELAYE1'.
+Generating RTLIL representation for module `\ISERDESE1'.
+Generating RTLIL representation for module `\OSERDESE1'.
+Generating RTLIL representation for module `\IDELAYE2'.
+Generating RTLIL representation for module `\ODELAYE2'.
+Generating RTLIL representation for module `\ISERDESE2'.
+Generating RTLIL representation for module `\OSERDESE2'.
+Generating RTLIL representation for module `\PHASER_IN'.
+Generating RTLIL representation for module `\PHASER_IN_PHY'.
+Generating RTLIL representation for module `\PHASER_OUT'.
+Generating RTLIL representation for module `\PHASER_OUT_PHY'.
+Generating RTLIL representation for module `\PHASER_REF'.
+Generating RTLIL representation for module `\PHY_CONTROL'.
+Generating RTLIL representation for module `\IDDRE1'.
+Generating RTLIL representation for module `\ODDRE1'.
+Generating RTLIL representation for module `\IDELAYE3'.
+Generating RTLIL representation for module `\ODELAYE3'.
+Generating RTLIL representation for module `\ISERDESE3'.
+Generating RTLIL representation for module `\OSERDESE3'.
+Generating RTLIL representation for module `\BITSLICE_CONTROL'.
+Generating RTLIL representation for module `\RIU_OR'.
+Generating RTLIL representation for module `\RX_BITSLICE'.
+Generating RTLIL representation for module `\RXTX_BITSLICE'.
+Generating RTLIL representation for module `\TX_BITSLICE'.
+Generating RTLIL representation for module `\TX_BITSLICE_TRI'.
+Generating RTLIL representation for module `\IODELAY2'.
+Generating RTLIL representation for module `\IODRP2'.
+Generating RTLIL representation for module `\IODRP2_MCB'.
+Generating RTLIL representation for module `\ISERDES2'.
+Generating RTLIL representation for module `\OSERDES2'.
+Generating RTLIL representation for module `\IBUF_DLY_ADJ'.
+Generating RTLIL representation for module `\IBUF_IBUFDISABLE'.
+Generating RTLIL representation for module `\IBUF_INTERMDISABLE'.
+Generating RTLIL representation for module `\IBUF_ANALOG'.
+Generating RTLIL representation for module `\IBUFE3'.
+Generating RTLIL representation for module `\IBUFDS'.
+Generating RTLIL representation for module `\IBUFDS_DLY_ADJ'.
+Generating RTLIL representation for module `\IBUFDS_IBUFDISABLE'.
+Generating RTLIL representation for module `\IBUFDS_INTERMDISABLE'.
+Generating RTLIL representation for module `\IBUFDS_DIFF_OUT'.
+Generating RTLIL representation for module `\IBUFDS_DIFF_OUT_IBUFDISABLE'.
+Generating RTLIL representation for module `\IBUFDS_DIFF_OUT_INTERMDISABLE'.
+Generating RTLIL representation for module `\IBUFDSE3'.
+Generating RTLIL representation for module `\IBUFDS_DPHY'.
+Generating RTLIL representation for module `\IBUFGDS'.
+Generating RTLIL representation for module `\IBUFGDS_DIFF_OUT'.
+Generating RTLIL representation for module `\IOBUF_DCIEN'.
+Generating RTLIL representation for module `\IOBUF_INTERMDISABLE'.
+Generating RTLIL representation for module `\IOBUFE3'.
+Generating RTLIL representation for module `\IOBUFDS'.
+Generating RTLIL representation for module `\IOBUFDS_DCIEN'.
+Generating RTLIL representation for module `\IOBUFDS_INTERMDISABLE'.
+Generating RTLIL representation for module `\IOBUFDS_DIFF_OUT'.
+Generating RTLIL representation for module `\IOBUFDS_DIFF_OUT_DCIEN'.
+Generating RTLIL representation for module `\IOBUFDS_DIFF_OUT_INTERMDISABLE'.
+Generating RTLIL representation for module `\IOBUFDSE3'.
+Generating RTLIL representation for module `\OBUFDS'.
+Generating RTLIL representation for module `\OBUFDS_DPHY'.
+Generating RTLIL representation for module `\OBUFTDS'.
+Generating RTLIL representation for module `\KEEPER'.
+Generating RTLIL representation for module `\PULLDOWN'.
+Generating RTLIL representation for module `\PULLUP'.
+Generating RTLIL representation for module `\DCIRESET'.
+Generating RTLIL representation for module `\HPIO_VREF'.
+Generating RTLIL representation for module `\BUFGCE'.
+Generating RTLIL representation for module `\BUFGCE_1'.
+Generating RTLIL representation for module `\BUFGMUX'.
+Generating RTLIL representation for module `\BUFGMUX_1'.
+Generating RTLIL representation for module `\BUFGMUX_CTRL'.
+Generating RTLIL representation for module `\BUFGMUX_VIRTEX4'.
+Generating RTLIL representation for module `\BUFG_GT'.
+Generating RTLIL representation for module `\BUFG_GT_SYNC'.
+Generating RTLIL representation for module `\BUFG_PS'.
+Generating RTLIL representation for module `\BUFGCE_DIV'.
+Generating RTLIL representation for module `\BUFH'.
+Generating RTLIL representation for module `\BUFIO2'.
+Generating RTLIL representation for module `\BUFIO2_2CLK'.
+Generating RTLIL representation for module `\BUFIO2FB'.
+Generating RTLIL representation for module `\BUFPLL'.
+Generating RTLIL representation for module `\BUFPLL_MCB'.
+Generating RTLIL representation for module `\BUFIO'.
+Generating RTLIL representation for module `\BUFIODQS'.
+Generating RTLIL representation for module `\BUFR'.
+Generating RTLIL representation for module `\BUFMR'.
+Generating RTLIL representation for module `\BUFMRCE'.
+Generating RTLIL representation for module `\DCM'.
+Generating RTLIL representation for module `\DCM_SP'.
+Generating RTLIL representation for module `\DCM_CLKGEN'.
+Generating RTLIL representation for module `\DCM_ADV'.
+Generating RTLIL representation for module `\DCM_BASE'.
+Generating RTLIL representation for module `\DCM_PS'.
+Generating RTLIL representation for module `\PMCD'.
+Generating RTLIL representation for module `\PLL_ADV'.
+Generating RTLIL representation for module `\PLL_BASE'.
+Generating RTLIL representation for module `\MMCM_ADV'.
+Generating RTLIL representation for module `\MMCM_BASE'.
+Generating RTLIL representation for module `\MMCME2_ADV'.
+Generating RTLIL representation for module `\MMCME2_BASE'.
+Generating RTLIL representation for module `\PLLE2_ADV'.
+Generating RTLIL representation for module `\PLLE2_BASE'.
+Generating RTLIL representation for module `\MMCME3_ADV'.
+Generating RTLIL representation for module `\MMCME3_BASE'.
+Generating RTLIL representation for module `\PLLE3_ADV'.
+Generating RTLIL representation for module `\PLLE3_BASE'.
+Generating RTLIL representation for module `\MMCME4_ADV'.
+Generating RTLIL representation for module `\MMCME4_BASE'.
+Generating RTLIL representation for module `\PLLE4_ADV'.
+Generating RTLIL representation for module `\PLLE4_BASE'.
+Generating RTLIL representation for module `\BUFT'.
+Generating RTLIL representation for module `\IN_FIFO'.
+Generating RTLIL representation for module `\OUT_FIFO'.
+Generating RTLIL representation for module `\HARD_SYNC'.
+Generating RTLIL representation for module `\STARTUP_SPARTAN3'.
+Generating RTLIL representation for module `\STARTUP_SPARTAN3E'.
+Generating RTLIL representation for module `\STARTUP_SPARTAN3A'.
+Generating RTLIL representation for module `\STARTUP_SPARTAN6'.
+Generating RTLIL representation for module `\STARTUP_VIRTEX4'.
+Generating RTLIL representation for module `\STARTUP_VIRTEX5'.
+Generating RTLIL representation for module `\STARTUP_VIRTEX6'.
+Generating RTLIL representation for module `\STARTUPE2'.
+Generating RTLIL representation for module `\STARTUPE3'.
+Generating RTLIL representation for module `\CAPTURE_SPARTAN3'.
+Generating RTLIL representation for module `\CAPTURE_SPARTAN3A'.
+Generating RTLIL representation for module `\CAPTURE_VIRTEX4'.
+Generating RTLIL representation for module `\CAPTURE_VIRTEX5'.
+Generating RTLIL representation for module `\CAPTURE_VIRTEX6'.
+Generating RTLIL representation for module `\CAPTUREE2'.
+Generating RTLIL representation for module `\ICAP_SPARTAN3A'.
+Generating RTLIL representation for module `\ICAP_SPARTAN6'.
+Generating RTLIL representation for module `\ICAP_VIRTEX4'.
+Generating RTLIL representation for module `\ICAP_VIRTEX5'.
+Generating RTLIL representation for module `\ICAP_VIRTEX6'.
+Generating RTLIL representation for module `\ICAPE2'.
+Generating RTLIL representation for module `\ICAPE3'.
+Generating RTLIL representation for module `\BSCAN_SPARTAN3'.
+Generating RTLIL representation for module `\BSCAN_SPARTAN3A'.
+Generating RTLIL representation for module `\BSCAN_SPARTAN6'.
+Generating RTLIL representation for module `\BSCAN_VIRTEX4'.
+Generating RTLIL representation for module `\BSCAN_VIRTEX5'.
+Generating RTLIL representation for module `\BSCAN_VIRTEX6'.
+Generating RTLIL representation for module `\BSCANE2'.
+Generating RTLIL representation for module `\DNA_PORT'.
+Generating RTLIL representation for module `\DNA_PORTE2'.
+Generating RTLIL representation for module `\FRAME_ECC_VIRTEX4'.
+Generating RTLIL representation for module `\FRAME_ECC_VIRTEX5'.
+Generating RTLIL representation for module `\FRAME_ECC_VIRTEX6'.
+Generating RTLIL representation for module `\FRAME_ECCE2'.
+Generating RTLIL representation for module `\FRAME_ECCE3'.
+Generating RTLIL representation for module `\FRAME_ECCE4'.
+Generating RTLIL representation for module `\USR_ACCESS_VIRTEX4'.
+Generating RTLIL representation for module `\USR_ACCESS_VIRTEX5'.
+Generating RTLIL representation for module `\USR_ACCESS_VIRTEX6'.
+Generating RTLIL representation for module `\USR_ACCESSE2'.
+Generating RTLIL representation for module `\POST_CRC_INTERNAL'.
+Generating RTLIL representation for module `\SUSPEND_SYNC'.
+Generating RTLIL representation for module `\KEY_CLEAR'.
+Generating RTLIL representation for module `\MASTER_JTAG'.
+Generating RTLIL representation for module `\SPI_ACCESS'.
+Generating RTLIL representation for module `\EFUSE_USR'.
+Generating RTLIL representation for module `\SYSMON'.
+Generating RTLIL representation for module `\XADC'.
+Generating RTLIL representation for module `\SYSMONE1'.
+Generating RTLIL representation for module `\SYSMONE4'.
+Generating RTLIL representation for module `\GTPA1_DUAL'.
+Generating RTLIL representation for module `\GT11_CUSTOM'.
+Generating RTLIL representation for module `\GT11_DUAL'.
+Generating RTLIL representation for module `\GT11CLK'.
+Generating RTLIL representation for module `\GT11CLK_MGT'.
+Generating RTLIL representation for module `\GTP_DUAL'.
+Generating RTLIL representation for module `\GTX_DUAL'.
+Generating RTLIL representation for module `\CRC32'.
+Generating RTLIL representation for module `\CRC64'.
+Generating RTLIL representation for module `\GTHE1_QUAD'.
+Generating RTLIL representation for module `\GTXE1'.
+Generating RTLIL representation for module `\IBUFDS_GTXE1'.
+Generating RTLIL representation for module `\IBUFDS_GTHE1'.
+Generating RTLIL representation for module `\GTHE2_CHANNEL'.
+Generating RTLIL representation for module `\GTHE2_COMMON'.
+Generating RTLIL representation for module `\GTPE2_CHANNEL'.
+Generating RTLIL representation for module `\GTPE2_COMMON'.
+Generating RTLIL representation for module `\GTXE2_CHANNEL'.
+Generating RTLIL representation for module `\GTXE2_COMMON'.
+Generating RTLIL representation for module `\IBUFDS_GTE2'.
+Generating RTLIL representation for module `\GTHE3_CHANNEL'.
+Generating RTLIL representation for module `\GTHE3_COMMON'.
+Generating RTLIL representation for module `\GTYE3_CHANNEL'.
+Generating RTLIL representation for module `\GTYE3_COMMON'.
+Generating RTLIL representation for module `\IBUFDS_GTE3'.
+Generating RTLIL representation for module `\OBUFDS_GTE3'.
+Generating RTLIL representation for module `\OBUFDS_GTE3_ADV'.
+Generating RTLIL representation for module `\GTHE4_CHANNEL'.
+Generating RTLIL representation for module `\GTHE4_COMMON'.
+Generating RTLIL representation for module `\GTYE4_CHANNEL'.
+Generating RTLIL representation for module `\GTYE4_COMMON'.
+Generating RTLIL representation for module `\IBUFDS_GTE4'.
+Generating RTLIL representation for module `\OBUFDS_GTE4'.
+Generating RTLIL representation for module `\OBUFDS_GTE4_ADV'.
+Generating RTLIL representation for module `\GTM_DUAL'.
+Generating RTLIL representation for module `\IBUFDS_GTM'.
+Generating RTLIL representation for module `\OBUFDS_GTM'.
+Generating RTLIL representation for module `\OBUFDS_GTM_ADV'.
+Generating RTLIL representation for module `\HSDAC'.
+Generating RTLIL representation for module `\HSADC'.
+Generating RTLIL representation for module `\RFDAC'.
+Generating RTLIL representation for module `\RFADC'.
+Generating RTLIL representation for module `\PCIE_A1'.
+Generating RTLIL representation for module `\PCIE_EP'.
+Generating RTLIL representation for module `\PCIE_2_0'.
+Generating RTLIL representation for module `\PCIE_2_1'.
+Generating RTLIL representation for module `\PCIE_3_0'.
+Generating RTLIL representation for module `\PCIE_3_1'.
+Generating RTLIL representation for module `\PCIE40E4'.
+Generating RTLIL representation for module `\PCIE4CE4'.
+Generating RTLIL representation for module `\EMAC'.
+Generating RTLIL representation for module `\TEMAC'.
+Generating RTLIL representation for module `\TEMAC_SINGLE'.
+Generating RTLIL representation for module `\CMAC'.
+Generating RTLIL representation for module `\CMACE4'.
+Generating RTLIL representation for module `\MCB'.
+Generating RTLIL representation for module `\HBM_REF_CLK'.
+Generating RTLIL representation for module `\HBM_SNGLBLI_INTF_APB'.
+Generating RTLIL representation for module `\HBM_SNGLBLI_INTF_AXI'.
+Generating RTLIL representation for module `\HBM_ONE_STACK_INTF'.
+Generating RTLIL representation for module `\HBM_TWO_STACK_INTF'.
+Generating RTLIL representation for module `\PPC405_ADV'.
+Generating RTLIL representation for module `\PPC440'.
+Generating RTLIL representation for module `\PS7'.
+Generating RTLIL representation for module `\PS8'.
+Generating RTLIL representation for module `\ILKN'.
+Generating RTLIL representation for module `\ILKNE4'.
+Generating RTLIL representation for module `\VCU'.
+Generating RTLIL representation for module `\FE'.
+Successfully finished Verilog frontend.
+
+6.3. Executing HIERARCHY pass (managing design hierarchy).
+
+6.3.1. Analyzing design hierarchy..
+Top module:  \tnf_mac_e4m8_pnr_top
+Used module:     \tnf_mac_e4m8_top
+Used module:         \tnf_mac
+Used module:             \tnf_add_full
+Used module:             \tnf_weight_apply
+Parameter \MANT_W = 8
+Parameter \OFF_W = 7
+Parameter \TOTAL = 16
+Parameter \OFFSET_MAX = 80
+
+6.3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\tnf_add_full'.
+Parameter \MANT_W = 8
+Parameter \OFF_W = 7
+Parameter \TOTAL = 16
+Parameter \OFFSET_MAX = 80
+Generating RTLIL representation for module `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full'.
+Parameter \TOTAL = 16
+
+6.3.3. Executing AST frontend in derive mode using pre-parsed AST for module `\tnf_weight_apply'.
+Parameter \TOTAL = 16
+Generating RTLIL representation for module `$paramod\tnf_weight_apply\TOTAL=s32'00000000000000000000000000010000'.
+Parameter \MANT_W = 8
+Parameter \OFF_W = 7
+Parameter \TOTAL = 16
+Parameter \OFFSET_MAX = 80
+
+6.3.4. Executing AST frontend in derive mode using pre-parsed AST for module `\tnf_mac'.
+Parameter \MANT_W = 8
+Parameter \OFF_W = 7
+Parameter \TOTAL = 16
+Parameter \OFFSET_MAX = 80
+Generating RTLIL representation for module `$paramod$1d526b4264278a13d0e08d550690fb7835ff2891\tnf_mac'.
+
+6.3.5. Analyzing design hierarchy..
+Top module:  \tnf_mac_e4m8_pnr_top
+Used module:     \tnf_mac_e4m8_top
+Used module:         $paramod$1d526b4264278a13d0e08d550690fb7835ff2891\tnf_mac
+Used module:             \tnf_add_full
+Used module:             \tnf_weight_apply
+Parameter \MANT_W = 8
+Parameter \OFF_W = 7
+Parameter \TOTAL = 16
+Parameter \OFFSET_MAX = 80
+Found cached RTLIL representation for module `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full'.
+Parameter \TOTAL = 16
+Found cached RTLIL representation for module `$paramod\tnf_weight_apply\TOTAL=s32'00000000000000000000000000010000'.
+
+6.3.6. Analyzing design hierarchy..
+Top module:  \tnf_mac_e4m8_pnr_top
+Used module:     \tnf_mac_e4m8_top
+Used module:         $paramod$1d526b4264278a13d0e08d550690fb7835ff2891\tnf_mac
+Used module:             $paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full
+Used module:             $paramod\tnf_weight_apply\TOTAL=s32'00000000000000000000000000010000
+
+6.3.7. Analyzing design hierarchy..
+Top module:  \tnf_mac_e4m8_pnr_top
+Used module:     \tnf_mac_e4m8_top
+Used module:         $paramod$1d526b4264278a13d0e08d550690fb7835ff2891\tnf_mac
+Used module:             $paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full
+Used module:             $paramod\tnf_weight_apply\TOTAL=s32'00000000000000000000000000010000
+Removing unused module `\tnf_mac'.
+Removing unused module `\tnf_add_full'.
+Removing unused module `\tnf_weight_apply'.
+Removed 3 unused modules.
+
+6.4. Executing PROC pass (convert processes to netlists).
+
+6.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$rtl/tnf_mac_e4m8_pnr_top.v:29$113 in module tnf_mac_e4m8_pnr_top.
+Marked 10 switch rules as full_case in process $proc$rtl/tnf_add_full.v:85$1243 in module $paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.
+Removed a total of 0 dead cases.
+
+6.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 6 redundant assignments.
+Promoted 3 assignments to connections.
+
+6.4.4. Executing PROC_INIT pass (extract init attributes).
+
+6.4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+6.4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~11 debug messages>
+
+6.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\tnf_mac_e4m8_pnr_top.$proc$rtl/tnf_mac_e4m8_pnr_top.v:29$113'.
+     1/6: $0\out_valid[0:0]
+     2/6: $0\result[15:0]
+     3/6: $0\in_valid_reg[0:0]
+     4/6: $0\weight_reg[1:0]
+     5/6: $0\sample_reg[15:0]
+     6/6: $0\acc_reg[15:0]
+Creating decoders for process `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.$proc$rtl/tnf_add_full.v:85$1243'.
+     1/21: $10\exponent[8:0]
+     2/21: $10\norm[12:0]
+     3/21: $9\exponent[8:0]
+     4/21: $9\norm[12:0]
+     5/21: $8\exponent[8:0]
+     6/21: $8\norm[12:0]
+     7/21: $7\exponent[8:0]
+     8/21: $7\norm[12:0]
+     9/21: $6\exponent[8:0]
+    10/21: $6\norm[12:0]
+    11/21: $5\exponent[8:0]
+    12/21: $5\norm[12:0]
+    13/21: $4\exponent[8:0]
+    14/21: $4\norm[12:0]
+    15/21: $3\exponent[8:0]
+    16/21: $3\norm[12:0]
+    17/21: $2\exponent[8:0]
+    18/21: $2\norm[12:0]
+    19/21: $1\exponent[8:0]
+    20/21: $1\norm[12:0]
+    21/21: $1\i[31:0]
+
+6.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.\i' from process `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.$proc$rtl/tnf_add_full.v:85$1243'.
+No latch inferred for signal `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.\norm' from process `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.$proc$rtl/tnf_add_full.v:85$1243'.
+No latch inferred for signal `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.\exponent' from process `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.$proc$rtl/tnf_add_full.v:85$1243'.
+
+6.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\tnf_mac_e4m8_pnr_top.\result' using process `\tnf_mac_e4m8_pnr_top.$proc$rtl/tnf_mac_e4m8_pnr_top.v:29$113'.
+  created $dff cell `$procdff$1456' with positive edge clock.
+Creating register for signal `\tnf_mac_e4m8_pnr_top.\out_valid' using process `\tnf_mac_e4m8_pnr_top.$proc$rtl/tnf_mac_e4m8_pnr_top.v:29$113'.
+  created $dff cell `$procdff$1457' with positive edge clock.
+Creating register for signal `\tnf_mac_e4m8_pnr_top.\acc_reg' using process `\tnf_mac_e4m8_pnr_top.$proc$rtl/tnf_mac_e4m8_pnr_top.v:29$113'.
+  created $dff cell `$procdff$1458' with positive edge clock.
+Creating register for signal `\tnf_mac_e4m8_pnr_top.\sample_reg' using process `\tnf_mac_e4m8_pnr_top.$proc$rtl/tnf_mac_e4m8_pnr_top.v:29$113'.
+  created $dff cell `$procdff$1459' with positive edge clock.
+Creating register for signal `\tnf_mac_e4m8_pnr_top.\weight_reg' using process `\tnf_mac_e4m8_pnr_top.$proc$rtl/tnf_mac_e4m8_pnr_top.v:29$113'.
+  created $dff cell `$procdff$1460' with positive edge clock.
+Creating register for signal `\tnf_mac_e4m8_pnr_top.\in_valid_reg' using process `\tnf_mac_e4m8_pnr_top.$proc$rtl/tnf_mac_e4m8_pnr_top.v:29$113'.
+  created $dff cell `$procdff$1461' with positive edge clock.
+
+6.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+6.4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\tnf_mac_e4m8_pnr_top.$proc$rtl/tnf_mac_e4m8_pnr_top.v:29$113'.
+Removing empty process `tnf_mac_e4m8_pnr_top.$proc$rtl/tnf_mac_e4m8_pnr_top.v:29$113'.
+Found and cleaned up 10 empty switches in `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.$proc$rtl/tnf_add_full.v:85$1243'.
+Removing empty process `$paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.$proc$rtl/tnf_add_full.v:85$1243'.
+Cleaned up 11 empty switches.
+
+6.4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+Optimizing module tnf_mac_e4m8_top.
+Optimizing module $paramod$1d526b4264278a13d0e08d550690fb7835ff2891\tnf_mac.
+Optimizing module $paramod\tnf_weight_apply\TOTAL=s32'00000000000000000000000000010000.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.
+<suppressed ~25 debug messages>
+
+6.5. Executing CHECK pass (checking for obvious problems).
+Checking module tnf_mac_e4m8_pnr_top...
+Checking module tnf_mac_e4m8_top...
+Checking module $paramod$1d526b4264278a13d0e08d550690fb7835ff2891\tnf_mac...
+Checking module $paramod\tnf_weight_apply\TOTAL=s32'00000000000000000000000000010000...
+Checking module $paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full...
+Found and reported 0 problems.
+
+6.6. Executing FLATTEN pass (flatten design).
+Deleting now unused module tnf_mac_e4m8_top.
+Deleting now unused module $paramod$1d526b4264278a13d0e08d550690fb7835ff2891\tnf_mac.
+Deleting now unused module $paramod\tnf_weight_apply\TOTAL=s32'00000000000000000000000000010000.
+Deleting now unused module $paramod$0929e3c5354343e5dc86bf3f9cb725bbc026c263\tnf_add_full.
+<suppressed ~4 debug messages>
+
+6.7. Executing TRIBUF pass.
+
+6.8. Executing DEMINOUT pass (demote inout ports to input or output).
+
+6.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+Removed 1 unused cells and 122 unused wires.
+<suppressed ~3 debug messages>
+
+6.11. Executing CHECK pass (checking for obvious problems).
+Checking module tnf_mac_e4m8_pnr_top...
+Found and reported 0 problems.
+
+6.12. Executing OPT pass (performing simple optimizations).
+
+6.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 153 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 152 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+6.12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tnf_mac_e4m8_pnr_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $flatten\datapath.\datapath.\accumulate.$procmux$1442: \datapath.datapath.accumulate.raw -> { 1'0 \datapath.datapath.accumulate.raw [11:0] }
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\datapath.\datapath.\accumulate.$procmux$1343.
+    dead port 1/2 on $mux $flatten\datapath.\datapath.\accumulate.$procmux$1349.
+Removed 2 multiplexer ports.
+<suppressed ~101 debug messages>
+
+6.12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tnf_mac_e4m8_pnr_top.
+Performed a total of 0 changes.
+
+6.12.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 150 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.12.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+6.12.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.12.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.12.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tnf_mac_e4m8_pnr_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~99 debug messages>
+
+6.12.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tnf_mac_e4m8_pnr_top.
+Performed a total of 0 changes.
+
+6.12.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 150 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.12.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.12.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+
+6.12.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.12.16. Finished fast OPT passes. (There is nothing left to do.)
+
+6.13. Executing FSM pass (extract and optimize FSM).
+
+6.13.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+6.13.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+6.13.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+6.13.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+
+6.13.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+6.13.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+6.13.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+6.13.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+6.14. Executing OPT pass (performing simple optimizations).
+
+6.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 150 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tnf_mac_e4m8_pnr_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~99 debug messages>
+
+6.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tnf_mac_e4m8_pnr_top.
+Performed a total of 0 changes.
+
+6.14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 150 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.14.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$1456 ($dff) from module tnf_mac_e4m8_pnr_top (D = { \next_result [14] \next_result [12] \next_result [0] }, Q = { \result [14] \result [12] \result [0] }, rval = 3'000).
+Adding SRST signal on $procdff$1456 ($dff) from module tnf_mac_e4m8_pnr_top (D = { $flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y [15] $flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y [13] $flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y [11:1] }, Q = { \result [15] \result [13] \result [11:1] }, rval = 13'0000000000000).
+Adding SRST signal on $procdff$1457 ($dff) from module tnf_mac_e4m8_pnr_top (D = \in_valid_reg, Q = \out_valid, rval = 1'0).
+Adding SRST signal on $procdff$1458 ($dff) from module tnf_mac_e4m8_pnr_top (D = \acc, Q = \acc_reg, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$1459 ($dff) from module tnf_mac_e4m8_pnr_top (D = \sample, Q = \sample_reg, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$1460 ($dff) from module tnf_mac_e4m8_pnr_top (D = \weight, Q = \weight_reg, rval = 2'00).
+Adding SRST signal on $procdff$1461 ($dff) from module tnf_mac_e4m8_pnr_top (D = \in_valid, Q = \in_valid_reg, rval = 1'0).
+
+6.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+Removed 6 unused cells and 6 unused wires.
+<suppressed ~7 debug messages>
+
+6.14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.14.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.14.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tnf_mac_e4m8_pnr_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~89 debug messages>
+
+6.14.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tnf_mac_e4m8_pnr_top.
+Performed a total of 0 changes.
+
+6.14.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 146 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.14.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.14.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+
+6.14.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.14.16. Finished fast OPT passes. (There is nothing left to do.)
+
+6.15. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 16) from mux cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:137$1315 ($mux).
+Removed top 1 bits (of 16) from mux cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:138$1314 ($mux).
+Removed top 1 bits (of 16) from mux cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:133$1306 ($mux).
+Removed top 2 bits (of 9) from port B of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:120$1304 ($ge).
+Removed top 1 bits (of 13) from port B of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:119$1302 ($gt).
+Removed top 1 bits (of 10) from port A of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:109$1295 ($add).
+Removed top 9 bits (of 10) from port B of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:109$1295 ($add).
+Removed top 2 bits (of 9) from port A of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1251 ($sub).
+Removed top 1 bits (of 9) from port Y of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1251 ($sub).
+Removed top 2 bits (of 9) from port A of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:91$1246 ($add).
+Removed top 1 bits (of 9) from port Y of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:91$1246 ($add).
+Removed top 1 bits (of 13) from port A of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$or$rtl/tnf_add_full.v:90$1245 ($or).
+Removed top 12 bits (of 13) from port B of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$or$rtl/tnf_add_full.v:90$1245 ($or).
+Removed top 1 bits (of 13) from port Y of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$or$rtl/tnf_add_full.v:90$1245 ($or).
+Removed top 1 bits (of 13) from port A of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:78$1241 ($add).
+Removed top 1 bits (of 13) from port B of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:78$1241 ($add).
+Removed top 1 bits (of 13) from port A of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:77$1240 ($sub).
+Removed top 1 bits (of 13) from port B of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:77$1240 ($sub).
+Removed top 3 bits (of 7) from port B of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:68$1227 ($ge).
+Removed top 1 bits (of 8) from port A of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:39$1213 ($ge).
+Removed top 1 bits (of 8) from port B of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:39$1213 ($ge).
+Removed top 1 bits (of 8) from port A of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:38$1212 ($ge).
+Removed top 1 bits (of 8) from port B of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:38$1212 ($ge).
+Removed top 1 bits (of 2) from port B of cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\apply_weight.$eq$rtl/tnf_weight_apply.v:18$1316 ($eq).
+Removed top 1 bits (of 16) from mux cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:131$1307 ($mux).
+Removed top 1 bits (of 16) from mux cell tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:129$1308 ($mux).
+Removed top 1 bits (of 16) from wire tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:138$1314_Y.
+Removed top 1 bits (of 9) from wire tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:91$1246_Y.
+Removed top 1 bits (of 13) from wire tnf_mac_e4m8_pnr_top.$flatten\datapath.\datapath.\accumulate.$or$rtl/tnf_add_full.v:90$1245_Y.
+Removed top 1 bits (of 16) from wire tnf_mac_e4m8_pnr_top.next_result.
+
+6.16. Executing PEEPOPT pass (run peephole optimizers).
+
+6.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+6.18. Executing PMUX2SHIFTX pass.
+
+6.19. Executing SORT pass.
+
+6.20. Executing TECHMAP pass (map to technology primitives).
+
+6.20.1. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+6.20.2. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/cmp2lcu.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/cmp2lcu.v' to AST representation.
+Generating RTLIL representation for module `\_80_lcu_cmp_'.
+Generating RTLIL representation for module `$__CMP2LCU'.
+Successfully finished Verilog frontend.
+
+6.20.3. Continuing TECHMAP pass.
+Using template $paramod$4103968df19a4460cf7ddbde266cebf880bdc3a5\_80_lcu_cmp_ for cells of type $ge.
+Using template $paramod$e4d94a42d14505b86f9860d98d7206473e33db0a\_80_lcu_cmp_ for cells of type $gt.
+Using template $paramod$a44fb5b85f2663107651126207e130c46a1b6ec5\_80_lcu_cmp_ for cells of type $ge.
+Using template $paramod$96310734d5cc6c747646e60b2e4e41e07e16ae9d\_80_lcu_cmp_ for cells of type $ge.
+Using template $paramod$4d957088477a174b5eb25a9bcd180640c3e9075e\_80_lcu_cmp_ for cells of type $gt.
+Using template $paramod$e28b3f98807e03aeebdff713ba0ab61b98f266a6\_80_lcu_cmp_ for cells of type $ge.
+Using template $paramod$4b4b4ba798d949ad9aa52dd54ceb18f43cc942ce$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$05c64d7f7a13f3f813fa1e8c20cee3b6a740895b$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$c4a650a12e8ac51cdfcaa6f4773b30501efc4fa1$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$644fcdd365ede8ea92fc5e6e6f294305ca0b94e1$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$72928bf4ad2c0b9cabb3ac992e844f5dbf6ac44c$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$8616e017929c63af2b78b3b9b7ceba7fcdd71394$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$846ef86f2941b8ca6b4c249eaeb9c50f97758632$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$e9c6ecc3a3cf9ae67c37aef59c59e3e7df7fe02a$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$13548d3f810d78e8bfc00f5500618db44cfe2791$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$cb27dd27b4b0d5f59809afbc7ea4e17de4a28b81$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$35146d53853bc5c8a542b6fb92ef6bef63e60c08$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$36d634b350e4a30d0b9ea2051df3d37b138ba27f$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$066ac03d48682c668f9b666ddd92ff8b10ed5528$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$350bc15bd4985c0b3435a32e8c27859da10a9e81$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$e8fcc88f10df165bdfd8dfb5a422a7973b463d23$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$cbfe92852772607bc59843edbad6d230258a3e64$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$364a8971dbab7d9405f111443fc5db6e054b2a4c$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$7f84e1d318446866429803ac9646a81053aee490$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$44112df1f1a161294d5a8851160c444648a09e2e$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$1156d1d3ac8da81138ade6be0f294021f06bab6d$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$855eb4ae5714d5219573186c259811628e12e653$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$b08e14939132feb20ef471a55f383d74b8ffdc8d$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$69b598c5539df121a2551ea0e384f45c5fe0fa60$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$a748e700bd2957eb97bc13b30c85ab83a2e96cb9$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$5d204d6c7f93c73498c942841e68c6a4a47cc3b1$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$65c77f1b18274510e11bd210709669e5e67c8816$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$b72ad57b17516b20b26e40a158dcd464e6aab537$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$76ba67f7422bbceda96dad20830fa7cb27760d5b$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$6aefe4a521984f177e18aedcc016880c7f08ee32$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$62c71c0ec7e23e328c65750cba32d2e2f0ec48b9$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$0bc0c463cabb09ab1a758108b3d993c8b7030861$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$619596eb0a3792a37426f6d9a1120e3714790787$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$c7182a7ae8122f272691312a4f55d94d8593c57e$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$18ff89d26857d4352616870fd0122710c46e7de8$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$f691be97ac9b8a6cb477a0774cf7965926e38f3c$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$665633a7de85fb13f4d75195d98115684e1e34ec$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$2e0a9f1ba56d4efbe6310404d2421e0bb24808d2$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$039ee2fbd7a8ee8246df0c308800fb73c1ddedab$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$117f72e5b3b6297dec08b2f33a0e6b755bc493ca$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$c6d3527e393c21f9c1bb978278c59f0645f4a850$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$ecb3a2ceafd20704a9b2a7ba00752414d3521a2b$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$a6a444842478a2bdd1e6f06875ef6269986b5057$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$be86cfcb6fbf594968d7029a891f1e4e9555be0e$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$f5f1c8ec00c80800e76917f45f3426f1653c9d8e$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$36dc62e826f4afacad5d9887b769bc071422e6c6$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$97e4af0126941a8659a05e33950e4453bab74841$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$36789b843dafee991cee47b9b2334217b8c54474$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$be0ecee78a6bb4116812c81784cd52e435868958$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$f0a7389ae002486becb5c3590dd498e83ef8c1d8$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$2eef8089b8392b45722dbf42a4e566bb8fde10f4$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$0294377a66682383f6fbe7af51329a05a6ea0d1e$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$0cedfb49e1d8bb960790bbfc68ee2bd67213b691$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$79d8173039876bd211dbe8b6676420a312460674$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$8674585206ce15f27cb2b8dbff12dc101c5f3fad$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$8d4fe84297127d3212075a5cf3c1eb0a07bfa9e9$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$e724d33d0bd8719122daebff717a0c39ded990e9$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$3f73cacbbfe1aa70e62e9bfbfcf9b43f84b3a227$__CMP2LCU for cells of type $__CMP2LCU.
+No more expansions possible.
+<suppressed ~1640 debug messages>
+
+6.21. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module tnf_mac_e4m8_pnr_top:
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:109$1295 ($add).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:112$1296 ($add).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:78$1241 ($add).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:91$1246 ($add).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:61$1226 ($sub).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:77$1240 ($sub).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1251 ($sub).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1256 ($sub).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1261 ($sub).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1266 ($sub).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1271 ($sub).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1276 ($sub).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1281 ($sub).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1286 ($sub).
+  creating $macc model for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1291 ($sub).
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1291.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1286.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1281.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1276.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1271.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1266.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1261.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1256.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1251.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:77$1240.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:61$1226.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:91$1246.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:78$1241.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:112$1296.
+  creating $alu model for $macc $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:109$1295.
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:109$1295: $auto$alumacc.cc:512:replace_alu$1824
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:112$1296: $auto$alumacc.cc:512:replace_alu$1827
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:91$1246: $auto$alumacc.cc:512:replace_alu$1830
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:61$1226: $auto$alumacc.cc:512:replace_alu$1833
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$add$rtl/tnf_add_full.v:78$1241: $auto$alumacc.cc:512:replace_alu$1836
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:77$1240: $auto$alumacc.cc:512:replace_alu$1839
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1251: $auto$alumacc.cc:512:replace_alu$1842
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1256: $auto$alumacc.cc:512:replace_alu$1845
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1261: $auto$alumacc.cc:512:replace_alu$1848
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1266: $auto$alumacc.cc:512:replace_alu$1851
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1271: $auto$alumacc.cc:512:replace_alu$1854
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1276: $auto$alumacc.cc:512:replace_alu$1857
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1281: $auto$alumacc.cc:512:replace_alu$1860
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1286: $auto$alumacc.cc:512:replace_alu$1863
+  creating $alu cell for $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1291: $auto$alumacc.cc:512:replace_alu$1866
+  created 15 $alu and 0 $macc cells.
+
+6.22. Executing SHARE pass (SAT-based resource sharing).
+Found 2 cells in module tnf_mac_e4m8_pnr_top that may be considered for resource sharing.
+  Analyzing resource sharing options for $flatten\datapath.\datapath.\accumulate.$shr$rtl/tnf_add_full.v:68$1228 ($shr):
+    Found 9 activation_patterns using ctrl signal { $techmap1792$flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:120$1304.genblk1.CO [1] $techmap1753$flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:68$1227.genblk1.CO [1] \datapath.datapath.accumulate.a_zero \datapath.datapath.accumulate.b_zero \datapath.datapath.accumulate.raw [12] \datapath.datapath.accumulate.exact_zero \datapath.datapath.accumulate.underflow \datapath.datapath.accumulate.underflow_rounds_up }.
+    No candidates found.
+  Analyzing resource sharing options for $flatten\datapath.\datapath.\accumulate.$shl$rtl/tnf_add_full.v:71$1233 ($shl):
+    Found 9 activation_patterns using ctrl signal { $techmap1792$flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:120$1304.genblk1.CO [1] $techmap1753$flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:68$1227.genblk1.CO [1] \datapath.datapath.accumulate.a_zero \datapath.datapath.accumulate.b_zero \datapath.datapath.accumulate.raw [12] \datapath.datapath.accumulate.exact_zero \datapath.datapath.accumulate.underflow \datapath.datapath.accumulate.underflow_rounds_up $flatten\datapath.\datapath.\accumulate.$eq$rtl/tnf_add_full.v:69$1230_Y }.
+    No candidates found.
+
+6.23. Executing OPT pass (performing simple optimizations).
+
+6.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+<suppressed ~189 debug messages>
+
+6.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 332 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 327 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+<suppressed ~15 debug messages>
+Removed a total of 5 cells.
+
+6.23.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tnf_mac_e4m8_pnr_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~89 debug messages>
+
+6.23.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tnf_mac_e4m8_pnr_top.
+Performed a total of 0 changes.
+
+6.23.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 327 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.23.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.23.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+Removed 0 unused cells and 836 unused wires.
+<suppressed ~1 debug messages>
+
+6.23.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.23.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.23.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tnf_mac_e4m8_pnr_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~89 debug messages>
+
+6.23.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tnf_mac_e4m8_pnr_top.
+Performed a total of 0 changes.
+
+6.23.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 327 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.23.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.23.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+
+6.23.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.23.16. Finished fast OPT passes. (There is nothing left to do.)
+
+6.24. Executing MEMORY pass.
+
+6.24.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+6.24.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+6.24.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+6.24.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+6.24.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+6.24.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+
+6.24.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+6.24.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+6.24.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+
+6.24.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+6.25. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+
+6.26. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+6.27. Executing TECHMAP pass (map to technology primitives).
+
+6.27.1. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/xilinx/lutrams_xc5v_map.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/xilinx/lutrams_xc5v_map.v' to AST representation.
+Generating RTLIL representation for module `$__XILINX_LUTRAM_SP_'.
+Generating RTLIL representation for module `$__XILINX_LUTRAM_DP_'.
+Generating RTLIL representation for module `$__XILINX_LUTRAM_QP_'.
+Generating RTLIL representation for module `$__XILINX_LUTRAM_OP_'.
+Generating RTLIL representation for module `$__XILINX_LUTRAM_SDP_'.
+Generating RTLIL representation for module `$__XILINX_LUTRAM_64X8SW_'.
+Generating RTLIL representation for module `$__XILINX_LUTRAM_32X16DR8_'.
+Successfully finished Verilog frontend.
+
+6.27.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~9 debug messages>
+
+6.28. Executing TECHMAP pass (map to technology primitives).
+
+6.28.1. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/xilinx/brams_xc6v_map.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/xilinx/brams_xc6v_map.v' to AST representation.
+Generating RTLIL representation for module `$__XILINX_BLOCKRAM_TDP_'.
+Generating RTLIL representation for module `$__XILINX_BLOCKRAM_SDP_'.
+Successfully finished Verilog frontend.
+
+6.28.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+6.29. Executing OPT pass (performing simple optimizations).
+
+6.29.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+<suppressed ~33 debug messages>
+
+6.29.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 311 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.29.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.29.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+Removed 0 unused cells and 20 unused wires.
+<suppressed ~1 debug messages>
+
+6.29.5. Finished fast OPT passes.
+
+6.30. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+6.31. Executing OPT pass (performing simple optimizations).
+
+6.31.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.31.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 311 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.31.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tnf_mac_e4m8_pnr_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port B of cell $flatten\datapath.\datapath.\accumulate.$procmux$1451: { 1'0 \datapath.datapath.accumulate.raw [12:2] $auto$opt_expr.cc:206:group_cell_inputs$2277 } -> { 2'01 \datapath.datapath.accumulate.raw [11:2] $auto$opt_expr.cc:206:group_cell_inputs$2277 }
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~72 debug messages>
+
+6.31.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tnf_mac_e4m8_pnr_top.
+    Consolidated identical input bits for $mux cell $flatten\datapath.\datapath.\accumulate.$procmux$1436:
+      Old ports: A={ 2'00 \datapath.datapath.accumulate.hi_off }, B={ $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1251_Y [7] $flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1251_Y [7:0] }, Y=$flatten\datapath.\datapath.\accumulate.$2\exponent[8:0]
+      New ports: A={ 1'0 \datapath.datapath.accumulate.hi_off }, B=$flatten\datapath.\datapath.\accumulate.$sub$rtl/tnf_add_full.v:96$1251_Y [7:0], Y=$flatten\datapath.\datapath.\accumulate.$2\exponent[8:0] [7:0]
+      New connections: $flatten\datapath.\datapath.\accumulate.$2\exponent[8:0] [8] = $flatten\datapath.\datapath.\accumulate.$2\exponent[8:0] [7]
+  Optimizing cells in module \tnf_mac_e4m8_pnr_top.
+Performed a total of 1 changes.
+
+6.31.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 311 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.31.6. Executing OPT_SHARE pass.
+
+6.31.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.31.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+
+6.31.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.31.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.31.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tnf_mac_e4m8_pnr_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~72 debug messages>
+
+6.31.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tnf_mac_e4m8_pnr_top.
+Performed a total of 0 changes.
+
+6.31.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 311 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Removed a total of 0 cells.
+
+6.31.14. Executing OPT_SHARE pass.
+
+6.31.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.31.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+
+6.31.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+
+6.31.18. Finished fast OPT passes. (There is nothing left to do.)
+
+6.32. Executing XILINX_SRL pass (Xilinx shift register extraction).
+
+6.33. Executing TECHMAP pass (map to technology primitives).
+
+6.33.1. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+6.33.2. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/xilinx/arith_map.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/xilinx/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_xilinx_lcu'.
+Generating RTLIL representation for module `\_80_xilinx_alu'.
+Successfully finished Verilog frontend.
+
+6.33.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$e6d7c368f19cc777f3ccb97619eebfe6d68b4607\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$b980c8bfa00ec83c8ecf8407fbcfa47dea6d4172\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$09997c60604c74160a0139178bffaa6f2c2243d9\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$43ab0da496f1c4b9dd2a006913ff7ebf3803501a\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$8b65ed3053701e411ceb26357f374cc5e2ec25f3\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$a3a52a7389080bb158dfbc4023f1cb024a7678ae\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$85af84bf7d42be99c4722b1d2545723156f1bf66\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$6545528246a930a9ca83959b183cd56f5a8c92a7\_80_xilinx_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $xnor.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $logic_or.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=s32'00000000000000000000000000000010 for cells of type $lcu.
+Using template $paramod\_80_xilinx_lcu\WIDTH=s32'00000000000000000000000000000011 for cells of type $lcu.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using template $paramod$constmap:64900978e73451f7a36963c43cd03f61ea7b1d0f$paramod$3b1cf125e00e5ba9d0718b7face890c3c108d82d\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using template $paramod$constmap:a5c58287c26468880effdf563ca059d94b357532$paramod$04ab46277e3b8855ed14fc76ec5a54407aacce81\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shr.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $pos.
+No more expansions possible.
+<suppressed ~1268 debug messages>
+
+6.34. Executing OPT pass (performing simple optimizations).
+
+6.34.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+<suppressed ~431 debug messages>
+
+6.34.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 1242 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 1201 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 1190 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 1181 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 1176 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 1175 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 1174 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+Computing hashes of 1173 cells of `\tnf_mac_e4m8_pnr_top'.
+Finding duplicate cells in `\tnf_mac_e4m8_pnr_top'.
+<suppressed ~207 debug messages>
+Removed a total of 69 cells.
+
+6.34.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.34.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tnf_mac_e4m8_pnr_top..
+Removed 46 unused cells and 438 unused wires.
+<suppressed ~50 debug messages>
+
+6.34.5. Finished fast OPT passes.
+
+6.35. Executing IOPADMAP pass (mapping inputs/outputs to IO-PAD cells).
+Mapping port tnf_mac_e4m8_pnr_top.acc using IBUF.
+Mapping port tnf_mac_e4m8_pnr_top.clk using IBUF.
+Mapping port tnf_mac_e4m8_pnr_top.in_valid using IBUF.
+Mapping port tnf_mac_e4m8_pnr_top.out_valid using OBUF.
+Mapping port tnf_mac_e4m8_pnr_top.result using OBUF.
+Mapping port tnf_mac_e4m8_pnr_top.rst using IBUF.
+Mapping port tnf_mac_e4m8_pnr_top.sample using IBUF.
+Mapping port tnf_mac_e4m8_pnr_top.weight using IBUF.
+
+6.36. Executing TECHMAP pass (map to technology primitives).
+
+6.36.1. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+6.36.2. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/xilinx/cells_map.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/xilinx/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$__SHREG_'.
+Generating RTLIL representation for module `$__XILINX_SHREG_'.
+Generating RTLIL representation for module `$__XILINX_MUXF78'.
+Successfully finished Verilog frontend.
+
+6.36.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~80 debug messages>
+
+6.37. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+6.38. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tnf_mac_e4m8_pnr_top.
+<suppressed ~4 debug messages>
+
+6.39. Executing ABC pass (technology mapping using ABC).
+
+6.39.1. Extracting gate netlist of module `\tnf_mac_e4m8_pnr_top' to `<abc-temp-dir>/input.blif'..
+
+6.39.1.1. Executed ABC.
+Extracted 1021 gates and 1198 wires to a netlist network with 175 inputs and 238 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + if 
+ABC: + mfs2 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+6.39.1.2. Re-integrating ABC results.
+ABC RESULTS:              $lut cells:      460
+ABC RESULTS:        internal signals:      785
+ABC RESULTS:           input signals:      175
+ABC RESULTS:          output signals:      238
+Removing temp directory.
+Removing global temp directory.
+Removed 0 unused cells and 724 unused wires.
+
+6.40. Executing TECHMAP pass (map to technology primitives).
+
+6.40.1. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/xilinx/ff_map.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/xilinx/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_DFFSRE_NPPP_'.
+Generating RTLIL representation for module `$_DFFSRE_PPPP_'.
+Generating RTLIL representation for module `$_SDFFE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFE_PP1P_'.
+Generating RTLIL representation for module `$_DLATCH_NP0_'.
+Generating RTLIL representation for module `$_DLATCH_PP0_'.
+Generating RTLIL representation for module `$_DLATCH_NP1_'.
+Generating RTLIL representation for module `$_DLATCH_PP1_'.
+Generating RTLIL representation for module `$_DLATCH_NPP_'.
+Generating RTLIL representation for module `$_DLATCH_PPP_'.
+Successfully finished Verilog frontend.
+
+6.40.2. Continuing TECHMAP pass.
+Using template $paramod$_SDFFE_PP0P_\_TECHMAP_WIREINIT_Q_=1'x for cells of type $_SDFFE_PP0P_.
+No more expansions possible.
+<suppressed ~81 debug messages>
+
+6.41. Executing XILINX_SRL pass (Xilinx shift register extraction).
+
+6.42. Executing TECHMAP pass (map to technology primitives).
+
+6.42.1. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/xilinx/lut_map.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/xilinx/lut_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+6.42.2. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/xilinx/cells_map.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/xilinx/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$__SHREG_'.
+Generating RTLIL representation for module `$__XILINX_SHREG_'.
+Generating RTLIL representation for module `$__XILINX_MUXF78'.
+Successfully finished Verilog frontend.
+
+6.42.3. Continuing TECHMAP pass.
+Using template $paramod$8e19c3b41cc25216871dcfb7c40e8d3f239ee2c5$lut for cells of type $lut.
+Using template $paramod$27cef572df4943dad875602a465f6ba25476d4e5$lut for cells of type $lut.
+Using template $paramod$82b4a585d1edcb5c6e755dc9bd3392228a1c1304$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11001010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01100000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01010011 for cells of type $lut.
+Using template $paramod$f9c112f5fe2c17715d8c265f1ad593784a1e8114$lut for cells of type $lut.
+Using template $paramod$16d3d3c37f08fd478bab9ca2448863f9e45400d7$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100111 for cells of type $lut.
+Using template $paramod$4183384cbf8cf1105604a447ce916f15d3ec7399$lut for cells of type $lut.
+Using template $paramod$95cc64abef17795863c0eaa2b497039aec9a3346$lut for cells of type $lut.
+Using template $paramod$0e20a9760fccbf68a5357dcbbe56446211532268$lut for cells of type $lut.
+Using template $paramod$6b0fc58e3bfcc579e605f5f267bcb8f4ff2d18a8$lut for cells of type $lut.
+Using template $paramod$1db4f5370f46f4c48b3a3dcb66a9737cdc3566f0$lut for cells of type $lut.
+Using template $paramod$a7dad16c080c08c1647c7e1b9706a59a123d8bcd$lut for cells of type $lut.
+Using template $paramod$8e224a63a74b6daf8fc2e441cb0688a65e7a4073$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00110101 for cells of type $lut.
+Using template $paramod$dbc0a9bdfd127ce1b4b5552eb6fe01ed20a38345$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100000 for cells of type $lut.
+Using template $paramod$b2de3da73df2fd28ff6f42e92fc7e17578e84fc4$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00111010 for cells of type $lut.
+Using template $paramod$6e3b22478ca21c5590744f2e30b92938c4d90996$lut for cells of type $lut.
+Using template $paramod$205f200db1316166beb86ac1a00614ed914cb8e1$lut for cells of type $lut.
+Using template $paramod$e6603c343a0a8df623dfb5fb7191fadd31ce8f34$lut for cells of type $lut.
+Using template $paramod$7f5f9e612c16a489fcab82ab974a150c000ca960$lut for cells of type $lut.
+Using template $paramod$9ae0f136c9ed34a2deb323e9b2a3a520eea61514$lut for cells of type $lut.
+Using template $paramod$d94c389425153a9564eb5dc062034946d5ff96d5$lut for cells of type $lut.
+Using template $paramod$016ccf23fcaa62349a8dd951b1017beeff16b672$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000111 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod$1cec58bfb33a7a51c359586aade8e947536c006e$lut for cells of type $lut.
+Using template $paramod$260a5dbd3303020bf6bacc5a8a6807c6aca3c9ab$lut for cells of type $lut.
+Using template $paramod$30a8f747cba2b9de4fc782cb95c941eddebf2219$lut for cells of type $lut.
+Using template $paramod$5ab8703b1aa62946296547e85dc0a19366704a74$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01110000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10101100 for cells of type $lut.
+Using template $paramod$1bf62ab10e48d71d6497bccacf5c70420c470fe9$lut for cells of type $lut.
+Using template $paramod$b75e8306635d621cb7e96e5d2ad1327ab1afa025$lut for cells of type $lut.
+Using template $paramod$8eadc7cb10ca6889b1ee95a2bd4cd23dab82c9ee$lut for cells of type $lut.
+Using template $paramod$2cff7d63030bceb6a9e77ac1bc8a99e47274d6e3$lut for cells of type $lut.
+Using template $paramod$2ba9e56de032012e33059055e229831a64914590$lut for cells of type $lut.
+Using template $paramod$6ee09bbe57f4163ca065c0862d394977218b960f$lut for cells of type $lut.
+Using template $paramod$a671f57f6365e338048b37a13a9f8a529ed94a91$lut for cells of type $lut.
+Using template $paramod$48c726291b457781bccff1fa249bac5fee1aa1c0$lut for cells of type $lut.
+Using template $paramod$c2ef1b0933cbd051ddacaffa3cceb860c1211f7f$lut for cells of type $lut.
+Using template $paramod$cffcdcfefee28cb7804202d59fcab831562282d3$lut for cells of type $lut.
+Using template $paramod$7a387db61e5d640257a739dd940c66e09df49dd4$lut for cells of type $lut.
+Using template $paramod$c481de106e9064aa05be97880989e63d87809a5a$lut for cells of type $lut.
+Using template $paramod$f1dc2bcd5860b4fddf77822c9a31277596dbd360$lut for cells of type $lut.
+Using template $paramod$e22417916d96a2dcc533f85d7dc310332565e735$lut for cells of type $lut.
+Using template $paramod$1aab9a9ca7a4099e065b8d8943e009e9915b58bd$lut for cells of type $lut.
+Using template $paramod$52b0f43ae6cb52b5e726dd3244952f6f33bb5f19$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10100011 for cells of type $lut.
+Using template $paramod$906a482514b59ccf3bec4001c6146f696a386c6f$lut for cells of type $lut.
+Using template $paramod$478e33feeac3aa53ff57d491aada044b8aedceae$lut for cells of type $lut.
+Using template $paramod$dfd20285ad20803f93c7b457ffdb13f5dcab0170$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01111000 for cells of type $lut.
+Using template $paramod$6eebf23a4833077d4c6f474bd14d46de9fc55b31$lut for cells of type $lut.
+Using template $paramod$ea88a06962d1884df863d9765f42571fd11bcb32$lut for cells of type $lut.
+Using template $paramod$f965a8a283199d658f4f46a10e1521a7ced37815$lut for cells of type $lut.
+Using template $paramod$b6dd6ec69449e3fa2bf86568d63ac195a38e1c88$lut for cells of type $lut.
+Using template $paramod$59cf314cbdcdd02eaf5af4647dd41a8f1dc9a673$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1110 for cells of type $lut.
+Using template $paramod$7a4bce4284f252c17c4855a3aa3a5b1b2d9d050b$lut for cells of type $lut.
+Using template $paramod$dda0bc315550d3097cebbb4dc6df8a36eaaf87bd$lut for cells of type $lut.
+Using template $paramod$d9fc5fb4745e58600f67710293bac14c7b88c4ae$lut for cells of type $lut.
+Using template $paramod$c8cca947f7227d9741e8c1c08c013d0e7481c039$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10110000 for cells of type $lut.
+Using template $paramod$7ea2352f8f054781a715aeddf3e67f1db65f005a$lut for cells of type $lut.
+Using template $paramod$073cbceb2ce22b44d7824aee3bc4162f24f2351c$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11000101 for cells of type $lut.
+Using template $paramod$9a207d694cff1095ca945b22458d7626f1f980c2$lut for cells of type $lut.
+Using template $paramod$92afefd2605c2a6dd645aeb9170d91cf93204f05$lut for cells of type $lut.
+Using template $paramod$f080956c6aa3e9a42c923f70c4c3ba7d49348a4d$lut for cells of type $lut.
+Using template $paramod$91b0090c19111cfbff217402a869c941180fe95c$lut for cells of type $lut.
+Using template $paramod$6b0849254d6c87461fb93e37cc18f089f61eb912$lut for cells of type $lut.
+Using template $paramod$e053a22d78e6bd5ea33183ea69976f0db741be0e$lut for cells of type $lut.
+Using template $paramod$b1fc87583609b8b51aeb60ad62717bc551c8b1b0$lut for cells of type $lut.
+Using template $paramod$20798777255c214e32de3304ce8faa1fdfa2f474$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01011100 for cells of type $lut.
+Using template $paramod$8b09f347504cfc0d3d65fbb4601497936543b1b3$lut for cells of type $lut.
+Using template $paramod$2d07c1a6c53c7b878509360922c4fa5ebedc3011$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101110 for cells of type $lut.
+Using template $paramod$9c9720c010d84f62d3afabc7f482fed506894822$lut for cells of type $lut.
+Using template $paramod$b83b450684d1d765f976332e7b6ef20fa7315777$lut for cells of type $lut.
+Using template $paramod$3a1b7067d310165aebea2fc4c947ab1f3a1f3651$lut for cells of type $lut.
+Using template $paramod$eb81fa5ee4c301e56c84f00fdc84dcdae2ef8f48$lut for cells of type $lut.
+Using template $paramod$157229df9b3fca17ea9b1d2a38d0e1e7e0dcd868$lut for cells of type $lut.
+Using template $paramod$eec0f060d7b3561d086dabf43d788b954efdac61$lut for cells of type $lut.
+Using template $paramod$b5a4bb7497408e0ca86d20fcc33ac1467c299ec7$lut for cells of type $lut.
+Using template $paramod$2934c559d69ed7e262bf5e363e0a6008bd9b16a2$lut for cells of type $lut.
+Using template $paramod$2757d0190353087075472a6c4ea7d2aa8ae2a1cd$lut for cells of type $lut.
+Using template $paramod$251994398653c4cf8de320f1e306e535d5d2d624$lut for cells of type $lut.
+Using template $paramod$6f94ed872e6e996ae21b7b60ade8b217c03dc294$lut for cells of type $lut.
+Using template $paramod$36439ab72e2843cf7b4c2df1313a22325c7091e6$lut for cells of type $lut.
+Using template $paramod$8a7803b96c67bbb331e9af9103a3406e0726fc63$lut for cells of type $lut.
+Using template $paramod$e077267a16a656dafc33635455de5045f5774071$lut for cells of type $lut.
+Using template $paramod$dbe5127cfbe3c92e3f51532c377729e7f621de9e$lut for cells of type $lut.
+Using template $paramod$a169751d7d8d3acd7598c6287783caa471ab3ddf$lut for cells of type $lut.
+Using template $paramod$eb453e5c4284f97a8ffea70cb552841f9d2d6223$lut for cells of type $lut.
+Using template $paramod$ad3a97108c9f4d10f8acfa309b668b9455d3d733$lut for cells of type $lut.
+Using template $paramod$a8122aedf3c5a4a586b47b18b4fc83f29fe51f48$lut for cells of type $lut.
+Using template $paramod$cf652acbfbf67d2248e3045cd0f09c58ca55886c$lut for cells of type $lut.
+Using template $paramod$05f19d9c2311a3d1ab38ece311a1bb9f96c62043$lut for cells of type $lut.
+Using template $paramod$b675e57b1ff0a7a21e1e15794dbf4cc6efada293$lut for cells of type $lut.
+Using template $paramod$34b44e6f6023a062e3f99a917a9946eaf0f82d14$lut for cells of type $lut.
+Using template $paramod$eba7de026ff587370e320127e266317dae097a89$lut for cells of type $lut.
+Using template $paramod$6e46ec5a196ba1a24b8e69ab094cadc07c13ac1f$lut for cells of type $lut.
+Using template $paramod$763d570e75d8443dc11eedd908677674d63b988b$lut for cells of type $lut.
+Using template $paramod$33e58adf67c6b686a154c9ce8ebbc4b04b8cabc5$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000001 for cells of type $lut.
+Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8$lut for cells of type $lut.
+Using template $paramod$84bef48419505c45080a829b4c4b6379a157eb8b$lut for cells of type $lut.
+Using template $paramod$200337237619ba4c0bed9a492562f1d1b57fb569$lut for cells of type $lut.
+Using template $paramod$0b1374b699bef26dd7d58501fa727935d8952f23$lut for cells of type $lut.
+Using template $paramod$109fe97631509767099e3986274f6c378763a695$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000 for cells of type $lut.
+Using template $paramod$33772c41489a9fa91cf9d835bca0384f12eceecd$lut for cells of type $lut.
+Using template $paramod$7ff054bf1849e35157c5493ac1b0fb5805fe014a$lut for cells of type $lut.
+Using template $paramod$67e4d10c96445e3ef481a27f3de1786ce3c551b8$lut for cells of type $lut.
+Using template $paramod$b93d1ea7a612a32c185108f67a153d44ffb9aac2$lut for cells of type $lut.
+Using template $paramod$43779580bfffd5d5a9f321249a174febf1dac288$lut for cells of type $lut.
+Using template $paramod$5066b10c0655ba356eda6c187e921b0d20ec7960$lut for cells of type $lut.
+Using template $paramod$31c3bdecdaa995f6bed088f4d27aad44a5974736$lut for cells of type $lut.
+Using template $paramod$8722d7b6fcc1b120cb8ba9bf94b1b3aaa116eac4$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000111 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01001011 for cells of type $lut.
+Using template $paramod$67b65bfbaf52c916a61fa72b009fe160f793273f$lut for cells of type $lut.
+Using template $paramod$ebf369ecdee3dd931679bebe24821119ae9b1a01$lut for cells of type $lut.
+Using template $paramod$fe89c52e83c5b0456317806a3190c48a5e8494e5$lut for cells of type $lut.
+Using template $paramod$43beb11e21f1a0e9873d8a5e98f66384c622dbb2$lut for cells of type $lut.
+Using template $paramod$53ce561f80f32d4298a3beadc88b6c5c78293221$lut for cells of type $lut.
+Using template $paramod$7acb4d83bedad043f1037430624d7ae454eb6a46$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
+Using template $paramod$12be9fdfd77fd6cafbad7bf212124832f09a5bae$lut for cells of type $lut.
+Using template $paramod$0b1b25fb4ea813b49b8a6056e3dd1cb06fc7b48b$lut for cells of type $lut.
+Using template $paramod$180bb8b90cbb836462aae232e91903c5b5179990$lut for cells of type $lut.
+Using template $paramod$2de067730b0b619d41b924468cebdcc03866cfaf$lut for cells of type $lut.
+Using template $paramod$aeee310e25c4a88dd9b507efd9efffc29f028a8e$lut for cells of type $lut.
+Using template $paramod$34e531dc93cdec6b88bf30bc052a85f014ce6b53$lut for cells of type $lut.
+Using template $paramod$a73bd93102ce9333d5ed1cfb799481d4f206264d$lut for cells of type $lut.
+Using template $paramod$15c736439c2a1115a8429da2190f80ef0d9cca85$lut for cells of type $lut.
+Using template $paramod$22d3e576e0a907b1c46de739dd678f315deab5ff$lut for cells of type $lut.
+Using template $paramod$44d441ebbd70d89c43d177db3665961064bed1ae$lut for cells of type $lut.
+Using template $paramod$5a91a618dd73cd5feab308b094eb53564abcbef4$lut for cells of type $lut.
+Using template $paramod$692927e279b3d5c42ee4aacb287247c0b34943ed$lut for cells of type $lut.
+Using template $paramod$2266ced68ce8c1733e09cb8121fbdde8f613454b$lut for cells of type $lut.
+Using template $paramod$a2b4ddfa3906001b2ef9f2414d79c3048f2a3a6e$lut for cells of type $lut.
+Using template $paramod$62b10256145614519a107613336c12ff4a78856c$lut for cells of type $lut.
+Using template $paramod$d985c15574f055e135575f22e4782940c51d3cf1$lut for cells of type $lut.
+Using template $paramod$609e5885ea60a39b5435e9a0b9279380a4141328$lut for cells of type $lut.
+Using template $paramod$ce7bdd7e397abf22e61f01cf98fe712fbb80d1eb$lut for cells of type $lut.
+Using template $paramod$3128c6e411f741ae1c9e3415f25b0514f7bff3f9$lut for cells of type $lut.
+Using template $paramod$afa5cc7ea02a0d78eb9b9c5845e7d58bfc9b0205$lut for cells of type $lut.
+Using template $paramod$ada8ed8a71b659652d80e58b7f9443bdb32f3651$lut for cells of type $lut.
+Using template $paramod$5d19889f1b57e4a5b798727f27438ccede617c7a$lut for cells of type $lut.
+Using template $paramod$c45576938a9b58d891a9ccf0c10041ea33e86e1d$lut for cells of type $lut.
+Using template $paramod$c55d56661b6266e1046a7895f047859860c086a0$lut for cells of type $lut.
+Using template $paramod$ac4fb80d591a6b6c6ac9fc3c8b96156e2c222fb0$lut for cells of type $lut.
+Using template $paramod$7d1b831b2879e157a8a6645e72ec74910b92e826$lut for cells of type $lut.
+Using template $paramod$a964f8ed466638f11766930007624f9261481a37$lut for cells of type $lut.
+Using template $paramod$0eaee30de296614473a6bc8d53fd4d0355d5a7dd$lut for cells of type $lut.
+Using template $paramod$ca260995b172aa4c9c5dd2cfd96abcb790c4fdd6$lut for cells of type $lut.
+Using template $paramod$882a21d2960375556f2b58e441a035e3f247b5f8$lut for cells of type $lut.
+Using template $paramod$00c03dd2ba6cc0d335d1413d42c26018922fd9a6$lut for cells of type $lut.
+Using template $paramod$83f575eefbe9a743f32f2a809f4d04ee7ed3aaa8$lut for cells of type $lut.
+Using template $paramod$8c5b5f42063e74507195ebe7f4d8f4657663843f$lut for cells of type $lut.
+Using template $paramod$bf674f2ac50ea31a0e995895af2e0d6a08190e5a$lut for cells of type $lut.
+Using template $paramod$da38f7b9a0aca3d8d25848c09ef697a8dbb873df$lut for cells of type $lut.
+Using template $paramod$27a281fa3d603c3277c43d6f3ff7c9da028726fd$lut for cells of type $lut.
+Using template $paramod$3c06cc976015666a4c3c1e1838aee7cdd0a4889a$lut for cells of type $lut.
+Using template $paramod$be42c5676ba89ecd0be6a90fdc5c9a569c4d7c16$lut for cells of type $lut.
+Using template $paramod$e71acd1fd0d505c5322a040014ca4f2fbd36a053$lut for cells of type $lut.
+Using template $paramod$44daa60cbef98747eac6a8608cc17001ae09be3d$lut for cells of type $lut.
+Using template $paramod$c315fd171a22ad0b563d890e3adda172ea240769$lut for cells of type $lut.
+Using template $paramod$c1c41644c89cd688e303bdfa02749bf8c2d68bdc$lut for cells of type $lut.
+Using template $paramod$70466a1dca3ea86fcd39e16944e4a276c722185f$lut for cells of type $lut.
+Using template $paramod$cf913cb826462b7f6c56cec3b35661145c4a19c9$lut for cells of type $lut.
+Using template $paramod$5f2756b153e96d315f89f05e80060b46cb28d5d2$lut for cells of type $lut.
+Using template $paramod$3ea3e8e9ef7a6d31abc46273c84646259a10848c$lut for cells of type $lut.
+Using template $paramod$a1015aad31bf6c3c1e9a23823c713c142b7b0a4c$lut for cells of type $lut.
+Using template $paramod$fd8d52fd9947b5e7bdfe9341cbec91532e7771f9$lut for cells of type $lut.
+Using template $paramod$dfd57607b12cbcfa0282cd45553eece614a60bf8$lut for cells of type $lut.
+Using template $paramod$a9aa85f3eb29847d7b3b607ff0ed6c413cd7479e$lut for cells of type $lut.
+Using template $paramod$aa40b2fa6a6d00b43dae46ade7bb92c3aacb7544$lut for cells of type $lut.
+Using template $paramod$c801ce482c875f91fc52e75da3847c8bac202f41$lut for cells of type $lut.
+Using template $paramod$80389088bbe68cf80531ae55d7040fa2361b4c50$lut for cells of type $lut.
+Using template $paramod$18e2f24662528c48ef14148fcf37cef190e2f5f3$lut for cells of type $lut.
+Using template $paramod$c1a430e6d23abcfe7cbb0181523879889263c5e9$lut for cells of type $lut.
+No more expansions possible.
+<suppressed ~3211 debug messages>
+
+6.43. Executing XILINX_DFFOPT pass (optimize FF control signal usage).
+Optimizing FFs in tnf_mac_e4m8_pnr_top.
+
+6.44. Executing OPT_LUT_INS pass (discard unused LUT inputs).
+Optimizing LUTs in tnf_mac_e4m8_pnr_top.
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 4)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4695.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4738.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 3)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4693.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4691.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4691.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4689.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4686.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4688.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 2)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4683.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4681.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4435.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 3)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4437.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 3)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4491.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4494.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4494.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4498.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4498.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4499.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4499.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4500.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4500.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4501.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4501.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4529.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4531.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4532.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4532.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4534.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4534.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4555.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4652.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4651.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 3)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4653.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4653.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4659.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 2)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4661.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4661.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 2)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4664.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4664.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 2)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4652.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4762.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4727.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4726.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4724.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4723.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4659.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4652.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4540.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 2)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4534.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4494.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4437.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 3)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4435.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 3)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4447.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4646.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 3)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4469.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4454.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4469.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4471.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4473.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4486.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4491.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4491.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4492.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4526.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4498.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4499.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4500.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4501.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4497.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4526.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4529.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4555.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4531.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4532.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4532.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4536.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 2)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4543.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4543.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4530.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4555.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4664.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 4)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4653.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4651.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 3)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4646.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 3)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4651.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4651.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4659.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 2)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4661.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 2)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4661.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 4)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4664.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 2)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4681.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4683.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4686.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4689.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4691.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4693.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4691.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4695.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4722.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4723.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4724.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4722.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4726.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4727.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4728.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4729.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4728.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4738.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 5)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4729.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (6 -> 1)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 0)
+  Optimizing lut $abc$4432$auto$blifparse.cc:557:parse_blif$4762.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (6 -> 1)
+
+6.45. Executing CLKBUFMAP pass (inserting clock buffers).
+Inserting BUFG on tnf_mac_e4m8_pnr_top.$iopadmap$clk[0].
+Removed 0 unused cells and 1703 unused wires.
+
+6.46. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `tnf_mac_e4m8_pnr_top'. Setting top module to tnf_mac_e4m8_pnr_top.
+
+6.46.1. Analyzing design hierarchy..
+Top module:  \tnf_mac_e4m8_pnr_top
+
+6.46.2. Analyzing design hierarchy..
+Top module:  \tnf_mac_e4m8_pnr_top
+Removed 0 unused modules.
+
+6.47. Printing statistics.
+
+=== tnf_mac_e4m8_pnr_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      588 wires
+     2384 wire bits
+       47 public wires
+      438 public wire bits
+        8 ports
+       54 port bits
+      592 cells
+        4   $scopeinfo
+        1   BUFG
+       37   IBUF
+       81   INV
+       42   LUT1
+       66   LUT2
+      132   LUT3
+       36   LUT4
+       62   LUT5
+      114   LUT6
+       17   OBUF
+      210 submodules
+       46   CARRY4
+       52   FDRE
+       82   MUXF7
+       30   MUXF8
+
+   Estimated number of LCs:        344
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      592 tnf_mac_e4m8_pnr_top
+
+        +----------Count including submodules.
+        | 
+      588 wires
+     2384 wire bits
+       47 public wires
+      438 public wire bits
+        8 ports
+       54 port bits
+        - memories
+        - memory bits
+        - processes
+      592 cells
+        4   $scopeinfo
+        1   BUFG
+       37   IBUF
+       81   INV
+       42   LUT1
+       66   LUT2
+      132   LUT3
+       36   LUT4
+       62   LUT5
+      114   LUT6
+       17   OBUF
+      210 submodules
+       46   CARRY4
+       52   FDRE
+       82   MUXF7
+       30   MUXF8
+
+   Estimated number of LCs:        344
+
+6.48. Executing CHECK pass (checking for obvious problems).
+Checking module tnf_mac_e4m8_pnr_top...
+Found and reported 0 problems.
+
+7. Executing JSON backend.
+
+8. Printing statistics.
+
+=== tnf_mac_e4m8_pnr_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      588 wires
+     2384 wire bits
+       47 public wires
+      438 public wire bits
+        8 ports
+       54 port bits
+      802 cells
+        4   $scopeinfo
+        1   BUFG
+       46   CARRY4
+       52   FDRE
+       37   IBUF
+       81   INV
+       42   LUT1
+       66   LUT2
+      132   LUT3
+       36   LUT4
+       62   LUT5
+      114   LUT6
+       82   MUXF7
+       30   MUXF8
+       17   OBUF
+
+End of script. Logfile hash: 270e3c6328, time: 3.03s, user: 2.46s, system: 0.11s, MEM: 137.69 MB peak
+Yosys 0.67+post (git sha1 b8e7da6f40ae8f552c116bf6c359b07c6533e159, Release, AppleClang clang++ 21.0.0.21000099)
+Time spent: 66% 21x read_verilog (1 sec), 13% 1x abc (0 sec), ...

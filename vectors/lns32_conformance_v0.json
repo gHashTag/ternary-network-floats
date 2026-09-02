@@ -1,0 +1,92 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "LNS32",
+  "format_name": "LNS-32",
+  "bitexact": true,
+  "format_notes": "log-number-system, 1 sign + 31 fixed-point base-2 log bits. zero is reserved code; no inf/nan in this convention",
+  "catalog": {
+    "id": "lns32",
+    "bits": 32,
+    "s": 1,
+    "e": 31,
+    "m": 0,
+    "bias": 0,
+    "storage": "u32",
+    "cluster": "Lns",
+    "status": "Verified",
+    "standard": "LNS-Madam (2021)",
+    "use_case": "log-domain DSP",
+    "gf_relation": "orthogonal",
+    "source": "Alam 2021",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": null,
+    "expected": 3.0,
+    "ieee754_exact": false,
+    "note": "3.0 is not an exact grid point of this format at this width"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "n_vectors": 5,
+  "vectors": [
+    {
+      "name": "pos_zero",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "lns32_bits_hex": "0x00000000",
+      "lns32_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "lns32_bits_hex": "0x80000000",
+      "lns32_bits_int": 2147483648,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_two",
+      "input_f64": 2.0,
+      "input_f64_hex": "0x4000000000000000",
+      "lns32_bits_hex": "0x00008000",
+      "lns32_bits_int": 32768,
+      "decoded_f64": 2.0,
+      "decoded_f64_hex": "0x4000000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_half",
+      "input_f64": 0.5,
+      "input_f64_hex": "0x3FE0000000000000",
+      "lns32_bits_hex": "0x7FFF8000",
+      "lns32_bits_int": 2147450880,
+      "decoded_f64": 0.5,
+      "decoded_f64_hex": "0x3FE0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_four",
+      "input_f64": 4.0,
+      "input_f64_hex": "0x4010000000000000",
+      "lns32_bits_hex": "0x00010000",
+      "lns32_bits_int": 65536,
+      "decoded_f64": 4.0,
+      "decoded_f64_hex": "0x4010000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}

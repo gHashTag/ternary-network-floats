@@ -1,0 +1,185 @@
+{
+ "schema": "t27-conformance/v0.1",
+ "format": "gf512",
+ "name_alt": "GoldenFloat512",
+ "format_name": "GoldenFloat512",
+ "bitexact": true,
+ "format_notes": "S1 E195 M316, BIAS=25108406941546723055343157692830665664409421777856138051583 (=2^(E-1)-1, IEC 60559 interchange bias). Storage word: u512_software; vectors use the FORMAT bit-width 512. Decode law shared across all rungs; promoted to strict SW-bitexact by an INDEPENDENT second decoder (gf_wide_independent_witness.py, dyadic-exact, abs_error=0) and an analytic separation-bound (SEPARATION_BOUND.md, zero rounding on exact dyadics). PHI_BIAS is OPEN/RETRACTED per the spec and is NOT emitted; phi_distance is descriptive metadata only, never used in decode.",
+ "catalog": {
+  "id": "gf512",
+  "bits": 512,
+  "s": 1,
+  "e": 195,
+  "m": 316,
+  "bias": 25108406941546723055343157692830665664409421777856138051583,
+  "bias_expr": "2^194-1",
+  "storage": "u512_software",
+  "cluster": "GoldenFloat",
+  "status": "Conj",
+  "standard": "this work; rule e=round((N-1)/phi^2)",
+  "gf_relation": "experimental",
+  "source": "specs/numeric/gf512.t27",
+  "phi_distance": 0.0009
+ },
+ "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+ "preprint": "https://arxiv.org/abs/2606.05017",
+ "anchor_identity": "phi^2 + 1/phi^2 = 3",
+ "anchor_note": "3.0 is exactly representable in this rung (anchor_three vector); it decodes to exactly 3 with no rounding error.",
+ "governing_sentence": "The GoldenFloat ladder earns its place through breadth and toolchain coherence, NOT through per-rung superiority over any competitor format. Takum (Hunhold 2024, arXiv:2412.20273) is the standing counterexample and is not suppressed.",
+ "structural_reason": "Bit-precise round-trip defined; every finite value is an EXACT dyadic rational odd*2^k (M=316 > 52 -> no FP lowering, no rounding; see SEPARATION_BOUND.md). Confirmed by TWO structurally independent exact decode paths (dyadic integer normalizer + Fraction-significand symbolic-shift) agreeing on all pack vectors and a representative sweep.",
+ "n_vectors": 15,
+ "vectors": [
+  {
+   "label": "pos_zero",
+   "category": "zero",
+   "bits": 0,
+   "hex": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": "0",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "neg_zero",
+   "category": "zero",
+   "bits": 6703903964971298549787012499102923063739682910296196688861780721860882015036773488400937149083451713845015929093243025426876941405973284973216824503042048,
+   "hex": "0x80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": "0",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "pos_inf",
+   "category": "inf",
+   "bits": 6703903964971298549787012499102923063739682910296196688861647222671136958156623799544301552076289044812368638295121335326388052673111994938840389372608512,
+   "hex": "0x7ffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": "INF(+)",
+   "abs_error": "0"
+  },
+  {
+   "label": "neg_inf",
+   "category": "inf",
+   "bits": 13407807929942597099574024998205846127479365820592393377723427944532018973193397287945238701159740758657384567388364360753264994079085279912057213875650560,
+   "hex": "0xfffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": "INF(-)",
+   "abs_error": "0"
+  },
+  {
+   "label": "nan",
+   "category": "nan",
+   "bits": 6703903964971298549787012499102923063739682910296196688861647222671136958156623799544301552076289044812368638295121335326388052673111994938840389372608513,
+   "hex": "0x7ffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000001",
+   "value": "NAN(+)",
+   "abs_error": "0"
+  },
+  {
+   "label": "smallest_subnormal",
+   "category": "subnormal",
+   "bits": 1,
+   "hex": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+   "value": "1p-25108406941546723055343157692830665664409421777856138051898",
+   "abs_error": "0",
+   "value_encoding": "dyadic"
+  },
+  {
+   "label": "largest_subnormal",
+   "category": "subnormal",
+   "bits": 133499189745056880149688856635597007162669032647290798121690100488888732861290034376435130433535,
+   "hex": "0x0000000000000000000000000000000000000000000000000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+   "value": "133499189745056880149688856635597007162669032647290798121690100488888732861290034376435130433535p-25108406941546723055343157692830665664409421777856138051898",
+   "abs_error": "0",
+   "value_encoding": "dyadic"
+  },
+  {
+   "label": "smallest_normal",
+   "category": "normal",
+   "bits": 133499189745056880149688856635597007162669032647290798121690100488888732861290034376435130433536,
+   "hex": "0x00000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": "1p-25108406941546723055343157692830665664409421777856138051582",
+   "abs_error": "0",
+   "value_encoding": "dyadic"
+  },
+  {
+   "label": "one",
+   "category": "normal",
+   "bits": 3351951982485649274893506249551461531869841455148098344430756861740695950638237055343832977534563187889860673748499822612949581970125352452231977121087488,
+   "hex": "0x3ffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": "1",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "two",
+   "category": "normal",
+   "bits": 3351951982485649274893506249551461531869841455148098344430890360930441007518386744200468574541725856922507964546621512713438470702986642486608412251521024,
+   "hex": "0x40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": "2",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "anchor_three",
+   "category": "normal",
+   "bits": 3351951982485649274893506249551461531869841455148098344430957110525313535958461588628786373045307191438831609945682357763682915069417287503796629816737792,
+   "hex": "0x40000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": "3",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "neg_one",
+   "category": "normal",
+   "bits": 10055855947456947824680518748654384595609524365444295033292537583601577965675010543744770126618014901734876602841742848039826523376098637425448801624129536,
+   "hex": "0xbffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": "-1",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "one_point_five",
+   "category": "normal",
+   "bits": 3351951982485649274893506249551461531869841455148098344430823611335568479078311899772150776038144522406184319147560667663194026336555997469420194686304256,
+   "hex": "0x3ffffffffffffffffffffffffffffffffffffffffffffffff8000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": "1.5",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "largest_normal",
+   "category": "normal",
+   "bits": 6703903964971298549787012499102923063739682910296196688861647222671136958156623799544301552076289044812368638295121335326388052673111994938840389372608511,
+   "hex": "0x7fffffffffffffffffffffffffffffffffffffffffffffffefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+   "value": "266998379490113760299377713271194014325338065294581596243380200977777465722580068752870260867071p25108406941546723055343157692830665664409421777856138051267",
+   "abs_error": "0",
+   "value_encoding": "dyadic"
+  },
+  {
+   "label": "neg_largest_normal",
+   "category": "normal",
+   "bits": 13407807929942597099574024998205846127479365820592393377723427944532018973193397287945238701159740758657384567388364360753264994079085279912057213875650559,
+   "hex": "0xffffffffffffffffffffffffffffffffffffffffffffffffefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+   "value": "-266998379490113760299377713271194014325338065294581596243380200977777465722580068752870260867071p25108406941546723055343157692830665664409421777856138051267",
+   "abs_error": "0",
+   "value_encoding": "dyadic"
+  }
+ ],
+ "witnesses": [
+  {
+   "kind": "sw_independent_dyadic",
+   "decoder": "gf_wide_independent_witness.py (from-scratch dyadic normalizer, integer (2^M+mant) -> odd*2^shift; does NOT reuse the encoder)",
+   "scope": "all 15 pack vectors",
+   "result": "15/15 pack vectors bit-exact, abs_error=0"
+  },
+  {
+   "kind": "sw_golden_fraction_oracle",
+   "decoder": "conformance/witness/gf512/gf512_decode_ref.py (fractions.Fraction significand + symbolic integer shift; exact-dyadic target, no FP lowering)",
+   "scope": "all 15 pack vectors",
+   "result": "15/15 pack vectors exact, abs_error=0"
+  },
+  {
+   "kind": "analytic_separation_bound",
+   "decoder": "conformance/witness/gf512/SEPARATION_BOUND.md (zero-rounding lemma)",
+   "scope": "entire 2^512 domain (analytic; 2^512 exhaustive infeasible)",
+   "result": "decode has NO rounding: every finite value is an exact dyadic odd*2^k; max rounding error 0 < ULP/2 -> deterministic, abs_error=0"
+  }
+ ]
+}

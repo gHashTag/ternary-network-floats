@@ -1,0 +1,54 @@
+{
+  "schema": "wp18-abs-error-allowlist/v1",
+  "note": "Explicit, auditable allow-list of bit-exact-pack rows that carry a NONZERO abs_error for an honest, documented reason. Every entry is a row where the round-trip is CORRECT but the input is not exactly representable (not_on_grid) or saturates (overflow_to_inf). The gate fails on any nonzero abs_error NOT listed here. Never add an entry to silence a real error; each must be a genuinely-disclosed case with a fixture.",
+  "allow": [
+    {
+      "pack_id": "bfloat16",
+      "row_name": "pos_0p1",
+      "reason": "not_on_grid",
+      "detail": "0.1 is not exactly representable in bf16; decoded_f64=0.10009765625, abs_error~9.77e-05 is the true nearest-representable error. Honest, expected."
+    },
+    {
+      "pack_id": "gf16",
+      "row_name": "overflow_to_inf",
+      "reason": "overflow_to_inf",
+      "detail": "input 1e40 exceeds the gf16 dynamic range and saturates to +inf; abs_error=inf is the honest record of an out-of-range input, not an encode/decode bug."
+    },
+    {
+      "pack_id": "gf16",
+      "row_name": "phi",
+      "reason": "not_on_grid",
+      "detail": "phi is not exactly representable on the gf16 grid; round-trip is correct, abs_error=0.000846489 is the true nearest-representable error (WP-18 F-1 correction)."
+    },
+    {
+      "pack_id": "gf16",
+      "row_name": "inv_phi",
+      "reason": "not_on_grid",
+      "detail": "inv_phi is not exactly representable on the gf16 grid; round-trip is correct, abs_error=0.000130074 is the true nearest-representable error (WP-18 F-1 correction)."
+    },
+    {
+      "pack_id": "gf16",
+      "row_name": "phi_squared",
+      "reason": "not_on_grid",
+      "detail": "phi_squared is not exactly representable on the gf16 grid; round-trip is correct, abs_error=0.000846489 is the true nearest-representable error (WP-18 F-1 correction)."
+    },
+    {
+      "pack_id": "gf16",
+      "row_name": "inv_phi_sq",
+      "reason": "not_on_grid",
+      "detail": "inv_phi_sq is not exactly representable on the gf16 grid; round-trip is correct, abs_error=0.000130074 is the true nearest-representable error (WP-18 F-1 correction)."
+    },
+    {
+      "pack_id": "gf16",
+      "row_name": "e",
+      "reason": "not_on_grid",
+      "detail": "e is not exactly representable on the gf16 grid; round-trip is correct, abs_error=0.000468172 is the true nearest-representable error (WP-18 F-1 correction)."
+    },
+    {
+      "pack_id": "gf16",
+      "row_name": "pi",
+      "reason": "not_on_grid",
+      "detail": "pi is not exactly representable on the gf16 grid; round-trip is correct, abs_error=0.000967654 is the true nearest-representable error (WP-18 F-1 correction)."
+    }
+  ]
+}

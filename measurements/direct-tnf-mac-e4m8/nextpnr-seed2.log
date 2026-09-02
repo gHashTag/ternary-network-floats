@@ -1,0 +1,1599 @@
+Info: Packing constants..
+Info: Inserting IO buffers..
+Info:     IO port 'clk' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.clk'
+Info:     IO port 'in_valid' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.in_valid'
+Info:     IO port 'out_valid' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.out_valid'
+Info:     IO port 'rst' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.rst'
+Info:     IO port 'acc[0]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc'
+Info:     IO port 'acc[1]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_1'
+Info:     IO port 'acc[10]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_10'
+Info:     IO port 'acc[11]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_11'
+Info:     IO port 'acc[12]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_12'
+Info:     IO port 'acc[13]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_13'
+Info:     IO port 'acc[14]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_14'
+Info:     IO port 'acc[15]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_15'
+Info:     IO port 'acc[2]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_2'
+Info:     IO port 'acc[3]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_3'
+Info:     IO port 'acc[4]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_4'
+Info:     IO port 'acc[5]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_5'
+Info:     IO port 'acc[6]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_6'
+Info:     IO port 'acc[7]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_7'
+Info:     IO port 'acc[8]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_8'
+Info:     IO port 'acc[9]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.acc_9'
+Info:     IO port 'result[0]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result'
+Info:     IO port 'result[1]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_1'
+Info:     IO port 'result[10]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_10'
+Info:     IO port 'result[11]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_11'
+Info:     IO port 'result[12]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_12'
+Info:     IO port 'result[13]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_13'
+Info:     IO port 'result[14]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_14'
+Info:     IO port 'result[15]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_15'
+Info:     IO port 'result[2]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_2'
+Info:     IO port 'result[3]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_3'
+Info:     IO port 'result[4]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_4'
+Info:     IO port 'result[5]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_5'
+Info:     IO port 'result[6]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_6'
+Info:     IO port 'result[7]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_7'
+Info:     IO port 'result[8]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_8'
+Info:     IO port 'result[9]' driven by OBUF '$iopadmap$tnf_mac_e4m8_pnr_top.result_9'
+Info:     IO port 'sample[0]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample'
+Info:     IO port 'sample[1]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_1'
+Info:     IO port 'sample[10]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_10'
+Info:     IO port 'sample[11]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_11'
+Info:     IO port 'sample[12]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_12'
+Info:     IO port 'sample[13]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_13'
+Info:     IO port 'sample[14]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_14'
+Info:     IO port 'sample[15]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_15'
+Info:     IO port 'sample[2]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_2'
+Info:     IO port 'sample[3]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_3'
+Info:     IO port 'sample[4]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_4'
+Info:     IO port 'sample[5]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_5'
+Info:     IO port 'sample[6]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_6'
+Info:     IO port 'sample[7]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_7'
+Info:     IO port 'sample[8]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_8'
+Info:     IO port 'sample[9]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.sample_9'
+Info:     IO port 'weight[0]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.weight'
+Info:     IO port 'weight[1]' driven by IBUF '$iopadmap$tnf_mac_e4m8_pnr_top.weight_1'
+Info:     Constraining 'clk' to site 'IOB_X0Y226'
+Info:     Tile 'LIOB33_X0Y225'
+Info:     Constraining 'in_valid' to site 'IOB_X0Y230'
+Info:     Tile 'LIOB33_X0Y229'
+Info:     Constraining 'out_valid' to site 'IOB_X0Y93'
+Info:     Tile 'LIOB33_X0Y93'
+Info:     Constraining 'rst' to site 'IOB_X1Y197'
+Info:     Tile 'RIOB33_X105Y197'
+Info:     Constraining 'acc[0]' to site 'IOB_X0Y229'
+Info:     Tile 'LIOB33_X0Y229'
+Info:     Constraining 'acc[1]' to site 'IOB_X0Y232'
+Info:     Tile 'LIOB33_X0Y231'
+Info:     Constraining 'acc[10]' to site 'IOB_X1Y130'
+Info:     Tile 'RIOB33_X105Y129'
+Info:     Constraining 'acc[11]' to site 'IOB_X1Y113'
+Info:     Tile 'RIOB33_X105Y113'
+Info:     Constraining 'acc[12]' to site 'IOB_X1Y106'
+Info:     Tile 'RIOB33_X105Y105'
+Info:     Constraining 'acc[13]' to site 'IOB_X0Y84'
+Info:     Tile 'LIOB33_X0Y83'
+Info:     Constraining 'acc[14]' to site 'IOB_X0Y82'
+Info:     Tile 'LIOB33_X0Y81'
+Info:     Constraining 'acc[15]' to site 'IOB_X0Y81'
+Info:     Tile 'LIOB33_X0Y81'
+Info:     Constraining 'acc[2]' to site 'IOB_X0Y231'
+Info:     Tile 'LIOB33_X0Y231'
+Info:     Constraining 'acc[3]' to site 'IOB_X0Y216'
+Info:     Tile 'LIOB33_X0Y215'
+Info:     Constraining 'acc[4]' to site 'IOB_X0Y215'
+Info:     Tile 'LIOB33_X0Y215'
+Info:     Constraining 'acc[5]' to site 'IOB_X0Y217'
+Info:     Tile 'LIOB33_X0Y217'
+Info:     Constraining 'acc[6]' to site 'IOB_X0Y207'
+Info:     Tile 'LIOB33_X0Y207'
+Info:     Constraining 'acc[7]' to site 'IOB_X1Y136'
+Info:     Tile 'RIOB33_X105Y135'
+Info:     Constraining 'acc[8]' to site 'IOB_X1Y131'
+Info:     Tile 'RIOB33_X105Y131'
+Info:     Constraining 'acc[9]' to site 'IOB_X1Y127'
+Info:     Tile 'RIOB33_X105Y127'
+Info:     Constraining 'result[0]' to site 'IOB_X0Y91'
+Info:     Tile 'LIOB33_X0Y91'
+Info:     Constraining 'result[1]' to site 'IOB_X0Y96'
+Info:     Tile 'LIOB33_X0Y95'
+Info:     Constraining 'result[10]' to site 'IOB_X0Y236'
+Info:     Tile 'LIOB33_X0Y235'
+Info:     Constraining 'result[11]' to site 'IOB_X0Y235'
+Info:     Tile 'LIOB33_X0Y235'
+Info:     Constraining 'result[12]' to site 'IOB_X0Y228'
+Info:     Tile 'LIOB33_X0Y227'
+Info:     Constraining 'result[13]' to site 'IOB_X0Y227'
+Info:     Tile 'LIOB33_X0Y227'
+Info:     Constraining 'result[14]' to site 'IOB_X0Y218'
+Info:     Tile 'LIOB33_X0Y217'
+Info:     Constraining 'result[15]' to site 'IOB_X0Y208'
+Info:     Tile 'LIOB33_X0Y207'
+Info:     Constraining 'result[2]' to site 'IOB_X0Y95'
+Info:     Tile 'LIOB33_X0Y95'
+Info:     Constraining 'result[3]' to site 'IOB_X0Y115'
+Info:     Tile 'LIOB33_X0Y115'
+Info:     Constraining 'result[4]' to site 'IOB_X0Y119'
+Info:     Tile 'LIOB33_X0Y119'
+Info:     Constraining 'result[5]' to site 'IOB_X0Y130'
+Info:     Tile 'LIOB33_X0Y129'
+Info:     Constraining 'result[6]' to site 'IOB_X0Y129'
+Info:     Tile 'LIOB33_X0Y129'
+Info:     Constraining 'result[7]' to site 'IOB_X1Y198'
+Info:     Tile 'RIOB33_X105Y197'
+Info:     Constraining 'result[8]' to site 'IOB_X1Y195'
+Info:     Tile 'RIOB33_X105Y195'
+Info:     Constraining 'result[9]' to site 'IOB_X0Y233'
+Info:     Tile 'LIOB33_X0Y233'
+Info:     Constraining 'sample[0]' to site 'IOB_X0Y94'
+Info:     Tile 'LIOB33_X0Y93'
+Info:     Constraining 'sample[1]' to site 'IOB_X0Y89'
+Info:     Tile 'LIOB33_X0Y89'
+Info:     Constraining 'sample[10]' to site 'IOB_X1Y134'
+Info:     Tile 'RIOB33_X105Y133'
+Info:     Constraining 'sample[11]' to site 'IOB_X1Y129'
+Info:     Tile 'RIOB33_X105Y129'
+Info:     Constraining 'sample[12]' to site 'IOB_X1Y109'
+Info:     Tile 'RIOB33_X105Y109'
+Info:     Constraining 'sample[13]' to site 'IOB_X1Y110'
+Info:     Tile 'RIOB33_X105Y109'
+Info:     Constraining 'sample[14]' to site 'IOB_X1Y105'
+Info:     Tile 'RIOB33_X105Y105'
+Info:     Constraining 'sample[15]' to site 'IOB_X0Y83'
+Info:     Tile 'LIOB33_X0Y83'
+Info:     Constraining 'sample[2]' to site 'IOB_X0Y92'
+Info:     Tile 'LIOB33_X0Y91'
+Info:     Constraining 'sample[3]' to site 'IOB_X0Y97'
+Info:     Tile 'LIOB33_X0Y97'
+Info:     Constraining 'sample[4]' to site 'IOB_X0Y116'
+Info:     Tile 'LIOB33_X0Y115'
+Info:     Constraining 'sample[5]' to site 'IOB_X0Y120'
+Info:     Tile 'LIOB33_X0Y119'
+Info:     Constraining 'sample[6]' to site 'IOB_X0Y134'
+Info:     Tile 'LIOB33_X0Y133'
+Info:     Constraining 'sample[7]' to site 'IOB_X0Y133'
+Info:     Tile 'LIOB33_X0Y133'
+Info:     Constraining 'sample[8]' to site 'IOB_X1Y135'
+Info:     Tile 'RIOB33_X105Y135'
+Info:     Constraining 'sample[9]' to site 'IOB_X1Y133'
+Info:     Tile 'RIOB33_X105Y133'
+Info:     Constraining 'weight[0]' to site 'IOB_X0Y86'
+Info:     Tile 'LIOB33_X0Y85'
+Info:     Constraining 'weight[1]' to site 'IOB_X0Y85'
+Info:     Tile 'LIOB33_X0Y85'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.clk'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.in_valid'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.out_valid'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.rst'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_1'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_10'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_11'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_12'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_13'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_14'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_15'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_2'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_3'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_4'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_5'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_6'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_7'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_8'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.acc_9'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_1'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_10'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_11'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_12'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_13'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_14'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_15'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_2'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_3'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_4'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_5'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_6'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_7'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_8'
+Info: Generating output buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.result_9'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_1'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_10'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_11'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_12'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_13'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_14'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_15'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_2'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_3'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_4'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_5'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_6'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_7'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_8'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.sample_9'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.weight'
+Info: Generating input buffer for '$iopadmap$tnf_mac_e4m8_pnr_top.weight_1'
+Info:     Created 54 PAD cells from:
+Info:             54x PAD
+Info: Preparing clocking...
+Info: Packing constants..
+Info: Packing cfg...
+Info: Packing PLLs...
+Info: Packing Gigabit Transceivers..
+Info: Packing global buffers...
+Info:     Constrained BUFGCTRL '$auto$clkbufmap.cc:261:execute$5519' to bel 'BUFGCTRL_X0Y16/BUFGCTRL' based on dedicated routing
+Info: Packing MUX[789]s..
+Info: Packing carries (atomic CARRY4)..
+Info:    Packed 46 CARRY4 cells into 18 chains (atomic).
+Info: router2 PRECYINIT fix: 46 CARRY4 cells, 64 constant carry pins disconnected
+Info: Packing LUTs..
+Info:     Created 854 SLICE_LUTX cells from:
+Info:            444x LUT1
+Info:             66x LUT2
+Info:            132x LUT3
+Info:             36x LUT4
+Info:             62x LUT5
+Info:            114x LUT6
+Info: Packing DRAM..
+Info:    Transformed 0 tied-low DRAM address inputs to be tied-high
+Info: Packing BRAM..
+Info: Packing DSPs..
+Info: Packing flipflops..
+Info:     Created 52 SLICE_FFX cells from:
+Info:             52x FDRE
+Info:     local-const FF control: disconnected 0 SR(=GND) + 52 CE(=VCC) pins from global nets
+Info:     Created 112 SELMUX2_1 cells from:
+Info:             82x MUXF7
+Info:             30x MUXF8
+Info: Constrained 16 LUTFF pairs.
+
+Info: Annotating ports with timing budgets for target frequency 50.00 MHz
+Info: Checksum: 0x802ffd9f
+
+Info: Device utilisation:
+Info: 	          SLICE_LUTX:   854/269200     0%
+Info: 	           SLICE_FFX:    52/269200     0%
+Info: 	              CARRY4:    46/33650     0%
+Info: 	          PSEUDO_GND:     1/69165     0%
+Info: 	          PSEUDO_VCC:     1/69165     0%
+Info: 	               HARD0:     0/ 3960     0%
+Info: 	            RAMB18E1:     0/  730     0%
+Info: 	            FIFO18E1:     0/  365     0%
+Info: 	        RAMBFIFO36E1:     0/  365     0%
+Info: 	            RAMB36E1:     0/  365     0%
+Info: 	             DSP48E1:     0/  740     0%
+Info: 	                 PAD:    54/ 1062     5%
+Info: 	       IOB33M_OUTBUF:     0/  240     0%
+Info: 	       IOB33S_OUTBUF:     0/  240     0%
+Info: 	        IOB33_OUTBUF:    17/  500     3%
+Info: 	     IOB33M_INBUF_EN:     0/  240     0%
+Info: 	     IOB33S_INBUF_EN:     0/  240     0%
+Info: 	      IOB33_INBUF_EN:    37/  500     7%
+Info: 	IOB33M_TERM_OVERRIDE:     0/  240     0%
+Info: 	IOB33S_TERM_OVERRIDE:     0/  240     0%
+Info: 	 IOB33_TERM_OVERRIDE:     0/  500     0%
+Info: 	       PULL_OR_KEEP1:     0/  980     0%
+Info: 	            IDELAYE2:     0/  500     0%
+Info: 	        OLOGICE3_TFF:     0/  500     0%
+Info: 	      OLOGICE3_OUTFF:     0/  500     0%
+Info: 	       OLOGICE3_MISR:     0/  500     0%
+Info: 	           OSERDESE2:     0/  500     0%
+Info: 	        ILOGICE3_IFF:     0/  500     0%
+Info: 	ILOGICE3_ZHOLD_DELAY:     0/  500     0%
+Info: 	           ISERDESE2:     0/  500     0%
+Info: 	                BUFR:     0/   40     0%
+Info: 	               BUFIO:     0/   40     0%
+Info: 	          IDELAYCTRL:     0/   10     0%
+Info: 	            BUFGCTRL:     1/   32     3%
+Info: 	            PCIE_2_1:     0/    1     0%
+Info: 	               BSCAN:     0/    4     0%
+Info: 	                BUFG:     0/   32     0%
+Info: 	              BUFHCE:     0/  120     0%
+Info: 	            DCIRESET:     0/    1     0%
+Info: 	            DNA_PORT:     0/    1     0%
+Info: 	           EFUSE_USR:     0/    1     0%
+Info: 	           FRAME_ECC:     0/    1     0%
+Info: 	       GTPE2_CHANNEL:     0/   16     0%
+Info: 	        GTPE2_COMMON:     0/    4     0%
+Info: 	         IBUFDS_GTE2:     0/    8     0%
+Info: 	                ICAP:     0/    2     0%
+Info: 	            INVERTER:     0/  240     0%
+Info: 	          MMCME2_ADV:     0/   10     0%
+Info: 	        OLOGICE2_TFF:     0/  500     0%
+Info: 	      OLOGICE2_OUTFF:     0/  500     0%
+Info: 	           PLLE2_ADV:     0/   10     0%
+Info: 	           SELMUX2_1:   112/102950     0%
+Info: 	             STARTUP:     0/    1     0%
+Info: 	          USR_ACCESS:     0/    1     0%
+Info: 	              BUFFER:     0/   82     0%
+Info: 	        ILOGICE2_IFF:     0/  500     0%
+Info: 	       OLOGICE2_MISR:     0/  500     0%
+
+Info: HeAP congestion knobs: beta=0.400 spread_scale=2,1 alpha=0.080
+Info: Placed 109 cells based on constraints.
+Info: Creating initial analytic placement for 428 cells, random placement wirelen = 230310.
+Info:     at initial placer iter 0, wirelen = 13649
+Info:     at initial placer iter 1, wirelen = 11527
+Info:     at initial placer iter 2, wirelen = 10664
+Info:     at initial placer iter 3, wirelen = 10313
+Info: Running main analytical placer.
+Info:     at iteration #1, type ALL: wirelen solved = 10335, spread = 21590, legal = 21161; time = 0.02s
+Info:     at iteration #2, type ALL: wirelen solved = 10479, spread = 19547, legal = 19441; time = 0.02s
+Info:     at iteration #3, type ALL: wirelen solved = 10469, spread = 19848, legal = 19432; time = 0.02s
+Info:     at iteration #4, type ALL: wirelen solved = 10549, spread = 19715, legal = 19408; time = 0.02s
+Info:     at iteration #5, type ALL: wirelen solved = 10500, spread = 18303, legal = 18512; time = 0.02s
+Info:     at iteration #6, type ALL: wirelen solved = 10692, spread = 18879, legal = 18978; time = 0.02s
+Info:     at iteration #7, type ALL: wirelen solved = 10756, spread = 17965, legal = 17956; time = 0.02s
+Info:     at iteration #8, type ALL: wirelen solved = 10811, spread = 17878, legal = 17941; time = 0.02s
+Info:     at iteration #9, type ALL: wirelen solved = 10980, spread = 17888, legal = 17833; time = 0.02s
+Info:     at iteration #10, type ALL: wirelen solved = 11042, spread = 18066, legal = 18295; time = 0.02s
+Info:     at iteration #11, type ALL: wirelen solved = 11070, spread = 18020, legal = 18069; time = 0.02s
+Info:     at iteration #12, type ALL: wirelen solved = 11309, spread = 17845, legal = 18097; time = 0.02s
+Info:     at iteration #13, type ALL: wirelen solved = 11428, spread = 18145, legal = 18408; time = 0.02s
+Info:     at iteration #14, type ALL: wirelen solved = 11633, spread = 17701, legal = 17891; time = 0.02s
+Info: HeAP Placer Time: 0.44s
+Info:   of which solving equations: 0.18s
+Info:   of which spreading cells: 0.08s
+Info:   of which strict legalisation: 0.02s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 930, wirelen = 17833
+Info:   at iteration #5: temp = 0.000000, timing cost = 762, wirelen = 16013
+Info:   at iteration #10: temp = 0.000000, timing cost = 714, wirelen = 15768
+Info:   at iteration #12: temp = 0.000000, timing cost = 705, wirelen = 15757 
+Info: SA placement time 0.14s
+
+Info: Max frequency for clock '$iopadmap$clk': 20.46 MHz (FAIL at 50.00 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [-28873, -26474) |*************** 
+Info: [-26474, -24075) | 
+Info: [-24075, -21676) | 
+Info: [-21676, -19277) | 
+Info: [-19277, -16878) | 
+Info: [-16878, -14479) | 
+Info: [-14479, -12080) | 
+Info: [-12080,  -9681) | 
+Info: [ -9681,  -7282) | 
+Info: [ -7282,  -4883) | 
+Info: [ -4883,  -2484) | 
+Info: [ -2484,    -85) | 
+Info: [   -85,   2314) |* 
+Info: [  2314,   4713) | 
+Info: [  4713,   7112) | 
+Info: [  7112,   9511) | 
+Info: [  9511,  11910) | 
+Info: [ 11910,  14309) | 
+Info: [ 14309,  16708) |************* 
+Info: [ 16708,  19107) |* 
+Info: Checksum: 0x6f381b79
+Info: Running post-placement legalisation...
+Info: post-place repair: relocated 134 stranded cluster(s)/cell(s) to valid bels
+Info: Routing global clocks...
+Info:     routing clock '$auto$clkbufmap.cc:262:execute$5520'
+Info:     routing clock '$iopadmap$clk'
+Info: Running router2...
+Info: Setting up routing resources...
+Info: Running main router loop...
+Info:     iter=1 wires=13261 overused=182 overuse=182 archfail=NA
+Info:     iter=2 wires=13425 overused=0 overuse=0 archfail=0
+Info: 1000 slowest nets by runtime:
+                                                                     $iopadmap$result[8]      1 83.2ms
+                                                                     $iopadmap$result[5]      1 72.0ms
+                                                                    $iopadmap$result[12]      1 57.8ms
+                        $techmap5268$abc$4432$auto$blifparse.cc:557:parse_blif$4805.A[2]     40 57.7ms
+                                                                    $iopadmap$result[15]      1 56.1ms
+                                                                    $iopadmap$result[14]      1 50.6ms
+                                                                     $iopadmap$result[7]      1 48.8ms
+                                                                    $iopadmap$result[11]      1 43.0ms
+                                                                    $iopadmap$result[13]      1 42.5ms
+                                                                     $iopadmap$result[0]      1 39.6ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4722.A[6]     24 38.5ms
+                                                                    $iopadmap$sample[14]      1 30.7ms
+                                                datapath.datapath.accumulate.distance[3]      7 25.8ms
+                                                                     $iopadmap$out_valid      1 25.0ms
+                        $techmap4951$abc$4432$auto$blifparse.cc:557:parse_blif$4438.A[0]     10 21.6ms
+                                                datapath.datapath.accumulate.distance[1]     13 21.6ms
+                                                                       $iopadmap$acc[10]      1 21.1ms
+                                                                     $iopadmap$result[4]      1 20.9ms
+                                                                     $iopadmap$result[1]      1 20.5ms
+                                                                       $iopadmap$acc[11]      1 19.6ms
+                                                                     $iopadmap$result[9]      1 18.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4681.A[7]     11 18.4ms
+                                                                    $iopadmap$result[10]      1 18.1ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4454.A[4]     13 17.9ms
+                        $techmap5106$abc$4432$auto$blifparse.cc:557:parse_blif$4595.A[2]      4 17.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4526.A[7]     17 17.0ms
+                                                                     $iopadmap$result[3]      1 16.9ms
+                        $techmap5213$abc$4432$auto$blifparse.cc:557:parse_blif$4748.A[1]     19 16.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[1]      5 15.7ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4454.A[1]     15 15.6ms
+                                       $abc$4432$auto$opt_dff.cc:360:combine_resets$1470     13 15.3ms
+                                                datapath.datapath.accumulate.distance[2]     10 15.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.Y[0]      1 14.9ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4454.A[2]     13 14.4ms
+                                                                     $iopadmap$result[2]      1 14.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4681.A[5]     16 14.1ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4681.A[4]     16 13.6ms
+                        $techmap4981$abc$4432$auto$blifparse.cc:557:parse_blif$4481.A[2]     11 13.6ms
+                                                datapath.datapath.accumulate.distance[0]     13 13.0ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4486.A[6]     15 12.7ms
+                        $techmap5216$abc$4432$auto$blifparse.cc:557:parse_blif$4735.A[5]     18 12.6ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4722.A[5]     11 12.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4486.A[3]      8 12.0ms
+                        $techmap5148$abc$4432$auto$blifparse.cc:557:parse_blif$4669.A[2]      2 10.5ms
+                                                               $PACKER_GND_NET$legal$603      1 10.4ms
+                                                                        $iopadmap$acc[8]      1 9.9ms
+                        $techmap5085$abc$4432$auto$blifparse.cc:557:parse_blif$4605.A[5]      1 9.7ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4454.A[3]     13 9.6ms
+                        $techmap5108$abc$4432$auto$blifparse.cc:557:parse_blif$4623.A[0]      5 9.6ms
+                                                                     $iopadmap$result[6]      1 9.5ms
+                                                                             acc_reg[13]      9 9.3ms
+                                                                       $iopadmap$acc[12]      1 9.0ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4447.A[6]      5 8.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4491.A[3]      5 8.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4681.A[3]     16 8.1ms
+                                                                             acc_reg[11]     10 8.1ms
+                                                datapath.datapath.accumulate.renormalize     16 8.0ms
+                        $techmap4983$abc$4432$auto$blifparse.cc:557:parse_blif$4479.A[2]     11 7.9ms
+                                                                              acc_reg[4]      5 7.8ms
+                                                                             acc_reg[15]      4 7.6ms
+                        $techmap5100$abc$4432$auto$blifparse.cc:557:parse_blif$4618.A[5]      2 7.5ms
+                        $techmap5070$abc$4432$auto$blifparse.cc:557:parse_blif$4576.A[1]      3 7.4ms
+                                                                              acc_reg[3]      7 7.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4681.A[2]     16 7.2ms
+                        $techmap5216$abc$4432$auto$blifparse.cc:557:parse_blif$4735.A[2]     12 7.2ms
+                                                                    $iopadmap$sample[15]      1 7.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.Y[5]      1 7.2ms
+                                                                          sample_reg[11]      4 7.1ms
+                                                                    $iopadmap$sample[10]      1 7.1ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4646.A[6]     17 7.0ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4454.A[6]     12 6.9ms
+                        $techmap4952$abc$4432$auto$blifparse.cc:557:parse_blif$4433.A[2]     23 6.8ms
+                                                                              acc_reg[2]      5 6.8ms
+                        $techmap4972$abc$4432$auto$blifparse.cc:557:parse_blif$4467.A[2]      4 6.8ms
+                                                                        $iopadmap$acc[7]      1 6.6ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4659.A[3]     17 6.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.X[6]     11 6.5ms
+                                                                             acc_reg[10]     10 6.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.Y[1]      1 6.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.A[0]      5 6.1ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4526.A[5]     14 6.1ms
+                                                                             acc_reg[12]     10 5.6ms
+                        $techmap5047$abc$4432$auto$blifparse.cc:557:parse_blif$4559.A[5]     13 5.4ms
+                        $techmap5066$abc$4432$auto$blifparse.cc:557:parse_blif$4579.A[2]      4 5.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4526.A[4]     15 5.4ms
+                                                 datapath.datapath.accumulate.hi_ext[10]      3 5.3ms
+                                                                     $iopadmap$sample[8]      1 5.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4659.A[7]     14 5.2ms
+                        $techmap5075$abc$4432$auto$blifparse.cc:557:parse_blif$4586.A[2]      3 5.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4473.A[0]      4 5.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4526.A[3]     13 5.1ms
+                        $techmap5032$abc$4432$auto$blifparse.cc:557:parse_blif$4547.A[1]      4 5.0ms
+                        $techmap4965$abc$4432$auto$blifparse.cc:557:parse_blif$4459.A[2]      5 5.0ms
+                                                                           weight_reg[0]     14 5.0ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4722.A[2]      4 4.9ms
+                                                  datapath.datapath.accumulate.hi_ext[7]      3 4.9ms
+                        $techmap5106$abc$4432$auto$blifparse.cc:557:parse_blif$4595.A[0]      5 4.9ms
+                                                  datapath.datapath.accumulate.hi_off[2]      3 4.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4486.A[4]      3 4.7ms
+                        $techmap5012$abc$4432$auto$blifparse.cc:557:parse_blif$4519.A[1]      4 4.7ms
+                        $techmap5113$abc$4432$auto$blifparse.cc:557:parse_blif$4593.A[0]      7 4.7ms
+                        $techmap5122$abc$4432$auto$blifparse.cc:557:parse_blif$4634.A[2]     12 4.6ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4659.A[4]     17 4.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4526.A[1]     13 4.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4653.A[7]      5 4.4ms
+                                                                    $iopadmap$sample[12]      1 4.3ms
+                        $techmap5206$abc$4432$auto$blifparse.cc:557:parse_blif$4740.A[2]      2 4.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.Y[6]      1 4.2ms
+                                                                              acc_reg[9]     10 4.2ms
+                                      $auto$alumacc.cc:512:replace_alu$1851.genblk1.O[7]      2 4.2ms
+                                                                              acc_reg[1]      7 4.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4497.A[0]      4 4.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.Y[8]      3 4.2ms
+                        $techmap5017$abc$4432$auto$blifparse.cc:557:parse_blif$4516.A[2]     11 4.1ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4661.A[1]      7 4.1ms
+                        $techmap4968$abc$4432$auto$blifparse.cc:557:parse_blif$4462.A[4]      6 4.1ms
+                                                                              acc_reg[6]      5 4.1ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4681.A[1]     18 4.0ms
+                        $techmap5069$abc$4432$auto$blifparse.cc:557:parse_blif$4581.A[1]      3 4.0ms
+                                                                        $iopadmap$acc[2]      1 3.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.A[0]     10 3.9ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4736.A[5]      5 3.8ms
+                        $techmap5177$abc$4432$auto$blifparse.cc:557:parse_blif$4706.A[1]      3 3.8ms
+                        $techmap4986$abc$4432$auto$blifparse.cc:557:parse_blif$4485.A[2]     14 3.7ms
+                        $techmap5227$abc$4432$auto$blifparse.cc:557:parse_blif$4759.A[3]      1 3.7ms
+                                                  datapath.datapath.accumulate.hi_ext[8]      3 3.6ms
+                        $techmap4954$abc$4432$auto$blifparse.cc:557:parse_blif$4440.A[1]      5 3.6ms
+                        $techmap4962$abc$4432$auto$blifparse.cc:557:parse_blif$4457.A[1]      4 3.6ms
+                        $techmap4983$abc$4432$auto$blifparse.cc:557:parse_blif$4479.A[1]      4 3.6ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4689.A[0]      6 3.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4526.A[2]     13 3.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4646.A[3]      4 3.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1842.Y[2]      2 3.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1833.X[0]      2 3.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4492.A[0]      4 3.5ms
+                        $techmap4991$abc$4432$auto$blifparse.cc:557:parse_blif$4451.A[2]     16 3.4ms
+                        $techmap5047$abc$4432$auto$blifparse.cc:557:parse_blif$4559.A[2]      3 3.4ms
+                        $techmap4958$abc$4432$auto$blifparse.cc:557:parse_blif$4444.A[1]      5 3.4ms
+                        $techmap4990$abc$4432$auto$blifparse.cc:557:parse_blif$4490.A[4]      5 3.4ms
+                        $techmap5246$abc$4432$auto$blifparse.cc:557:parse_blif$4779.A[3]      1 3.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.A[0]      4 3.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4471.A[0]      4 3.3ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4722.A[3]     10 3.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.Y[0]      3 3.3ms
+                        $techmap5161$abc$4432$auto$blifparse.cc:557:parse_blif$4678.A[2]      6 3.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.X[1]     11 3.2ms
+                        $techmap5063$abc$4432$auto$blifparse.cc:557:parse_blif$4557.A[3]      6 3.2ms
+                                                                     $iopadmap$weight[1]      1 3.2ms
+                                                                          sample_reg[14]      4 3.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.A[5]      1 3.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1842.Y[3]      2 3.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4659.A[2]     17 3.1ms
+                                                                     $iopadmap$sample[6]      1 3.1ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.Y[3]      1 3.1ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.Y[3]      3 3.1ms
+                        $techmap4983$abc$4432$auto$blifparse.cc:557:parse_blif$4479.A[0]      4 3.1ms
+                                                                             acc_reg[14]     11 3.1ms
+                                                  datapath.datapath.accumulate.hi_ext[3]      3 3.0ms
+            $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:50$1214.CO[2]     11 3.0ms
+                                                                        $iopadmap$acc[9]      1 3.0ms
+                                                    datapath.datapath.accumulate.kept[5]      3 3.0ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4659.A[1]      7 3.0ms
+                        $techmap5061$abc$4432$auto$blifparse.cc:557:parse_blif$4573.A[1]      5 3.0ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4447.A[3]      7 3.0ms
+                        $techmap5087$abc$4432$auto$blifparse.cc:557:parse_blif$4604.A[4]      1 2.9ms
+                           $techmap5351$abc$4432$auto$blifparse.cc:557:parse_blif$4888.A      4 2.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.A[0]      5 2.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.Y[8]      2 2.9ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[6]      6 2.8ms
+                        $techmap5122$abc$4432$auto$blifparse.cc:557:parse_blif$4634.A[0]      5 2.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.Y[1]      2 2.8ms
+                                                                          sample_reg[13]      4 2.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4722.A[4]     10 2.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.Y[2]      2 2.8ms
+                        $techmap5087$abc$4432$auto$blifparse.cc:557:parse_blif$4604.A[1]      2 2.8ms
+                                                                        $iopadmap$acc[0]      1 2.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4447.A[2]      7 2.8ms
+                        $techmap5051$abc$4432$auto$blifparse.cc:557:parse_blif$4562.A[0]      7 2.7ms
+                                                                      $iopadmap$in_valid      1 2.7ms
+                        $techmap5036$abc$4432$auto$blifparse.cc:557:parse_blif$4448.A[2]      2 2.7ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4724.A[2]      3 2.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.A[0]      7 2.6ms
+                                      $auto$alumacc.cc:512:replace_alu$1851.genblk1.O[5]      2 2.6ms
+                        $techmap4965$abc$4432$auto$blifparse.cc:557:parse_blif$4459.A[3]      5 2.6ms
+                        $techmap5052$abc$4432$auto$blifparse.cc:557:parse_blif$4558.A[0]      2 2.6ms
+                                                                           weight_reg[1]     12 2.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.X[3]      7 2.6ms
+                           $techmap5298$abc$4432$auto$blifparse.cc:557:parse_blif$4835.A      3 2.5ms
+                                                                        $iopadmap$acc[4]      1 2.5ms
+                           $techmap5327$abc$4432$auto$blifparse.cc:557:parse_blif$4864.A      3 2.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.Y[0]      3 2.5ms
+                        $techmap4960$abc$4432$auto$blifparse.cc:557:parse_blif$4455.A[1]      6 2.4ms
+                        $techmap4991$abc$4432$auto$blifparse.cc:557:parse_blif$4451.A[1]      3 2.4ms
+                                      $auto$alumacc.cc:512:replace_alu$1851.genblk1.O[1]      2 2.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[3]      5 2.4ms
+                        $techmap4968$abc$4432$auto$blifparse.cc:557:parse_blif$4462.A[2]      6 2.4ms
+                        $techmap4991$abc$4432$auto$blifparse.cc:557:parse_blif$4451.A[4]     11 2.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4727.A[2]      4 2.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.Y[8]      1 2.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.Y[2]      1 2.4ms
+                                      $auto$alumacc.cc:512:replace_alu$1851.genblk1.O[0]      2 2.3ms
+                        $techmap5153$abc$4432$auto$blifparse.cc:557:parse_blif$4667.A[2]      6 2.3ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4659.A[0]      7 2.3ms
+                                                    datapath.datapath.accumulate.kept[1]      2 2.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.Y[4]      1 2.3ms
+                        $techmap5101$abc$4432$auto$blifparse.cc:557:parse_blif$4615.A[1]      3 2.3ms
+                        $techmap5054$abc$4432$auto$blifparse.cc:557:parse_blif$4568.A[0]      5 2.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4736.A[1]      4 2.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1827.Y[3]      1 2.2ms
+                                                                        $iopadmap$acc[5]      1 2.2ms
+                                                                              acc_reg[5]      7 2.2ms
+                                      $auto$alumacc.cc:512:replace_alu$1851.genblk1.O[6]      2 2.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.Y[8]      2 2.2ms
+                        $techmap5015$abc$4432$auto$blifparse.cc:557:parse_blif$4522.A[1]      4 2.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.Y[1]      1 2.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4736.A[2]      4 2.2ms
+                        $techmap5092$abc$4432$auto$blifparse.cc:557:parse_blif$4610.A[1]      2 2.2ms
+                                                datapath.datapath.accumulate.distance[4]      6 2.1ms
+                        $techmap4970$abc$4432$auto$blifparse.cc:557:parse_blif$4465.A[4]      6 2.1ms
+                                                                     $iopadmap$sample[7]      1 2.1ms
+                                                datapath.datapath.accumulate.exponent[2]      4 2.1ms
+                        $techmap5019$abc$4432$auto$blifparse.cc:557:parse_blif$4449.A[0]      4 2.1ms
+                        $techmap5174$abc$4432$auto$blifparse.cc:557:parse_blif$4698.A[1]      2 2.1ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4738.A[1]      7 2.1ms
+                        $techmap4956$abc$4432$auto$blifparse.cc:557:parse_blif$4442.A[1]      7 2.1ms
+                                                                              acc_reg[8]      7 2.1ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.Y[0]      2 2.0ms
+                        $techmap4952$abc$4432$auto$blifparse.cc:557:parse_blif$4433.A[1]      7 2.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.Y[1]      2 2.0ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4664.A[0]      5 2.0ms
+                                                                     $iopadmap$sample[4]      1 2.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.Y[4]      1 2.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.A[0]      4 2.0ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4738.A[2]      3 2.0ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4736.A[0]      4 1.9ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4729.A[2]      4 1.9ms
+                                                 datapath.datapath.accumulate.rounded[6]      2 1.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.Y[7]      2 1.9ms
+                           $techmap5316$abc$4432$auto$blifparse.cc:557:parse_blif$4853.A      5 1.9ms
+                        $techmap5113$abc$4432$auto$blifparse.cc:557:parse_blif$4593.A[2]      5 1.9ms
+                                                                              acc_reg[7]      5 1.9ms
+                                                  datapath.datapath.accumulate.hi_off[5]      3 1.9ms
+                                                                    $iopadmap$sample[11]      1 1.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.Y[2]      3 1.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4454.A[0]      4 1.8ms
+                                                                       $iopadmap$acc[14]      1 1.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.X[5]      2 1.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.Y[0]      2 1.8ms
+                        $techmap5180$abc$4432$auto$blifparse.cc:557:parse_blif$4703.A[1]      2 1.8ms
+                        $techmap5106$abc$4432$auto$blifparse.cc:557:parse_blif$4595.A[1]      4 1.8ms
+                                                  datapath.datapath.accumulate.hi_ext[5]      3 1.8ms
+                        $techmap5049$abc$4432$auto$blifparse.cc:557:parse_blif$4563.A[0]      5 1.8ms
+                        $techmap4990$abc$4432$auto$blifparse.cc:557:parse_blif$4490.A[5]      4 1.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.X[4]      3 1.8ms
+                                                  datapath.datapath.accumulate.hi_off[1]      3 1.8ms
+                                                datapath.datapath.accumulate.exponent[7]      3 1.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4529.A[0]      7 1.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1842.Y[6]      1 1.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4447.A[1]      7 1.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[5]      5 1.7ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4469.A[5]      3 1.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.Y[4]      2 1.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.X[4]      2 1.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.Y[4]      3 1.7ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4651.A[3]      4 1.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.Y[0]      1 1.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.Y[5]      1 1.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.X[2]      5 1.7ms
+                                                datapath.datapath.accumulate.exponent[4]      3 1.7ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4736.A[6]      5 1.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.X[8]      2 1.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.Y[2]      1 1.6ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[4]      5 1.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.Y[9]      1 1.6ms
+                                                 datapath.datapath.accumulate.rounded[8]      1 1.6ms
+                                                                        $iopadmap$acc[1]      1 1.6ms
+                                                                            in_valid_reg      1 1.6ms
+                        $techmap5057$abc$4432$auto$blifparse.cc:557:parse_blif$4567.A[0]      2 1.6ms
+                                             $auto$alumacc.cc:512:replace_alu$1839.Y[11]      1 1.6ms
+                        $techmap5019$abc$4432$auto$blifparse.cc:557:parse_blif$4449.A[2]      4 1.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.Y[7]      1 1.6ms
+                                                  datapath.datapath.accumulate.hi_off[4]      3 1.6ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4531.A[0]      7 1.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.Y[1]      2 1.6ms
+                        $techmap4991$abc$4432$auto$blifparse.cc:557:parse_blif$4451.A[3]     16 1.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.Y[3]      2 1.6ms
+                        $techmap5186$abc$4432$auto$blifparse.cc:557:parse_blif$4708.A[1]      2 1.6ms
+                                                                       $iopadmap$acc[13]      1 1.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.Y[7]      2 1.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4695.A[0]      6 1.5ms
+                                                  datapath.datapath.accumulate.hi_ext[6]      3 1.5ms
+                                                                     $iopadmap$sample[1]      1 1.5ms
+                                                  datapath.datapath.accumulate.hi_ext[4]      3 1.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4736.A[4]      4 1.5ms
+                        $techmap5172$abc$4432$auto$blifparse.cc:557:parse_blif$4700.A[1]      3 1.5ms
+                        $techmap5067$abc$4432$auto$blifparse.cc:557:parse_blif$4577.A[2]      2 1.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4736.A[7]      4 1.4ms
+                        $techmap4985$abc$4432$auto$blifparse.cc:557:parse_blif$4452.A[0]      3 1.4ms
+                        $techmap5056$abc$4432$auto$blifparse.cc:557:parse_blif$4570.A[0]      5 1.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.Y[6]      2 1.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.Y[2]      2 1.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.Y[4]      2 1.4ms
+                                                 datapath.datapath.accumulate.rounded[3]      2 1.4ms
+                                             $auto$alumacc.cc:512:replace_alu$1839.Y[12]      1 1.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.Y[6]      3 1.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4728.A[2]      4 1.4ms
+                        $techmap5042$abc$4432$auto$blifparse.cc:557:parse_blif$4554.A[0]      1 1.4ms
+                                                  datapath.datapath.accumulate.hi_off[6]      3 1.4ms
+                        $techmap5144$abc$4432$auto$blifparse.cc:557:parse_blif$4654.A[4]      2 1.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4447.A[4]      3 1.4ms
+                                                                     $iopadmap$sample[9]      1 1.4ms
+                                                  datapath.datapath.accumulate.hi_ext[9]      3 1.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.A[4]      1 1.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1842.Y[7]      2 1.4ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4723.A[2]      4 1.3ms
+                                                    datapath.datapath.accumulate.kept[8]      3 1.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1827.Y[2]      1 1.3ms
+                                                datapath.datapath.accumulate.exponent[6]      3 1.3ms
+                                                                    $iopadmap$sample[13]      1 1.3ms
+                        $techmap5006$abc$4432$auto$blifparse.cc:557:parse_blif$4514.A[1]      1 1.3ms
+                        $techmap5251$abc$4432$auto$blifparse.cc:557:parse_blif$4785.A[2]      1 1.3ms
+                                                datapath.datapath.accumulate.exponent[3]      3 1.3ms
+                                                                         next_result[12]      1 1.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.Y[3]      1 1.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1827.X[0]      1 1.3ms
+                                                                              acc_reg[0]      5 1.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.Y[8]      1 1.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.Y[4]      2 1.3ms
+                                                                          sample_reg[10]      4 1.3ms
+                                             $auto$alumacc.cc:512:replace_alu$1839.Y[10]      1 1.2ms
+                        $techmap5175$abc$4432$auto$blifparse.cc:557:parse_blif$4697.A[0]      2 1.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.Y[6]      2 1.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4447.A[5]      3 1.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.Y[6]      2 1.2ms
+                           $techmap5301$abc$4432$auto$blifparse.cc:557:parse_blif$4838.A      3 1.2ms
+                        $techmap5119$abc$4432$auto$blifparse.cc:557:parse_blif$4591.A[1]      2 1.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.A[7]      4 1.2ms
+                        $techmap5017$abc$4432$auto$blifparse.cc:557:parse_blif$4516.A[0]      4 1.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.Y[8]      2 1.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[2]      5 1.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4726.A[2]      4 1.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.Y[7]      2 1.2ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4664.A[1]      7 1.2ms
+                                                                        $iopadmap$acc[6]      1 1.2ms
+                                                                     $iopadmap$weight[0]      1 1.2ms
+                                                 datapath.datapath.accumulate.rounded[1]      2 1.2ms
+                        $techmap5036$abc$4432$auto$blifparse.cc:557:parse_blif$4448.A[0]      7 1.2ms
+                                                datapath.datapath.accumulate.exponent[8]      3 1.2ms
+                                                                        $iopadmap$acc[3]      1 1.1ms
+                                             datapath.datapath.accumulate.lo_aligned[11]      2 1.1ms
+                        $techmap5089$abc$4432$auto$blifparse.cc:557:parse_blif$4603.A[0]      1 1.1ms
+                        $techmap5220$abc$4432$auto$blifparse.cc:557:parse_blif$4755.A[3]      1 1.1ms
+                        $techmap5036$abc$4432$auto$blifparse.cc:557:parse_blif$4448.A[3]      6 1.1ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.Y[5]      2 1.1ms
+                        $techmap5019$abc$4432$auto$blifparse.cc:557:parse_blif$4449.A[1]      4 1.1ms
+                        $techmap5246$abc$4432$auto$blifparse.cc:557:parse_blif$4779.A[5]      4 1.1ms
+                        $techmap5057$abc$4432$auto$blifparse.cc:557:parse_blif$4567.A[1]      3 1.1ms
+                                              $auto$alumacc.cc:512:replace_alu$1842.Y[4]      2 1.1ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4736.A[3]      3 1.1ms
+                        $techmap5251$abc$4432$auto$blifparse.cc:557:parse_blif$4785.A[3]      1 1.1ms
+                                              $auto$alumacc.cc:512:replace_alu$1851.A[0]      7 1.1ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.Y[4]      1 1.1ms
+                        $techmap5151$abc$4432$auto$blifparse.cc:557:parse_blif$4674.A[1]      3 1.1ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4537.A[7]      1 1.0ms
+                        $techmap5153$abc$4432$auto$blifparse.cc:557:parse_blif$4667.A[0]      2 1.0ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4646.A[4]      4 1.0ms
+                                      $auto$alumacc.cc:512:replace_alu$1851.genblk1.O[4]      2 1.0ms
+                           $techmap5345$abc$4432$auto$blifparse.cc:557:parse_blif$4882.A      3 1.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.Y[2]      2 1.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.A[0]      4 1.0ms
+                        $techmap5063$abc$4432$auto$blifparse.cc:557:parse_blif$4557.A[2]      5 1.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.X[6]      2 1.0ms
+                        $techmap5227$abc$4432$auto$blifparse.cc:557:parse_blif$4759.A[5]      1 1.0ms
+                                                                           sample_reg[9]      3 1.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.X[6]      2 1.0ms
+                                                    datapath.datapath.accumulate.kept[6]      3 1.0ms
+                                                                     $iopadmap$sample[2]      1 1.0ms
+                        $techmap5155$abc$4432$auto$blifparse.cc:557:parse_blif$4641.A[0]      2 1.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.Y[7]      2 1.0ms
+                        $techmap5104$abc$4432$auto$blifparse.cc:557:parse_blif$4621.A[2]      1 1.0ms
+                        $techmap5246$abc$4432$auto$blifparse.cc:557:parse_blif$4779.A[1]      2 1.0ms
+                        $techmap5081$abc$4432$auto$blifparse.cc:557:parse_blif$4600.A[1]      2 1.0ms
+                        $techmap5063$abc$4432$auto$blifparse.cc:557:parse_blif$4557.A[1]      3 1.0ms
+                        $techmap5181$abc$4432$auto$blifparse.cc:557:parse_blif$4639.A[0]      2 1.0ms
+                        $techmap5161$abc$4432$auto$blifparse.cc:557:parse_blif$4678.A[1]      4 1.0ms
+                                                datapath.datapath.accumulate.exponent[1]      4 1.0ms
+                        $techmap5212$abc$4432$auto$blifparse.cc:557:parse_blif$4749.A[5]      2 0.9ms
+                                      $auto$alumacc.cc:512:replace_alu$1851.genblk1.O[2]      1 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.Y[3]      2 0.9ms
+                                                                     $iopadmap$sample[0]      1 0.9ms
+                        $techmap5227$abc$4432$auto$blifparse.cc:557:parse_blif$4759.A[2]      1 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.Y[7]      1 0.9ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4651.A[4]      4 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.Y[6]      2 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.Y[0]      1 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.Y[5]      1 0.9ms
+                        $techmap5147$abc$4432$auto$blifparse.cc:557:parse_blif$4670.A[1]      3 0.9ms
+                        $techmap5000$abc$4432$auto$blifparse.cc:557:parse_blif$4510.A[0]      2 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.X[7]      2 0.9ms
+                        $techmap5119$abc$4432$auto$blifparse.cc:557:parse_blif$4591.A[2]      2 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.Y[2]      2 0.9ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4726.A[0]      1 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.Y[6]      1 0.9ms
+                                                                     $iopadmap$sample[5]      1 0.9ms
+                                             $auto$alumacc.cc:512:replace_alu$1839.BB[1]      2 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.Y[5]      2 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.A[8]      1 0.9ms
+                        $techmap5082$abc$4432$auto$blifparse.cc:557:parse_blif$4599.A[3]      2 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1827.Y[5]      1 0.9ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4693.A[0]      6 0.9ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4681.A[0]      6 0.9ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.X[3]      2 0.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.Y[1]      2 0.8ms
+                        $techmap5081$abc$4432$auto$blifparse.cc:557:parse_blif$4600.A[0]      2 0.8ms
+                                                                          sample_reg[12]      3 0.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1827.Y[4]      1 0.8ms
+           $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:119$1302.CO[2]      1 0.8ms
+                        $techmap5036$abc$4432$auto$blifparse.cc:557:parse_blif$4448.A[1]      7 0.8ms
+                                                 datapath.datapath.accumulate.rounded[5]      2 0.8ms
+                        $techmap5184$abc$4432$auto$blifparse.cc:557:parse_blif$4710.A[1]      2 0.8ms
+                        $techmap5092$abc$4432$auto$blifparse.cc:557:parse_blif$4610.A[0]      2 0.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.A[1]      1 0.8ms
+                           $techmap5326$abc$4432$auto$blifparse.cc:557:parse_blif$4863.A      3 0.8ms
+                        $techmap4990$abc$4432$auto$blifparse.cc:557:parse_blif$4490.A[2]      2 0.8ms
+                                                  datapath.datapath.accumulate.hi_off[0]      3 0.8ms
+                        $techmap5113$abc$4432$auto$blifparse.cc:557:parse_blif$4593.A[1]      3 0.8ms
+                                                 datapath.datapath.accumulate.rounded[4]      2 0.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.Y[7]      1 0.8ms
+                        $techmap5059$abc$4432$auto$blifparse.cc:557:parse_blif$4566.A[1]      2 0.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.Y[1]      2 0.8ms
+                                                  datapath.datapath.accumulate.hi_off[3]      3 0.8ms
+                                                    datapath.datapath.accumulate.kept[4]      3 0.8ms
+                                                    datapath.datapath.accumulate.kept[7]      3 0.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4729.A[0]      1 0.8ms
+                        $techmap5152$abc$4432$auto$blifparse.cc:557:parse_blif$4673.A[1]      2 0.8ms
+                                             $auto$alumacc.cc:512:replace_alu$1839.X[10]      2 0.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4540.A[6]      3 0.8ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4683.A[0]      6 0.8ms
+                           $techmap5321$abc$4432$auto$blifparse.cc:557:parse_blif$4858.A      4 0.8ms
+                        $techmap5059$abc$4432$auto$blifparse.cc:557:parse_blif$4566.A[0]      3 0.8ms
+                        $techmap5035$abc$4432$auto$blifparse.cc:557:parse_blif$4544.A[4]      2 0.8ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[9]      1 0.8ms
+                        $techmap5067$abc$4432$auto$blifparse.cc:557:parse_blif$4577.A[0]      2 0.8ms
+                                                datapath.datapath.accumulate.exponent[5]      3 0.8ms
+                                                    datapath.datapath.accumulate.kept[3]      2 0.8ms
+                        $techmap5171$abc$4432$auto$blifparse.cc:557:parse_blif$4701.A[1]      2 0.8ms
+                        $techmap5150$abc$4432$auto$blifparse.cc:557:parse_blif$4675.A[1]      2 0.8ms
+                        $techmap5227$abc$4432$auto$blifparse.cc:557:parse_blif$4759.A[0]      1 0.8ms
+                        $techmap5185$abc$4432$auto$blifparse.cc:557:parse_blif$4709.A[1]      2 0.8ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.Y[9]      1 0.7ms
+        $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.genblk1.S[2]      1 0.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.Y[7]      2 0.7ms
+                        $techmap5115$abc$4432$auto$blifparse.cc:557:parse_blif$4592.A[0]      2 0.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1827.Y[8]      1 0.7ms
+                        $techmap4985$abc$4432$auto$blifparse.cc:557:parse_blif$4452.A[1]      1 0.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.Y[3]      2 0.7ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4526.A[0]      7 0.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.Y[1]      1 0.7ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4686.A[0]      6 0.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.Y[8]      1 0.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1839.X[4]      2 0.7ms
+                        $techmap5142$abc$4432$auto$blifparse.cc:557:parse_blif$4656.A[1]      2 0.7ms
+                                                                       $iopadmap$acc[15]      1 0.7ms
+                                             $auto$alumacc.cc:512:replace_alu$1839.BB[2]      2 0.7ms
+                        $techmap5063$abc$4432$auto$blifparse.cc:557:parse_blif$4557.A[0]      2 0.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.Y[5]      2 0.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.Y[6]      1 0.7ms
+                        $techmap4990$abc$4432$auto$blifparse.cc:557:parse_blif$4490.A[3]      2 0.7ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4738.A[3]      3 0.7ms
+                        $techmap5027$abc$4432$auto$blifparse.cc:557:parse_blif$4538.A[4]      2 0.7ms
+                        $techmap5179$abc$4432$auto$blifparse.cc:557:parse_blif$4704.A[1]      2 0.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.Y[5]      2 0.7ms
+                        $techmap5051$abc$4432$auto$blifparse.cc:557:parse_blif$4562.A[2]      3 0.7ms
+        $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:119$1302.genblk1.S[0]      3 0.7ms
+                        $techmap5262$abc$4432$auto$blifparse.cc:557:parse_blif$4798.A[0]      1 0.7ms
+                                                    datapath.datapath.accumulate.kept[2]      2 0.7ms
+                                              $auto$alumacc.cc:512:replace_alu$1842.Y[1]      1 0.7ms
+                           $techmap5299$abc$4432$auto$blifparse.cc:557:parse_blif$4836.A      3 0.6ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4727.A[0]      1 0.6ms
+                           $techmap5328$abc$4432$auto$blifparse.cc:557:parse_blif$4865.A      3 0.6ms
+                        $techmap5070$abc$4432$auto$blifparse.cc:557:parse_blif$4576.A[0]      1 0.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.Y[6]      2 0.6ms
+                                        datapath.datapath.accumulate.hi_ext[9]$legal$239      1 0.6ms
+                                                               $PACKER_GND_NET$legal$607      1 0.6ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4723.A[0]      1 0.6ms
+                                                               $PACKER_GND_NET$legal$415      1 0.6ms
+                                                               $PACKER_GND_NET$legal$307      1 0.6ms
+                        $techmap5101$abc$4432$auto$blifparse.cc:557:parse_blif$4615.A[0]      2 0.6ms
+                                        datapath.datapath.accumulate.hi_off[0]$legal$205      1 0.6ms
+                                                               $PACKER_GND_NET$legal$347      1 0.6ms
+                        $techmap5013$abc$4432$auto$blifparse.cc:557:parse_blif$4518.A[0]      2 0.6ms
+                        $techmap5101$abc$4432$auto$blifparse.cc:557:parse_blif$4615.A[2]      1 0.6ms
+                           $techmap5300$abc$4432$auto$blifparse.cc:557:parse_blif$4837.A      3 0.6ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[6]      1 0.6ms
+                        $techmap5224$abc$4432$auto$blifparse.cc:557:parse_blif$4761.A[4]      1 0.6ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4728.A[0]      1 0.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.Y[5]      1 0.6ms
+                        $techmap5272$abc$4432$auto$blifparse.cc:557:parse_blif$4807.A[3]      1 0.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.Y[7]      2 0.6ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.X[5]      3 0.6ms
+                        $techmap5019$abc$4432$auto$blifparse.cc:557:parse_blif$4449.A[3]      2 0.6ms
+                                             $auto$alumacc.cc:512:replace_alu$1839.BB[0]      2 0.6ms
+                                                 datapath.datapath.accumulate.rounded[2]      2 0.6ms
+                        $techmap5093$abc$4432$auto$blifparse.cc:557:parse_blif$4598.A[0]      3 0.6ms
+                        $techmap5143$abc$4432$auto$blifparse.cc:557:parse_blif$4655.A[1]      2 0.6ms
+                                                               $PACKER_GND_NET$legal$259      1 0.6ms
+                                                               $PACKER_GND_NET$legal$567      1 0.5ms
+                        $techmap5155$abc$4432$auto$blifparse.cc:557:parse_blif$4641.A[1]      1 0.5ms
+                                                               $PACKER_VCC_NET$legal$173      1 0.5ms
+                                                               $PACKER_GND_NET$legal$471      1 0.5ms
+             $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:50$1214.G[2]      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.A[5]      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.Y[4]      2 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.A[7]      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.Y[3]      2 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.Y[3]      1 0.5ms
+                                                 datapath.datapath.accumulate.rounded[7]      2 0.5ms
+                                                               $PACKER_GND_NET$legal$267      1 0.5ms
+                                                               $PACKER_GND_NET$legal$535      1 0.5ms
+                        $techmap5093$abc$4432$auto$blifparse.cc:557:parse_blif$4598.A[1]      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1827.Y[0]      1 0.5ms
+                                        datapath.datapath.accumulate.hi_ext[9]$legal$291      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.Y[2]      1 0.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4724.A[0]      1 0.5ms
+            $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.CO[2]      1 0.5ms
+                                                                           sample_reg[3]      1 0.5ms
+                                                                          sample_reg[15]      1 0.5ms
+                                        datapath.datapath.accumulate.hi_ext[7]$legal$285      1 0.5ms
+                        $techmap5215$abc$4432$auto$blifparse.cc:557:parse_blif$4751.A[5]      2 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.A[5]      1 0.5ms
+        $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:50$1214.genblk1.S[2]      2 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1842.Y[0]      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.A[1]      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.Y[0]      2 0.5ms
+                                                                $PACKER_GND_NET$legal$89      1 0.5ms
+                        $techmap5148$abc$4432$auto$blifparse.cc:557:parse_blif$4669.A[1]      3 0.5ms
+                        $techmap5118$abc$4432$auto$blifparse.cc:557:parse_blif$4630.A[2]      2 0.5ms
+                                                                     $iopadmap$sample[3]      1 0.5ms
+                        $techmap5033$abc$4432$auto$blifparse.cc:557:parse_blif$4546.A[1]      2 0.5ms
+                        $techmap5241$abc$4432$auto$blifparse.cc:557:parse_blif$4777.A[3]      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.A[1]      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.Y[2]      2 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.A[1]      1 0.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4722.A[0]      1 0.5ms
+                        $techmap5153$abc$4432$auto$blifparse.cc:557:parse_blif$4667.A[1]      2 0.5ms
+                        $techmap4949$abc$4432$auto$blifparse.cc:557:parse_blif$4434.A[0]      1 0.5ms
+                        $techmap5239$abc$4432$auto$blifparse.cc:557:parse_blif$4775.A[3]      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.A[8]      1 0.5ms
+             $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.G[1]      1 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.A[4]      1 0.5ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4532.A[5]      4 0.5ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.Y[8]      1 0.4ms
+                        $techmap5229$abc$4432$auto$blifparse.cc:557:parse_blif$4765.A[3]      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.A[2]      1 0.4ms
+                        $techmap5246$abc$4432$auto$blifparse.cc:557:parse_blif$4779.A[0]      1 0.4ms
+                        $techmap4990$abc$4432$auto$blifparse.cc:557:parse_blif$4490.A[1]      2 0.4ms
+                        $techmap5237$abc$4432$auto$blifparse.cc:557:parse_blif$4773.A[3]      1 0.4ms
+                                                               $PACKER_GND_NET$legal$627      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1827.Y[7]      1 0.4ms
+                                    $auto$alumacc.cc:512:replace_alu$1863.A[0]$legal$547      1 0.4ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[3]      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1827.Y[6]      1 0.4ms
+                                    $auto$alumacc.cc:512:replace_alu$1854.A[0]$legal$451      1 0.4ms
+                        $techmap5272$abc$4432$auto$blifparse.cc:557:parse_blif$4807.A[0]      1 0.4ms
+                                        datapath.datapath.accumulate.hi_ext[6]$legal$283      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.Y[5]      2 0.4ms
+                                                               $PACKER_GND_NET$legal$109      1 0.4ms
+                        $techmap5052$abc$4432$auto$blifparse.cc:557:parse_blif$4558.A[1]      2 0.4ms
+                                                               $PACKER_GND_NET$legal$153      1 0.4ms
+                        $techmap5222$abc$4432$auto$blifparse.cc:557:parse_blif$4757.A[3]      1 0.4ms
+             $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:50$1214.G[1]      1 0.4ms
+                                                               $PACKER_GND_NET$legal$145      1 0.4ms
+                        $techmap5109$abc$4432$auto$blifparse.cc:557:parse_blif$4594.A[0]      2 0.4ms
+                        $techmap5183$abc$4432$auto$blifparse.cc:557:parse_blif$4711.A[1]      2 0.4ms
+                                       datapath.datapath.accumulate.hi_ext[10]$legal$241      1 0.4ms
+                                        datapath.datapath.accumulate.hi_ext[8]$legal$289      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.Y[1]      1 0.4ms
+                                                               $PACKER_GND_NET$legal$543      1 0.4ms
+                                                               $PACKER_GND_NET$legal$407      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.Y[0]      2 0.4ms
+                                        datapath.datapath.accumulate.hi_ext[4]$legal$275      1 0.4ms
+                        $techmap5017$abc$4432$auto$blifparse.cc:557:parse_blif$4516.A[1]      2 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.A[6]      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.A[7]      1 0.4ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[13]      1 0.4ms
+                                                               $PACKER_GND_NET$legal$193      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.A[3]      1 0.4ms
+                                    $auto$alumacc.cc:512:replace_alu$1866.A[0]$legal$579      1 0.4ms
+                                                               $PACKER_GND_NET$legal$539      1 0.4ms
+                                                               $PACKER_GND_NET$legal$185      1 0.4ms
+                                                               $PACKER_GND_NET$legal$575      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.A[8]      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.Y[4]      2 0.4ms
+                                                               $PACKER_VCC_NET$legal$299      1 0.4ms
+                        $techmap5089$abc$4432$auto$blifparse.cc:557:parse_blif$4603.A[4]      1 0.4ms
+                                                               $PACKER_GND_NET$legal$177      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.A[5]      1 0.4ms
+             $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.G[2]      1 0.4ms
+                                                               $PACKER_GND_NET$legal$571      1 0.4ms
+                                      $auto$alumacc.cc:512:replace_alu$1851.genblk1.O[3]      1 0.4ms
+                                    $auto$alumacc.cc:512:replace_alu$1860.A[0]$legal$515      1 0.4ms
+                        $techmap5146$abc$4432$auto$blifparse.cc:557:parse_blif$4671.A[1]      2 0.4ms
+                                        datapath.datapath.accumulate.hi_ext[3]$legal$271      1 0.4ms
+                                                               $PACKER_GND_NET$legal$475      1 0.4ms
+                                                               $PACKER_GND_NET$legal$137      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.A[5]      1 0.4ms
+                                    $auto$alumacc.cc:512:replace_alu$1848.A[0]$legal$387      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.A[6]      1 0.4ms
+                        $techmap5178$abc$4432$auto$blifparse.cc:557:parse_blif$4705.A[1]      2 0.4ms
+                                        datapath.datapath.accumulate.hi_off[0]$legal$319      1 0.4ms
+                        $techmap5204$abc$4432$auto$blifparse.cc:557:parse_blif$4742.A[1]      1 0.4ms
+                                        datapath.datapath.accumulate.hi_ext[8]$legal$235      1 0.4ms
+                                        datapath.datapath.accumulate.hi_off[2]$legal$209      1 0.4ms
+                        $techmap5095$abc$4432$auto$blifparse.cc:557:parse_blif$4597.A[1]      1 0.4ms
+        $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.genblk1.S[1]      1 0.4ms
+                                                               $PACKER_VCC_NET$legal$243      1 0.4ms
+                                                               $PACKER_GND_NET$legal$101      1 0.4ms
+                                                               $PACKER_GND_NET$legal$599      1 0.4ms
+                                        datapath.datapath.accumulate.hi_ext[7]$legal$233      1 0.4ms
+                        $techmap5034$abc$4432$auto$blifparse.cc:557:parse_blif$4545.A[1]      2 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1842.Y[5]      3 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.Y[3]      1 0.4ms
+                                        datapath.datapath.accumulate.hi_off[5]$legal$339      1 0.4ms
+                                          datapath.datapath.accumulate.round_up$legal$77      1 0.4ms
+                                                               $PACKER_GND_NET$legal$189      1 0.4ms
+                                                                $PACKER_GND_NET$legal$85      1 0.4ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.A[1]      1 0.4ms
+                                                               $PACKER_GND_NET$legal$201      1 0.4ms
+                        $techmap5181$abc$4432$auto$blifparse.cc:557:parse_blif$4639.A[1]      2 0.3ms
+                                        datapath.datapath.accumulate.hi_off[2]$legal$327      1 0.3ms
+                                        datapath.datapath.accumulate.hi_ext[5]$legal$279      1 0.3ms
+             $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:50$1214.G[0]      1 0.3ms
+        $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.G[2]$legal$615      1 0.3ms
+                                                               $PACKER_GND_NET$legal$641      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.Y[8]      2 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.A[4]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.A[3]      1 0.3ms
+                                                               $PACKER_GND_NET$legal$315      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1851.A[7]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.A[1]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.A[2]      1 0.3ms
+                        $techmap5218$abc$4432$auto$blifparse.cc:557:parse_blif$4753.A[3]      1 0.3ms
+                                                               $PACKER_GND_NET$legal$263      1 0.3ms
+                        $techmap5085$abc$4432$auto$blifparse.cc:557:parse_blif$4605.A[3]      1 0.3ms
+                                                               $PACKER_GND_NET$legal$221      1 0.3ms
+                                                               $PACKER_GND_NET$legal$113      1 0.3ms
+                        $techmap5115$abc$4432$auto$blifparse.cc:557:parse_blif$4592.A[1]      1 0.3ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[10]      1 0.3ms
+                           $techmap5307$abc$4432$auto$blifparse.cc:557:parse_blif$4844.A      2 0.3ms
+                                                datapath.datapath.accumulate.distance[5]      1 0.3ms
+        $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:50$1214.genblk1.S[1]      2 0.3ms
+                                                               $PACKER_GND_NET$legal$247      1 0.3ms
+                                                   datapath.datapath.accumulate.round_up      2 0.3ms
+                        $techmap5093$abc$4432$auto$blifparse.cc:557:parse_blif$4598.A[2]      1 0.3ms
+                                                               $PACKER_GND_NET$legal$511      1 0.3ms
+                                                               $PACKER_GND_NET$legal$121      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.A[3]      1 0.3ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4540.A[2]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.A[6]      1 0.3ms
+                        $techmap5251$abc$4432$auto$blifparse.cc:557:parse_blif$4785.A[0]      1 0.3ms
+                        $techmap5016$abc$4432$auto$blifparse.cc:557:parse_blif$4521.A[1]      2 0.3ms
+                                                               $PACKER_GND_NET$legal$133      1 0.3ms
+                                                               $PACKER_GND_NET$legal$251      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1827.Y[1]      1 0.3ms
+                        $techmap5095$abc$4432$auto$blifparse.cc:557:parse_blif$4597.A[0]      1 0.3ms
+                        $techmap4994$abc$4432$auto$blifparse.cc:557:parse_blif$4504.A[2]      1 0.3ms
+                                        datapath.datapath.accumulate.hi_ext[5]$legal$227      1 0.3ms
+                                                                $PACKER_GND_NET$legal$81      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.A[8]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.A[6]      1 0.3ms
+                                                                           sample_reg[1]      1 0.3ms
+                                        datapath.datapath.accumulate.hi_off[1]$legal$323      1 0.3ms
+                        $techmap5235$abc$4432$auto$blifparse.cc:557:parse_blif$4771.A[3]      1 0.3ms
+                                                               $PACKER_GND_NET$legal$161      1 0.3ms
+            $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:119$1302.G[1]      1 0.3ms
+                        $techmap5173$abc$4432$auto$blifparse.cc:557:parse_blif$4699.A[2]      2 0.3ms
+                                                                           sample_reg[6]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.A[3]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.A[7]      1 0.3ms
+                                                               $PACKER_GND_NET$legal$105      1 0.3ms
+                                                               $PACKER_GND_NET$legal$479      1 0.3ms
+                                        datapath.datapath.accumulate.hi_off[1]$legal$207      1 0.3ms
+                                                               $PACKER_GND_NET$legal$129      1 0.3ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[1]      1 0.3ms
+                                      $auto$alumacc.cc:512:replace_alu$1851.genblk1.O[8]      2 0.3ms
+                                                    datapath.datapath.accumulate.norm[0]      1 0.3ms
+                                    $abc$4432$auto$blifparse.cc:557:parse_blif$4534.A[7]      1 0.3ms
+                                                               $PACKER_GND_NET$legal$447      1 0.3ms
+                                                datapath.datapath.accumulate.distance[6]      1 0.3ms
+                                                                          next_result[0]      1 0.3ms
+                                                                           sample_reg[5]      1 0.3ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[8]      1 0.3ms
+                                                               $PACKER_GND_NET$legal$255      1 0.3ms
+        $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:50$1214.G[2]$legal$637      1 0.3ms
+                                                               $PACKER_GND_NET$legal$117      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.A[8]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.A[1]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.A[4]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.A[8]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.A[3]      1 0.3ms
+                        $techmap5233$abc$4432$auto$blifparse.cc:557:parse_blif$4769.A[3]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1851.A[2]      1 0.3ms
+             $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.G[0]      1 0.3ms
+        $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:50$1214.G[1]$legal$633      1 0.3ms
+        $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:119$1302.genblk1.S[1]      2 0.3ms
+                                                 datapath.datapath.accumulate.rounded[0]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.A[7]      1 0.3ms
+                                              $auto$alumacc.cc:512:replace_alu$1851.A[8]      1 0.3ms
+                                                               $PACKER_GND_NET$legal$311      1 0.2ms
+                                                               $PACKER_GND_NET$legal$379      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1851.A[6]      1 0.2ms
+                                                               $PACKER_GND_NET$legal$507      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1854.A[2]      1 0.2ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[11]      1 0.2ms
+                                                                $PACKER_GND_NET$legal$93      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.A[6]      1 0.2ms
+                        $techmap5205$abc$4432$auto$blifparse.cc:557:parse_blif$4741.A[1]      1 0.2ms
+            $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:119$1302.G[2]      1 0.2ms
+                                        datapath.datapath.accumulate.hi_off[4]$legal$335      1 0.2ms
+                                        datapath.datapath.accumulate.hi_off[3]$legal$331      1 0.2ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[15]      1 0.2ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[7]      1 0.2ms
+                                                               $PACKER_GND_NET$legal$303      1 0.2ms
+                                                               $PACKER_GND_NET$legal$165      1 0.2ms
+                                        datapath.datapath.accumulate.hi_off[3]$legal$211      1 0.2ms
+                                                               $PACKER_GND_NET$legal$169      1 0.2ms
+                                        datapath.datapath.accumulate.hi_off[5]$legal$215      1 0.2ms
+                                                               $PACKER_GND_NET$legal$157      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.A[2]      1 0.2ms
+                                                                           sample_reg[2]      1 0.2ms
+                        $techmap5109$abc$4432$auto$blifparse.cc:557:parse_blif$4594.A[1]      2 0.2ms
+                                                                         next_result[14]      1 0.2ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[5]      1 0.2ms
+                                                               $PACKER_VCC_NET$legal$125      1 0.2ms
+                                    $auto$alumacc.cc:512:replace_alu$1857.A[0]$legal$483      1 0.2ms
+                        $techmap5231$abc$4432$auto$blifparse.cc:557:parse_blif$4767.A[3]      1 0.2ms
+                        $techmap5267$abc$4432$auto$blifparse.cc:557:parse_blif$4803.A[0]      1 0.2ms
+        $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.G[1]$legal$611      1 0.2ms
+                                                                           sample_reg[4]      1 0.2ms
+                                                                           sample_reg[8]      2 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.A[4]      1 0.2ms
+                                        datapath.datapath.accumulate.hi_off[6]$legal$343      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.A[7]      1 0.2ms
+                                                                           sample_reg[0]      1 0.2ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[2]      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1866.A[3]      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1851.A[5]      1 0.2ms
+                                        datapath.datapath.accumulate.hi_off[4]$legal$213      1 0.2ms
+                           $techmap5308$abc$4432$auto$blifparse.cc:557:parse_blif$4845.A      2 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1857.A[5]      1 0.2ms
+                                                               $PACKER_GND_NET$legal$141      1 0.2ms
+                                                               $PACKER_GND_NET$legal$619      1 0.2ms
+                                                                $PACKER_GND_NET$legal$97      1 0.2ms
+                                                               $PACKER_GND_NET$legal$149      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1851.A[1]      1 0.2ms
+                                                               $PACKER_GND_NET$legal$443      1 0.2ms
+                                                               $PACKER_GND_NET$legal$383      1 0.2ms
+                                                               $PACKER_GND_NET$legal$503      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.A[6]      1 0.2ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.A[0]$legal$351      1 0.2ms
+                                                                           sample_reg[7]      1 0.2ms
+                                                               $PACKER_GND_NET$legal$375      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1851.A[3]      1 0.2ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.A[7]$legal$367      1 0.2ms
+        $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[4]      1 0.2ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.A[7]$legal$371      1 0.2ms
+                                                               $PACKER_GND_NET$legal$439      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1851.A[4]      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.A[3]      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.A[4]      1 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.A[2]      1 0.2ms
+                                                                           $iopadmap$clk     52 0.2ms
+                                              $auto$alumacc.cc:512:replace_alu$1845.A[5]      1 0.1ms
+                                             $auto$alumacc.cc:512:replace_alu$1833.CO[3]      1 0.1ms
+                                                     $auto$clkbufmap.cc:262:execute$5520      1 0.0ms
+                                                               $PACKER_GND_NET$legal$411      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1851.CO[7]      1 0.0ms
+                                            $auto$alumacc.cc:512:replace_alu$1839.CO[11]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1860.CO[7]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1842.CO[3]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1839.CO[7]      1 0.0ms
+                                        datapath.datapath.accumulate.hi_ext[6]$legal$229      1 0.0ms
+                                                               $PACKER_GND_NET$legal$197      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1863.CO[7]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1860.CO[3]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1848.CO[3]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1830.CO[3]      1 0.0ms
+                                                               $PACKER_GND_NET$legal$181      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1854.CO[7]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1827.CO[3]      1 0.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.A[7]      1 0.0ms
+                                                               $PACKER_GND_NET$legal$605      1 0.0ms
+                                       datapath.datapath.accumulate.hi_ext[10]$legal$295      1 0.0ms
+                                        datapath.datapath.accumulate.hi_ext[4]$legal$225      1 0.0ms
+                                        datapath.datapath.accumulate.hi_off[6]$legal$217      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1866.CO[7]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1866.CO[3]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1857.CO[7]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1857.CO[3]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1851.CO[3]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1848.CO[7]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1839.CO[3]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1836.CO[7]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1836.CO[3]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1824.CO[7]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1824.CO[3]      1 0.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.A[2]      1 0.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1863.A[6]      1 0.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1860.A[2]      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1851.A[0]$legal$419      1 0.0ms
+                                        datapath.datapath.accumulate.hi_ext[3]$legal$223      1 0.0ms
+                                           datapath.datapath.accumulate.kept[5]$legal$95      1 0.0ms
+                                                                               result[5]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1863.CO[3]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1854.CO[3]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1845.CO[7]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1845.CO[3]      1 0.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1848.A[4]      1 0.0ms
+                                                               $PACKER_GND_NET$legal$639      1 0.0ms
+        $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:119$1302.genblk1.S[0]$legal$621      1 0.0ms
+                 $techmap5351$abc$4432$auto$blifparse.cc:557:parse_blif$4888.A$legal$595      1 0.0ms
+                                                               $PACKER_GND_NET$legal$573      1 0.0ms
+                                                               $PACKER_GND_NET$legal$569      1 0.0ms
+                                                               $PACKER_GND_NET$legal$565      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4681.A[1]$legal$553      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4659.A[1]$legal$529      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4664.A[1]$legal$527      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4661.A[1]$legal$525      1 0.0ms
+                 $techmap5328$abc$4432$auto$blifparse.cc:557:parse_blif$4865.A$legal$517      1 0.0ms
+                                                               $PACKER_GND_NET$legal$509      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4447.A[1]$legal$499      1 0.0ms
+                 $techmap5298$abc$4432$auto$blifparse.cc:557:parse_blif$4835.A$legal$399      1 0.0ms
+              $techmap4990$abc$4432$auto$blifparse.cc:557:parse_blif$4490.A[4]$legal$393      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.X[5]$legal$361      1 0.0ms
+                                   $auto$alumacc.cc:512:replace_alu$1839.X[10]$legal$293      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1839.X[4]$legal$273      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1839.X[3]$legal$269      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1836.X[6]$legal$237      1 0.0ms
+                                                               $PACKER_GND_NET$legal$199      1 0.0ms
+                                        datapath.datapath.accumulate.hi_off[6]$legal$195      1 0.0ms
+                                        datapath.datapath.accumulate.hi_off[5]$legal$191      1 0.0ms
+                                        datapath.datapath.accumulate.hi_off[1]$legal$175      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4454.A[0]$legal$171      1 0.0ms
+                                                               $PACKER_GND_NET$legal$167      1 0.0ms
+                                                               $PACKER_GND_NET$legal$159      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1827.X[0]$legal$123      1 0.0ms
+                                                               $PACKER_GND_NET$legal$119      1 0.0ms
+                                                               $PACKER_GND_NET$legal$115      1 0.0ms
+                                                               $PACKER_GND_NET$legal$111      1 0.0ms
+                                          datapath.datapath.accumulate.kept[7]$legal$103      1 0.0ms
+                                           datapath.datapath.accumulate.kept[2]$legal$83      1 0.0ms
+                                                                $PACKER_GND_NET$legal$75      1 0.0ms
+                                                                $PACKER_GND_NET$legal$65      1 0.0ms
+                                                                $PACKER_GND_NET$legal$57      1 0.0ms
+                                                                $PACKER_GND_NET$legal$41      1 0.0ms
+                                                                $PACKER_GND_NET$legal$33      1 0.0ms
+                                                                $PACKER_GND_NET$legal$25      1 0.0ms
+                                                                $PACKER_GND_NET$legal$21      1 0.0ms
+                                                                $PACKER_GND_NET$legal$19      1 0.0ms
+                                                                 $PACKER_VCC_NET$legal$7      1 0.0ms
+                                                                 $PACKER_GND_NET$legal$5      1 0.0ms
+                                                                               result[8]      1 0.0ms
+                                                                               result[4]      1 0.0ms
+                                                                              result[14]      1 0.0ms
+                                                                               result[1]      1 0.0ms
+                                                                               result[0]      1 0.0ms
+                                             $auto$alumacc.cc:512:replace_alu$1827.CO[7]      1 0.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.X[3]      1 0.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.X[5]      1 0.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.X[7]      1 0.0ms
+                                              $auto$alumacc.cc:512:replace_alu$1836.X[8]      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4729.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4729.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4728.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4695.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4695.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4695.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4695.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4693.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4691.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4689.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4689.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4689.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4688.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4686.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4686.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4683.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4681.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4664.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4659.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4651.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4532.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4531.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4531.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4529.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4529.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4501.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4500.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4499.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4491.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4435.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $abc$4432$auto$blifparse.cc:557:parse_blif$4435.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1      1 0.0ms
+        $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:50$1214.genblk1.S[2]$legal$635      1 0.0ms
+        $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:50$1214.genblk1.S[1]$legal$631      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1833.X[0]$legal$629      1 0.0ms
+                                                               $PACKER_GND_NET$legal$625      1 0.0ms
+        $flatten\datapath.\datapath.\accumulate.$gt$rtl/tnf_add_full.v:119$1302.genblk1.S[1]$legal$623      1 0.0ms
+                                                               $PACKER_GND_NET$legal$617      1 0.0ms
+        $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.genblk1.S[2]$legal$613      1 0.0ms
+        $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.genblk1.S[1]$legal$609      1 0.0ms
+                                                               $PACKER_GND_NET$legal$601      1 0.0ms
+                                                               $PACKER_GND_NET$legal$597      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4722.A[2]$legal$593      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4723.A[2]$legal$591      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4724.A[2]$legal$589      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4726.A[2]$legal$587      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4727.A[2]$legal$585      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4728.A[2]$legal$583      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4729.A[2]$legal$581      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1866.A[0]$legal$577      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4695.A[0]$legal$563      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4686.A[0]$legal$561      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4693.A[0]$legal$559      1 0.0ms
+              $techmap5161$abc$4432$auto$blifparse.cc:557:parse_blif$4678.A[1]$legal$557      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4683.A[0]$legal$555      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4681.A[0]$legal$551      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4689.A[0]$legal$549      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1863.A[0]$legal$545      1 0.0ms
+                                                               $PACKER_GND_NET$legal$541      1 0.0ms
+                                                               $PACKER_GND_NET$legal$537      1 0.0ms
+                                                               $PACKER_GND_NET$legal$533      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4664.A[0]$legal$531      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4659.A[0]$legal$523      1 0.0ms
+                 $techmap5327$abc$4432$auto$blifparse.cc:557:parse_blif$4864.A$legal$521      1 0.0ms
+                 $techmap5326$abc$4432$auto$blifparse.cc:557:parse_blif$4863.A$legal$519      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1860.A[0]$legal$513      1 0.0ms
+                                                               $PACKER_GND_NET$legal$505      1 0.0ms
+                                                               $PACKER_GND_NET$legal$501      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4646.A[3]$legal$497      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4646.A[4]$legal$495      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4447.A[2]$legal$493      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4651.A[3]$legal$491      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4651.A[4]$legal$489      1 0.0ms
+                 $techmap5321$abc$4432$auto$blifparse.cc:557:parse_blif$4858.A$legal$487      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4447.A[3]$legal$485      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1857.A[0]$legal$481      1 0.0ms
+                                                               $PACKER_GND_NET$legal$477      1 0.0ms
+                                                               $PACKER_GND_NET$legal$473      1 0.0ms
+                                                               $PACKER_GND_NET$legal$469      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[3]$legal$467      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[5]$legal$465      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[1]$legal$463      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[6]$legal$461      1 0.0ms
+              $techmap5122$abc$4432$auto$blifparse.cc:557:parse_blif$4634.A[0]$legal$459      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[2]$legal$457      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[4]$legal$455      1 0.0ms
+                 $techmap5316$abc$4432$auto$blifparse.cc:557:parse_blif$4853.A$legal$453      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1854.A[0]$legal$449      1 0.0ms
+                                                               $PACKER_GND_NET$legal$445      1 0.0ms
+                                                               $PACKER_GND_NET$legal$441      1 0.0ms
+                                                               $PACKER_GND_NET$legal$437      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4526.A[4]$legal$435      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4540.A[6]$legal$433      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4532.A[5]$legal$431      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4531.A[0]$legal$429      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4529.A[0]$legal$427      1 0.0ms
+                 $techmap5308$abc$4432$auto$blifparse.cc:557:parse_blif$4845.A$legal$425      1 0.0ms
+                 $techmap5307$abc$4432$auto$blifparse.cc:557:parse_blif$4844.A$legal$423      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4526.A[0]$legal$421      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1851.A[0]$legal$417      1 0.0ms
+                                                               $PACKER_GND_NET$legal$413      1 0.0ms
+                                                               $PACKER_GND_NET$legal$409      1 0.0ms
+                                                               $PACKER_GND_NET$legal$405      1 0.0ms
+                 $techmap5345$abc$4432$auto$blifparse.cc:557:parse_blif$4882.A$legal$403      1 0.0ms
+                 $techmap5299$abc$4432$auto$blifparse.cc:557:parse_blif$4836.A$legal$401      1 0.0ms
+                 $techmap5301$abc$4432$auto$blifparse.cc:557:parse_blif$4838.A$legal$397      1 0.0ms
+                 $techmap5300$abc$4432$auto$blifparse.cc:557:parse_blif$4837.A$legal$395      1 0.0ms
+              $techmap4990$abc$4432$auto$blifparse.cc:557:parse_blif$4490.A[5]$legal$391      1 0.0ms
+              $techmap4991$abc$4432$auto$blifparse.cc:557:parse_blif$4451.A[1]$legal$389      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1848.A[0]$legal$385      1 0.0ms
+                                                               $PACKER_GND_NET$legal$381      1 0.0ms
+                                                               $PACKER_GND_NET$legal$377      1 0.0ms
+                                                               $PACKER_GND_NET$legal$373      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.X[7]$legal$369      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.X[7]$legal$365      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.X[6]$legal$363      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.X[4]$legal$359      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.X[3]$legal$357      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.X[2]$legal$355      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.X[1]$legal$353      1 0.0ms
+                                    $auto$alumacc.cc:512:replace_alu$1845.A[0]$legal$349      1 0.0ms
+                                                               $PACKER_VCC_NET$legal$345      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4473.A[0]$legal$341      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4454.A[1]$legal$337      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4497.A[0]$legal$333      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4492.A[0]$legal$329      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4471.A[0]$legal$325      1 0.0ms
+                          $abc$4432$auto$blifparse.cc:557:parse_blif$4469.A[5]$legal$321      1 0.0ms
+Info: Router2 time 5.73s
+Info: Routing $PACKER_VCC_NET connections...
+Info:     $PACKER_VCC_NET: 204/204 sinks bridged (0 left to main router; max BFS 33)
+Info: Routing $PACKER_GND_NET connections...
+Info:     $PACKER_GND_NET: 139/139 sinks bridged (0 left to main router; max BFS 8947)
+Info: Running post-routing legalisation...
+
+Info: Critical path report for clock '$iopadmap$clk' (posedge -> posedge):
+Info: curr total
+Info:  0.1  0.1  Source $auto$ff.cc:337:slice$2421.Q
+Info:  0.7  0.8    Net weight_reg[0] budget 0.000000 ns (14,123) -> (13,121)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4439.A4
+Info:  0.1  0.9  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4439.O6
+Info:  0.6  1.5    Net $techmap4951$abc$4432$auto$blifparse.cc:557:parse_blif$4438.A[0] budget 0.000000 ns (13,121) -> (13,122)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4441.A1
+Info:  0.1  1.6  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4441.O6
+Info:  0.6  2.2    Net $techmap4954$abc$4432$auto$blifparse.cc:557:parse_blif$4440.A[1] budget 0.000000 ns (13,122) -> (10,122)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4636.A1
+Info:  0.1  2.3  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4636.O6
+Info:  0.3  2.6    Net $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.genblk1.S[1] budget 0.000000 ns (10,122) -> (10,122)
+Info:                Sink $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.genblk1.S[1]$LUT$610.A2
+Info:  0.1  2.7  Source $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.genblk1.S[1]$LUT$610.O6
+Info:  0.0  2.7    Net $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.genblk1.S[1]$legal$609 budget -2.355000 ns (10,122) -> (10,122)
+Info:                Sink $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.genblk1.slice[0].genblk1.carry4.S1
+Info:  0.5  3.3  Source $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.genblk1.slice[0].genblk1.carry4.CO2
+Info:  0.6  3.9    Net $flatten\datapath.\datapath.\accumulate.$ge$rtl/tnf_add_full.v:51$1216.CO[2] budget 0.000000 ns (10,122) -> (14,123)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4436.A5
+Info:  0.1  4.0  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4436.O6
+Info:  0.8  4.7    Net $techmap4949$abc$4432$auto$blifparse.cc:557:parse_blif$4434.A[0] budget 0.000000 ns (14,123) -> (13,120)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4434.A2
+Info:  0.1  4.9  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4434.O6
+Info:  0.6  5.4    Net $techmap4952$abc$4432$auto$blifparse.cc:557:parse_blif$4433.A[2] budget 0.000000 ns (13,120) -> (14,119)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4563.A2
+Info:  0.1  5.6  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4563.O6
+Info:  0.9  6.4    Net $techmap5051$abc$4432$auto$blifparse.cc:557:parse_blif$4562.A[2] budget 0.000000 ns (14,119) -> (13,115)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4601.A2
+Info:  0.1  6.6  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4601.O6
+Info:  1.0  7.5    Net $techmap5081$abc$4432$auto$blifparse.cc:557:parse_blif$4600.A[1] budget 0.000000 ns (13,115) -> (17,119)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4600.A4
+Info:  0.1  7.7  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4600.O6
+Info:  1.2  8.8    Net $techmap5082$abc$4432$auto$blifparse.cc:557:parse_blif$4599.A[3] budget 0.000000 ns (17,119) -> (13,113)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4599.A5
+Info:  0.1  9.0  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4599.O6
+Info:  0.7  9.7    Net $techmap5093$abc$4432$auto$blifparse.cc:557:parse_blif$4598.A[1] budget 0.000000 ns (13,113) -> (10,109)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4598.A2
+Info:  0.1  9.8  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4598.O6
+Info:  1.0 10.8    Net $techmap5095$abc$4432$auto$blifparse.cc:557:parse_blif$4597.A[1] budget 0.000000 ns (10,109) -> (10,116)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4597.A4
+Info:  0.1 11.0  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4597.O6
+Info:  0.2 11.1    Net $auto$alumacc.cc:512:replace_alu$1839.BB[0] budget 0.000000 ns (10,116) -> (10,116)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1839.BB[0]$LUT$258.A2
+Info:  0.1 11.2  Source $auto$alumacc.cc:512:replace_alu$1839.BB[0]$LUT$258.O6
+Info:  0.0 11.2    Net $auto$alumacc.cc:512:replace_alu$1839.BB[0]$legal$257 budget -1.519000 ns (10,116) -> (10,116)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1839.genblk1.slice[0].genblk1.carry4.S0
+Info:  0.5 11.7  Source $auto$alumacc.cc:512:replace_alu$1839.genblk1.slice[0].genblk1.carry4.CO3
+Info:  0.1 11.8    Net $auto$alumacc.cc:512:replace_alu$1839.CO[3] budget -0.967000 ns (10,116) -> (10,115)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1839.genblk1.slice[1].genblk1.carry4.CIN
+Info:  0.1 12.0  Source $auto$alumacc.cc:512:replace_alu$1839.genblk1.slice[1].genblk1.carry4.CO3
+Info:  0.1 12.1    Net $auto$alumacc.cc:512:replace_alu$1839.CO[7] budget -0.906000 ns (10,115) -> (10,114)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1839.genblk1.slice[2].genblk1.carry4.CIN
+Info:  0.3 12.4  Source $auto$alumacc.cc:512:replace_alu$1839.genblk1.slice[2].genblk1.carry4.O3
+Info:  0.9 13.3    Net $auto$alumacc.cc:512:replace_alu$1839.Y[11] budget 0.000000 ns (10,114) -> (14,119)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4467.A2
+Info:  0.1 13.4  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4467.O6
+Info:  0.9 14.2    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4454.A[6] budget 0.000000 ns (14,119) -> (23,124)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4496.A6
+Info:  0.1 14.4  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4496.O6
+Info:  1.2 15.6    Net $auto$alumacc.cc:512:replace_alu$1845.A[7] budget 0.000000 ns (23,124) -> (24,113)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4881.A4
+Info:  0.1 15.7  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4881.O6
+Info:  0.7 16.4    Net $auto$alumacc.cc:512:replace_alu$1845.X[7] budget 0.000000 ns (24,113) -> (23,115)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1845.X[7]$LUT$366.A5
+Info:  0.1 16.5  Source $auto$alumacc.cc:512:replace_alu$1845.X[7]$LUT$366.O6
+Info:  0.0 16.5    Net $auto$alumacc.cc:512:replace_alu$1845.X[7]$legal$365 budget -0.818000 ns (23,115) -> (23,115)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1845.genblk1.slice[1].genblk1.carry4.S3
+Info:  0.4 16.8  Source $auto$alumacc.cc:512:replace_alu$1845.genblk1.slice[1].genblk1.carry4.CO3
+Info:  0.1 16.9    Net $auto$alumacc.cc:512:replace_alu$1845.CO[7] budget -0.391000 ns (23,115) -> (23,114)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1845.genblk1.slice[2].genblk1.carry4.CIN
+Info:  0.2 17.2  Source $auto$alumacc.cc:512:replace_alu$1845.genblk1.slice[2].genblk1.carry4.O0
+Info:  0.9 18.0    Net $auto$alumacc.cc:512:replace_alu$1845.Y[8] budget -0.121000 ns (23,114) -> (17,115)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4499.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux7.S0
+Info:  0.3 18.3  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4499.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux7.OUT
+Info:  0.0 18.3    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4499.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 budget -0.931000 ns (17,115) -> (17,115)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4499.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux8.1
+Info:  0.1 18.4  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4499.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux8.OUT
+Info:  1.1 19.5    Net $techmap4990$abc$4432$auto$blifparse.cc:557:parse_blif$4490.A[2] budget 0.000000 ns (17,115) -> (24,111)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4510.A4
+Info:  0.1 19.6  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4510.O6
+Info:  0.8 20.4    Net $techmap5345$abc$4432$auto$blifparse.cc:557:parse_blif$4882.A budget 0.000000 ns (24,111) -> (17,111)
+Info:                Sink $techmap5345$abc$4432$auto$blifparse.cc:557:parse_blif$4882.A$LUT$404.A5
+Info:  0.1 20.5  Source $techmap5345$abc$4432$auto$blifparse.cc:557:parse_blif$4882.A$LUT$404.O6
+Info:  0.0 20.5    Net $techmap5345$abc$4432$auto$blifparse.cc:557:parse_blif$4882.A$legal$403 budget -0.840000 ns (17,111) -> (17,111)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1848.genblk1.slice[2].genblk1.carry4.S0
+Info:  0.2 20.8  Source $auto$alumacc.cc:512:replace_alu$1848.genblk1.slice[2].genblk1.carry4.O0
+Info:  0.9 21.7    Net $auto$alumacc.cc:512:replace_alu$1848.Y[8] budget 0.000000 ns (17,111) -> (23,113)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4509.A3
+Info:  0.1 21.8  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4509.O6
+Info:  0.9 22.6    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4526.A[4] budget 0.000000 ns (23,113) -> (24,117)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.A1
+Info:  0.1 22.8  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.O6
+Info:  0.0 22.8    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 budget -0.751000 ns (24,117) -> (24,117)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux7.1
+Info:  0.2 23.0  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux7.OUT
+Info:  0.0 23.0    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 budget -0.601000 ns (24,117) -> (24,117)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux8.0
+Info:  0.1 23.1  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4537.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux8.OUT
+Info:  1.4 24.5    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[4] budget 0.000000 ns (24,117) -> (17,109)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[4]$LUT$456.A5
+Info:  0.1 24.6  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[4]$LUT$456.O6
+Info:  0.0 24.6    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4530.A[4]$legal$455 budget -0.559000 ns (17,109) -> (17,109)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1854.genblk1.slice[0].genblk1.carry4.S2
+Info:  0.4 24.9  Source $auto$alumacc.cc:512:replace_alu$1854.genblk1.slice[0].genblk1.carry4.CO3
+Info:  0.1 25.0    Net $auto$alumacc.cc:512:replace_alu$1854.CO[3] budget -0.151000 ns (17,109) -> (17,108)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1854.genblk1.slice[1].genblk1.carry4.CIN
+Info:  0.3 25.4  Source $auto$alumacc.cc:512:replace_alu$1854.genblk1.slice[1].genblk1.carry4.O3
+Info:  0.9 26.3    Net $auto$alumacc.cc:512:replace_alu$1854.Y[7] budget 0.000000 ns (17,108) -> (24,110)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4554.A3
+Info:  0.1 26.4  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4554.O6
+Info:  0.7 27.2    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4447.A[5] budget 0.000000 ns (24,110) -> (17,111)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4447.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.A6
+Info:  0.1 27.3  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4447.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.O6
+Info:  0.0 27.3    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4447.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 budget -0.658000 ns (17,111) -> (17,111)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4447.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux7.1
+Info:  0.2 27.5  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4447.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux7.OUT
+Info:  0.9 28.3    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4646.A[6] budget 0.000000 ns (17,111) -> (14,108)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4732.A2
+Info:  0.1 28.5  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4732.O6
+Info:  0.6 29.1    Net $techmap5326$abc$4432$auto$blifparse.cc:557:parse_blif$4863.A budget 0.000000 ns (14,108) -> (14,115)
+Info:                Sink $techmap5326$abc$4432$auto$blifparse.cc:557:parse_blif$4863.A$LUT$520.A1
+Info:  0.1 29.2  Source $techmap5326$abc$4432$auto$blifparse.cc:557:parse_blif$4863.A$LUT$520.O6
+Info:  0.0 29.2    Net $techmap5326$abc$4432$auto$blifparse.cc:557:parse_blif$4863.A$legal$519 budget -0.460000 ns (14,115) -> (14,115)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1860.genblk1.slice[0].genblk1.carry4.S2
+Info:  0.4 29.6  Source $auto$alumacc.cc:512:replace_alu$1860.genblk1.slice[0].genblk1.carry4.CO3
+Info:  0.1 29.7    Net $auto$alumacc.cc:512:replace_alu$1860.CO[3] budget -0.044000 ns (14,115) -> (14,114)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1860.genblk1.slice[1].genblk1.carry4.CIN
+Info:  0.3 30.0  Source $auto$alumacc.cc:512:replace_alu$1860.genblk1.slice[1].genblk1.carry4.O1
+Info:  0.9 30.9    Net $auto$alumacc.cc:512:replace_alu$1860.Y[5] budget 0.000000 ns (14,114) -> (17,111)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4679.A4
+Info:  0.1 31.0  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4679.O6
+Info:  0.8 31.8    Net $techmap5161$abc$4432$auto$blifparse.cc:557:parse_blif$4678.A[1] budget 0.000000 ns (17,111) -> (17,115)
+Info:                Sink $techmap5161$abc$4432$auto$blifparse.cc:557:parse_blif$4678.A[1]$LUT$558.A2
+Info:  0.1 32.0  Source $techmap5161$abc$4432$auto$blifparse.cc:557:parse_blif$4678.A[1]$LUT$558.O6
+Info:  0.0 32.0    Net $techmap5161$abc$4432$auto$blifparse.cc:557:parse_blif$4678.A[1]$legal$557 budget -0.410000 ns (17,115) -> (17,115)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1863.genblk1.slice[1].genblk1.carry4.S1
+Info:  0.6 32.6  Source $auto$alumacc.cc:512:replace_alu$1863.genblk1.slice[1].genblk1.carry4.O3
+Info:  0.9 33.5    Net $auto$alumacc.cc:512:replace_alu$1863.Y[7] budget 0.109000 ns (17,115) -> (10,112)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4686.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux7.S0
+Info:  0.3 33.8  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4686.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux7.OUT
+Info:  0.0 33.8    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4686.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 budget -0.388000 ns (10,112) -> (10,112)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4686.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux8.0
+Info:  0.1 33.9  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4686.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux8.OUT
+Info:  1.1 35.0    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4722.A[2] budget 0.000000 ns (10,112) -> (14,117)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4685.A1
+Info:  0.1 35.1  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4685.O6
+Info:  0.6 35.7    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4722.A[4] budget 0.000000 ns (14,117) -> (10,120)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4640.A1
+Info:  0.1 35.8  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4640.O6
+Info:  0.9 36.7    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4738.A[1] budget 0.000000 ns (10,120) -> (23,120)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4708.A4
+Info:  0.1 36.8  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4708.O6
+Info:  1.2 38.0    Net datapath.datapath.accumulate.kept[6] budget 0.000000 ns (23,120) -> (10,118)
+Info:                Sink datapath.datapath.accumulate.kept[6]$LUT$100.A5
+Info:  0.1 38.1  Source datapath.datapath.accumulate.kept[6]$LUT$100.O6
+Info:  0.0 38.1    Net datapath.datapath.accumulate.kept[6]$legal$99 budget -0.358000 ns (10,118) -> (10,118)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1824.genblk1.slice[1].genblk1.carry4.S2
+Info:  0.4 38.5  Source $auto$alumacc.cc:512:replace_alu$1824.genblk1.slice[1].genblk1.carry4.CO3
+Info:  0.1 38.6    Net $auto$alumacc.cc:512:replace_alu$1824.CO[7] budget 0.040000 ns (10,118) -> (10,117)
+Info:                Sink $auto$alumacc.cc:512:replace_alu$1824.genblk1.slice[2].genblk1.carry4.CIN
+Info:  0.3 39.0  Source $auto$alumacc.cc:512:replace_alu$1824.genblk1.slice[2].genblk1.carry4.O1
+Info:  1.1 40.1    Net datapath.datapath.accumulate.renormalize budget 0.000000 ns (10,117) -> (10,106)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4747.A1
+Info:  0.1 40.2  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4747.O6
+Info:  1.1 41.4    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4736.A[3] budget 0.000000 ns (10,106) -> (10,117)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.A1
+Info:  0.1 41.5  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.O6
+Info:  0.0 41.5    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 budget -0.318000 ns (10,117) -> (10,117)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux7.0
+Info:  0.2 41.7  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux7.OUT
+Info:  0.0 41.7    Net $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 budget -0.468000 ns (10,117) -> (10,117)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux8.1
+Info:  0.1 41.8  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4736.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.mux8.OUT
+Info:  1.2 43.0    Net $techmap5216$abc$4432$auto$blifparse.cc:557:parse_blif$4735.A[2] budget 0.000000 ns (10,117) -> (13,109)
+Info:                Sink $abc$4432$auto$blifparse.cc:557:parse_blif$4753.A4
+Info:  0.1 43.1  Source $abc$4432$auto$blifparse.cc:557:parse_blif$4753.O6
+Info:  0.0 43.1    Net $abc$4432$flatten\datapath.\datapath.\accumulate.$ternary$rtl/tnf_add_full.v:139$1313_Y[11] budget -0.468000 ns (13,109) -> (13,109)
+Info:                Sink $auto$ff.cc:337:slice$2470.D
+Info:  0.1 43.2  Setup $auto$ff.cc:337:slice$2470.D
+Info: 11.1 ns logic, 32.1 ns routing
+
+Info: Max frequency for clock '$iopadmap$clk': 23.14 MHz (FAIL at 50.00 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [-23208, -21087) |*************** 
+Info: [-21087, -18966) | 
+Info: [-18966, -16845) | 
+Info: [-16845, -14724) | 
+Info: [-14724, -12603) | 
+Info: [-12603, -10482) | 
+Info: [-10482,  -8361) | 
+Info: [ -8361,  -6240) | 
+Info: [ -6240,  -4119) | 
+Info: [ -4119,  -1998) | 
+Info: [ -1998,    123) | 
+Info: [   123,   2244) |* 
+Info: [  2244,   4365) | 
+Info: [  4365,   6486) | 
+Info: [  6486,   8607) | 
+Info: [  8607,  10728) | 
+Info: [ 10728,  12849) | 
+Info: [ 12849,  14970) | 
+Info: [ 14970,  17091) |************* 
+Info: [ 17091,  19212) |* 

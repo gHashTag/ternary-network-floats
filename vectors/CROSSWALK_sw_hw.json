@@ -1,0 +1,602 @@
+{
+  "schema": "t27-conformance-crosswalk/v0.1",
+  "generated_from": "INDEX_all_formats.json (SW) x trinity-fpga #199 (HW, 2026-07-02..03 snapshot)",
+  "axes_note": "encoding != compute != FPGA. SW-pack, decode-HW, compute-HW are INDEPENDENT. A format may be SW-packable yet HW-structural.",
+  "hw_ceiling": "71/83 on XC7A200T (decode-HW 41 + compute-HW 30); takum32/64 unroutable",
+  "totals": {
+    "sw_bitexact": 69,
+    "sw_selfconsistent": 6,
+    "sw_structural": 8,
+    "decode_hw_tier_e_in_ssot": 38,
+    "compute_hw_tier_e_in_ssot": 10,
+    "tier_e_union_in_ssot": 46,
+    "hw_ids_outside_ssot83": [
+      "bitnet",
+      "e8m0",
+      "mxint8"
+    ]
+  },
+  "rows": [
+    {
+      "format": "afp",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "bcd",
+      "sw_pack": "bitexact",
+      "n_vectors": 0,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "bfloat16",
+      "sw_pack": "bitexact",
+      "n_vectors": 0,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "binary128",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "binary16",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "binary256",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "binary32",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "binary64",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "block_fp",
+      "sw_pack": "structural",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "cray_float",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "decimal128",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "decimal32",
+      "sw_pack": "bitexact",
+      "n_vectors": 7,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "decimal64",
+      "sw_pack": "bitexact",
+      "n_vectors": 7,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "double_double",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "fp4_e2m1",
+      "sw_pack": "bitexact",
+      "n_vectors": 16,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "fp6_e2m3",
+      "sw_pack": "bitexact",
+      "n_vectors": 64,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "fp6_e3m2",
+      "sw_pack": "bitexact",
+      "n_vectors": 64,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "fp8_e4m3",
+      "sw_pack": "bitexact",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "fp8_e5m2",
+      "sw_pack": "bitexact",
+      "n_vectors": 0,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "gf10",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "Tier-E"
+    },
+    {
+      "format": "gf1024",
+      "sw_pack": "bitexact_selfconsistent",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "gf12",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "Tier-E"
+    },
+    {
+      "format": "gf128",
+      "sw_pack": "bitexact_selfconsistent",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "gf14",
+      "sw_pack": "bitexact",
+      "n_vectors": 14,
+      "decode_hw": "Tier-E",
+      "compute_hw": "Tier-E"
+    },
+    {
+      "format": "gf16",
+      "sw_pack": "bitexact",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "Tier-E"
+    },
+    {
+      "format": "gf20",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "Tier-E"
+    },
+    {
+      "format": "gf24",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "Tier-E"
+    },
+    {
+      "format": "gf256",
+      "sw_pack": "bitexact_selfconsistent",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "gf32",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "Tier-E"
+    },
+    {
+      "format": "gf4",
+      "sw_pack": "bitexact",
+      "n_vectors": 16,
+      "decode_hw": "-",
+      "compute_hw": "Tier-E"
+    },
+    {
+      "format": "gf48",
+      "sw_pack": "bitexact_selfconsistent",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "gf512",
+      "sw_pack": "bitexact_selfconsistent",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "gf6",
+      "sw_pack": "bitexact",
+      "n_vectors": 64,
+      "decode_hw": "-",
+      "compute_hw": "Tier-E"
+    },
+    {
+      "format": "gf64",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "gf8",
+      "sw_pack": "bitexact",
+      "n_vectors": 256,
+      "decode_hw": "-",
+      "compute_hw": "Tier-E"
+    },
+    {
+      "format": "gf8_bfp",
+      "sw_pack": "bitexact",
+      "n_vectors": 256,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "gf96",
+      "sw_pack": "bitexact_selfconsistent",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "gf_lns_hybrid",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "gfternary",
+      "sw_pack": "bitexact",
+      "n_vectors": 4,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "ibm_hfp128",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "ibm_hfp32",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "ibm_hfp64",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "int128",
+      "sw_pack": "bitexact",
+      "n_vectors": 7,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "int16",
+      "sw_pack": "bitexact",
+      "n_vectors": 7,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "int32",
+      "sw_pack": "bitexact",
+      "n_vectors": 7,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "int4",
+      "sw_pack": "bitexact",
+      "n_vectors": 16,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "int64",
+      "sw_pack": "bitexact",
+      "n_vectors": 7,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "int8",
+      "sw_pack": "bitexact",
+      "n_vectors": 256,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "lns16",
+      "sw_pack": "bitexact",
+      "n_vectors": 5,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "lns32",
+      "sw_pack": "bitexact",
+      "n_vectors": 5,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "lns64",
+      "sw_pack": "bitexact",
+      "n_vectors": 5,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "lns8",
+      "sw_pack": "bitexact",
+      "n_vectors": 256,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "minifloat",
+      "sw_pack": "structural",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "ms_mbf32",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "ms_mbf64",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "mxfp4",
+      "sw_pack": "bitexact",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "mxfp6",
+      "sw_pack": "bitexact",
+      "n_vectors": 64,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "mxfp8",
+      "sw_pack": "bitexact",
+      "n_vectors": 256,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "mxgf4",
+      "sw_pack": "bitexact",
+      "n_vectors": 16,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "mxgf6",
+      "sw_pack": "bitexact",
+      "n_vectors": 64,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "nf4",
+      "sw_pack": "bitexact",
+      "n_vectors": 16,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "per_channel_scale",
+      "sw_pack": "bitexact",
+      "n_vectors": 256,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "posit16",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "posit32",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "posit64",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "posit8",
+      "sw_pack": "bitexact",
+      "n_vectors": 256,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "q_format",
+      "sw_pack": "structural",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "quad_double",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "shared_exp",
+      "sw_pack": "structural",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "stochastic_rounding",
+      "sw_pack": "structural",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "takum16",
+      "sw_pack": "bitexact",
+      "n_vectors": 3,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "takum32",
+      "sw_pack": "bitexact",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "takum64",
+      "sw_pack": "bitexact",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "takum8",
+      "sw_pack": "bitexact",
+      "n_vectors": 256,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "tapered_fp",
+      "sw_pack": "structural",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "tf32",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "unum_i",
+      "sw_pack": "structural",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "unum_ii",
+      "sw_pack": "structural",
+      "n_vectors": 0,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "vax_d",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "vax_f",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "vax_g",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "Tier-E",
+      "compute_hw": "-"
+    },
+    {
+      "format": "vax_h",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    },
+    {
+      "format": "x87_fp80",
+      "sw_pack": "bitexact",
+      "n_vectors": 8,
+      "decode_hw": "-",
+      "compute_hw": "-"
+    }
+  ]
+}

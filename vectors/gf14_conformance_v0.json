@@ -1,0 +1,126 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "GF14",
+  "format_name": "GF14 (rule-derived)",
+  "bitexact": true,
+  "format_notes": "GF14 (rule-derived) -- this work; rule e=round(13/phi^2)=5; bridge GF12-GF16; lowest phi-dist below GF48 | strict bit-exact: independent 2nd witness, abs_error=0 (Trinity)",
+  "catalog": {
+    "id": "gf14",
+    "bits": 14,
+    "s": 1,
+    "e": 5,
+    "m": 8,
+    "bias": 15,
+    "storage": "u16",
+    "cluster": "GoldenFloat",
+    "status": "Open",
+    "standard": "this work; rule e=round(13/phi^2)=5; bridge GF12-GF16; lowest phi-dist below GF48",
+    "use_case": "OPEN R&D: drop-in for fp16 with tighter phi alignment",
+    "gf_relation": "experimental",
+    "source": "specs/numeric/gf14.t27",
+    "phi_distance": 0.007
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "structural_reason": "Bit-precise round-trip defined; vectors emitted by encoder and confirmed by an INDEPENDENT second decoder (gf14_independent_witness.py, fractions.Fraction, abs_error=0) -> strict bitexact, not selfconsistent.",
+  "anchor_note": "Anchor identity phi^2 + 1/phi^2 = 3 recorded per shared schema.",
+  "n_vectors": 14,
+  "vectors": [
+    {
+      "label": "pos_zero",
+      "bits": 0,
+      "hex": "0x0000",
+      "value": "0"
+    },
+    {
+      "label": "pos_inf",
+      "bits": 7936,
+      "hex": "0x1F00",
+      "value": "INF(+)"
+    },
+    {
+      "label": "neg_inf",
+      "bits": 16128,
+      "hex": "0x3F00",
+      "value": "INF(-)"
+    },
+    {
+      "label": "nan",
+      "bits": 7937,
+      "hex": "0x1F01",
+      "value": "NAN(+)"
+    },
+    {
+      "label": "smallest_subnormal",
+      "bits": 1,
+      "hex": "0x0001",
+      "value": "0.0000002384185791015625"
+    },
+    {
+      "label": "largest_subnormal",
+      "bits": 255,
+      "hex": "0x00FF",
+      "value": "0.0000607967376708984375"
+    },
+    {
+      "label": "smallest_normal",
+      "bits": 256,
+      "hex": "0x0100",
+      "value": "0.00006103515625"
+    },
+    {
+      "label": "one",
+      "bits": 3840,
+      "hex": "0x0F00",
+      "value": "1"
+    },
+    {
+      "label": "two",
+      "bits": 4096,
+      "hex": "0x1000",
+      "value": "2"
+    },
+    {
+      "label": "onepointfive",
+      "bits": 3968,
+      "hex": "0x0F80",
+      "value": "1.5"
+    },
+    {
+      "label": "neg_one",
+      "bits": 12032,
+      "hex": "0x2F00",
+      "value": "-1"
+    },
+    {
+      "label": "quarter",
+      "bits": 3328,
+      "hex": "0x0D00",
+      "value": "0.25"
+    },
+    {
+      "label": "five",
+      "bits": 4416,
+      "hex": "0x1140",
+      "value": "5"
+    },
+    {
+      "label": "largest_finite",
+      "bits": 7935,
+      "hex": "0x1EFF",
+      "value": "65408"
+    }
+  ],
+  "witnesses": [
+    {
+      "kind": "rtl_iverilog_exhaustive",
+      "scope": "all 16384 codes (u16 domain of the 14-bit format)",
+      "decoder": "gf_decode_param #(WIDTH=14, E=5, M=8, BIAS=15)",
+      "result": "16384/16384 bit-exact vs golden, abs_error=0",
+      "source": "trinity-fpga PR #239 (merge cb845f75f)",
+      "repo": "https://github.com/gHashTag/trinity-fpga/pull/239",
+      "note": "Independent second witness (RTL simulation) distinct from the software encoder that produced these vectors. SW simulation witness -- not an on-silicon HW-conformance (Tier-E) claim."
+    }
+  ]
+}

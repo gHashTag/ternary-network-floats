@@ -1,0 +1,125 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "BINARY128",
+  "format_name": "binary128 (fp128, quad)",
+  "bitexact": true,
+  "format_notes": "IEEE 754 binary128, S1E15M112, bias 16383. inf at max exp m=0, nan at max exp m!=0 (mantissa exceeds f64; decode approximate for wide formats)",
+  "catalog": {
+    "id": "binary128",
+    "bits": 128,
+    "s": 1,
+    "e": 15,
+    "m": 112,
+    "bias": 16383,
+    "storage": "u128",
+    "cluster": "Ieee754Binary",
+    "status": "Verified",
+    "standard": "IEEE 754-2008",
+    "use_case": "high-precision simulations",
+    "gf_relation": "competitor",
+    "source": "IEEE 754-2008",
+    "phi_distance": 0.484
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": 3.0,
+    "expected": 3.0,
+    "ieee754_exact": true,
+    "binary128_bits_hex": "0x40008000000000000000000000000000"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "n_vectors": 8,
+  "vectors": [
+    {
+      "name": "pos_zero",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "binary128_bits_hex": "0x00000000000000000000000000000000",
+      "binary128_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "pos_one",
+      "input_f64": 1.0,
+      "input_f64_hex": "0x3FF0000000000000",
+      "binary128_bits_hex": "0x3FFF0000000000000000000000000000",
+      "binary128_bits_int": 85065399433376081038215121361612832768,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3FF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "binary128_bits_hex": "0xBFFF0000000000000000000000000000",
+      "binary128_bits_int": 255206582893845312769902425077496938496,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_two",
+      "input_f64": 2.0,
+      "input_f64_hex": "0x4000000000000000",
+      "binary128_bits_hex": "0x40000000000000000000000000000000",
+      "binary128_bits_int": 85070591730234615865843651857942052864,
+      "decoded_f64": 2.0,
+      "decoded_f64_hex": "0x4000000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_three",
+      "input_f64": 3.0,
+      "input_f64_hex": "0x4008000000000000",
+      "binary128_bits_hex": "0x40008000000000000000000000000000",
+      "binary128_bits_int": 85073187878663883279657917106106662912,
+      "decoded_f64": 3.0,
+      "decoded_f64_hex": "0x4008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_half",
+      "input_f64": 0.5,
+      "input_f64_hex": "0x3FE0000000000000",
+      "binary128_bits_hex": "0x3FFE0000000000000000000000000000",
+      "binary128_bits_int": 85060207136517546210586590865283612672,
+      "decoded_f64": 0.5,
+      "decoded_f64_hex": "0x3FE0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_four",
+      "input_f64": 4.0,
+      "input_f64_hex": "0x4010000000000000",
+      "binary128_bits_hex": "0x40010000000000000000000000000000",
+      "binary128_bits_int": 85075784027093150693472182354271272960,
+      "decoded_f64": 4.0,
+      "decoded_f64_hex": "0x4010000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_three",
+      "input_f64": -3.0,
+      "input_f64_hex": "0xC008000000000000",
+      "binary128_bits_hex": "0xC0008000000000000000000000000000",
+      "binary128_bits_int": 255214371339133115011345220821990768640,
+      "decoded_f64": -3.0,
+      "decoded_f64_hex": "0xC008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "X87_FP80",
+  "format_name": "x87 FP80",
+  "bitexact": true,
+  "format_notes": "Intel x87 80-bit extended S1E15+SIG64 (explicit integer bit as MSB of the 64-bit significand), bias 16383: value = (SIG/2^63) * 2^(E-16383). inf at max exp (int=1, frac=0); nan otherwise at max exp",
+  "catalog": {
+    "id": "x87_fp80",
+    "bits": 80,
+    "s": 1,
+    "e": 15,
+    "m": 64,
+    "bias": 16383,
+    "storage": "u80_padded",
+    "cluster": "ExtendedFloat",
+    "status": "Historical",
+    "standard": "Intel x87 (explicit integer bit)",
+    "use_case": "legacy long double on x86",
+    "gf_relation": "orthogonal",
+    "source": "Intel SDM",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": 3.0,
+    "expected": 3.0,
+    "ieee754_exact": true,
+    "x87_fp80_bits_hex": "0x4000C000000000000000"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "n_vectors": 8,
+  "vectors": [
+    {
+      "name": "pos_zero",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "x87_fp80_bits_hex": "0x00000000000000000000",
+      "x87_fp80_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "pos_one",
+      "input_f64": 1.0,
+      "input_f64_hex": "0x3FF0000000000000",
+      "x87_fp80_bits_hex": "0x3FFF8000000000000000",
+      "x87_fp80_bits_int": 302222231531620438900736,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3FF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "x87_fp80_bits_hex": "0xBFFF8000000000000000",
+      "x87_fp80_bits_int": 906685141338935026253824,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_two",
+      "input_f64": 2.0,
+      "input_f64_hex": "0x4000000000000000",
+      "x87_fp80_bits_hex": "0x40008000000000000000",
+      "x87_fp80_bits_int": 302240678275694148452352,
+      "decoded_f64": 2.0,
+      "decoded_f64_hex": "0x4000000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_three",
+      "input_f64": 3.0,
+      "input_f64_hex": "0x4008000000000000",
+      "x87_fp80_bits_hex": "0x4000C000000000000000",
+      "x87_fp80_bits_int": 302245289961712575840256,
+      "decoded_f64": 3.0,
+      "decoded_f64_hex": "0x4008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_half",
+      "input_f64": 0.5,
+      "input_f64_hex": "0x3FE0000000000000",
+      "x87_fp80_bits_hex": "0x3FFE8000000000000000",
+      "x87_fp80_bits_int": 302203784787546729349120,
+      "decoded_f64": 0.5,
+      "decoded_f64_hex": "0x3FE0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_four",
+      "input_f64": 4.0,
+      "input_f64_hex": "0x4010000000000000",
+      "x87_fp80_bits_hex": "0x40018000000000000000",
+      "x87_fp80_bits_int": 302259125019767858003968,
+      "decoded_f64": 4.0,
+      "decoded_f64_hex": "0x4010000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_three",
+      "input_f64": -3.0,
+      "input_f64_hex": "0xC008000000000000",
+      "x87_fp80_bits_hex": "0xC000C000000000000000",
+      "x87_fp80_bits_int": 906708199769027163193344,
+      "decoded_f64": -3.0,
+      "decoded_f64_hex": "0xC008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# These are byte-preserved generated/provenance artefacts. Their SHA-256 values
+# are part of the evidence, so do not rewrite them to satisfy text whitespace rules.
+measurements/**/*.log -whitespace
+vectors/** -whitespace

@@ -1,0 +1,190 @@
+{
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_note": "3.0 is exactly representable in this rung; it decodes to exactly 3 with no rounding error.",
+  "bitexact": true,
+  "catalog": {
+    "bias": 131071,
+    "bias_expr": "131071",
+    "bits": 48,
+    "cluster": "GoldenFloat",
+    "e": 18,
+    "gf_relation": "experimental",
+    "id": "gf48",
+    "m": 29,
+    "phi_distance": 0.003,
+    "s": 1,
+    "source": "specs/numeric/gf48.t27",
+    "standard": "this work; rule e=round((N-1)/phi^2)",
+    "status": "Conj",
+    "storage": "u64_padded"
+  },
+  "format": "gf48",
+  "format_name": "GoldenFloat48",
+  "format_notes": "S1 E18 M29, BIAS=131071 (=2^(E-1)-1, IEC 60559 interchange bias). Storage word: u64_padded; vectors use the FORMAT bit-width 48, not the storage word. Decode law shared across all five rungs; promoted to strict SW-bitexact by an INDEPENDENT second decoder (gf_wide_independent_witness.py, dyadic-exact, abs_error=0). PHI_BIAS is OPEN/RETRACTED per the spec and is NOT emitted; phi_distance is descriptive metadata only, never used in decode.",
+  "governing_sentence": "The GoldenFloat ladder earns its place through breadth and toolchain coherence, NOT through per-rung superiority over any competitor format. Takum (Hunhold 2024, arXiv:2412.20273) is the standing counterexample and is not suppressed.",
+  "n_vectors": 15,
+  "preprint": "arXiv:2606.05017 (GoldenFloat)",
+  "schema": "t27-conformance/v0.1",
+  "ssot": "gHashTag/t27 specs/numeric/formats_catalog.t27",
+  "structural_reason": "Bit-precise round-trip defined; vectors emitted by encoder and confirmed by an INDEPENDENT second decoder (gf_wide_independent_witness.py, dyadic A*2^B exact comparison, abs_error=0), plus a golden Fraction oracle and a fixed-width FP64 RTL bit-model (224255/224255 vs golden). Strict bitexact, not selfconsistent. See the witnesses array.",
+  "vectors": [
+    {
+      "abs_error": "0",
+      "bits": 0,
+      "category": "zero",
+      "hex": "0x000000000000",
+      "label": "pos_zero",
+      "value": "0",
+      "value_encoding": "decimal"
+    },
+    {
+      "abs_error": "0",
+      "bits": 140737488355328,
+      "category": "zero",
+      "hex": "0x800000000000",
+      "label": "neg_zero",
+      "value": "0",
+      "value_encoding": "decimal"
+    },
+    {
+      "abs_error": "0",
+      "bits": 140736951484416,
+      "category": "inf",
+      "hex": "0x7FFFE0000000",
+      "label": "pos_inf",
+      "value": "INF(+)"
+    },
+    {
+      "abs_error": "0",
+      "bits": 281474439839744,
+      "category": "inf",
+      "hex": "0xFFFFE0000000",
+      "label": "neg_inf",
+      "value": "INF(-)"
+    },
+    {
+      "abs_error": "0",
+      "bits": 140736951484417,
+      "category": "nan",
+      "hex": "0x7FFFE0000001",
+      "label": "nan",
+      "value": "NAN(+)"
+    },
+    {
+      "abs_error": "0",
+      "bits": 1,
+      "category": "subnormal",
+      "hex": "0x000000000001",
+      "label": "smallest_subnormal",
+      "value": "1p-131099",
+      "value_encoding": "dyadic"
+    },
+    {
+      "abs_error": "0",
+      "bits": 536870911,
+      "category": "subnormal",
+      "hex": "0x00001FFFFFFF",
+      "label": "largest_subnormal",
+      "value": "536870911p-131099",
+      "value_encoding": "dyadic"
+    },
+    {
+      "abs_error": "0",
+      "bits": 536870912,
+      "category": "normal",
+      "hex": "0x000020000000",
+      "label": "smallest_normal",
+      "value": "1p-131070",
+      "value_encoding": "dyadic"
+    },
+    {
+      "abs_error": "0",
+      "bits": 70368207306752,
+      "category": "normal",
+      "hex": "0x3FFFE0000000",
+      "label": "one",
+      "value": "1",
+      "value_encoding": "decimal"
+    },
+    {
+      "abs_error": "0",
+      "bits": 70368744177664,
+      "category": "normal",
+      "hex": "0x400000000000",
+      "label": "two",
+      "value": "2",
+      "value_encoding": "decimal"
+    },
+    {
+      "abs_error": "0",
+      "bits": 70369012613120,
+      "category": "normal",
+      "hex": "0x400010000000",
+      "label": "anchor_three",
+      "value": "3",
+      "value_encoding": "decimal"
+    },
+    {
+      "abs_error": "0",
+      "bits": 211105695662080,
+      "category": "normal",
+      "hex": "0xBFFFE0000000",
+      "label": "neg_one",
+      "value": "-1",
+      "value_encoding": "decimal"
+    },
+    {
+      "abs_error": "0",
+      "bits": 70368475742208,
+      "category": "normal",
+      "hex": "0x3FFFF0000000",
+      "label": "one_point_five",
+      "value": "1.5",
+      "value_encoding": "decimal"
+    },
+    {
+      "abs_error": "0",
+      "bits": 140736951484415,
+      "category": "normal",
+      "hex": "0x7FFFDFFFFFFF",
+      "label": "largest_normal",
+      "value": "1073741823p131042",
+      "value_encoding": "dyadic"
+    },
+    {
+      "abs_error": "0",
+      "bits": 281474439839743,
+      "category": "normal",
+      "hex": "0xFFFFDFFFFFFF",
+      "label": "neg_largest_normal",
+      "value": "-1073741823p131042",
+      "value_encoding": "dyadic"
+    }
+  ],
+  "witnesses": [
+    {
+      "decoder": "gf_wide_independent_witness.py (from-scratch dyadic normalizer, odd*2^shift; does NOT reuse the encoder)",
+      "kind": "sw_independent_dyadic",
+      "note": "Independent second decoder distinct from the software encoder that produced these vectors. This is the in-repo witness that promotes gf48 from selfconsistent to strict bitexact. SW-only; not an on-silicon HW-conformance (Tier-E) claim.",
+      "result": "15/15 bit-exact vs golden, abs_error=0 [e=18 m=29 bias=131071]",
+      "scope": "all 15 pack vectors (dyadic A*2^B exact comparison)",
+      "source": "gHashTag/t27 conformance/gf_wide_independent_witness.py"
+    },
+    {
+      "decoder": "gf48_decode_ref.py (fractions.Fraction exact oracle -> IEEE binary64, RNE)",
+      "kind": "sw_golden_fraction_oracle",
+      "note": "Third independent decode path (exact rational arithmetic) agreeing with the dyadic witness. SW-only.",
+      "result": "15/15 exact vs pack",
+      "scope": "all 15 pack vectors + FP64 target lowering",
+      "source": "gHashTag/t27 conformance/gf48 witness set (gf48_decode_ref.py)"
+    },
+    {
+      "decoder": "rtl_bit_model_fp64.py (fixed-width Python model of gf_decode_param_fp64.v) vs gf48_decode_ref.py golden",
+      "kind": "rtl_bit_model_fp64",
+      "note": "Fixed-width datapath spec for the FP64 RTL. The iverilog run of gf_decode_param_fp64.v with tb_gf_decode_fp64.v is the stronger RTL-simulation witness prepared for the local agent (sandbox has no iverilog). Both fixed-width fixes (widen-before-shift; OOB-safe wide sub_shifted) carried over from the FP32 iverilog witness. SW/simulation-only; not Tier-E HW.",
+      "result": "224255/224255 bit-exact vs golden, fails=0",
+      "scope": "224255 representative codes: 5-class + boundary + full-exponent stress sweep + deep-underflow edge + 200k deterministic random (2^48 exhaustive infeasible)",
+      "source": "gHashTag/t27 conformance/gf48 witness set (rtl_bit_model_fp64.py, gf_decode_param_fp64.v, tb_gf_decode_fp64.v)"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "IBM_HFP128",
+  "format_name": "IBM HFP (extended)",
+  "bitexact": true,
+  "format_notes": "IBM Hexadecimal Floating Point S1E7M120, excess-64 base-16 exponent: value = 0.M(2) * 16^(E-64). no inf/nan; true zero is all-zero; named small values exact (mantissa exceeds f64 for the full grid)",
+  "catalog": {
+    "id": "ibm_hfp128",
+    "bits": 128,
+    "s": 1,
+    "e": 7,
+    "m": 120,
+    "bias": 64,
+    "storage": "u128",
+    "cluster": "HistoricalVendor",
+    "status": "Historical",
+    "standard": "IBM z/Architecture",
+    "use_case": "legacy mainframe",
+    "gf_relation": "orthogonal",
+    "source": "IBM POO",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": 3.0,
+    "expected": 3.0,
+    "ieee754_exact": true,
+    "ibm_hfp128_bits_hex": "0x41300000000000000000000000000000"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "n_vectors": 8,
+  "vectors": [
+    {
+      "name": "pos_zero",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "ibm_hfp128_bits_hex": "0x00000000000000000000000000000000",
+      "ibm_hfp128_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "pos_one",
+      "input_f64": 1.0,
+      "input_f64_hex": "0x3FF0000000000000",
+      "ibm_hfp128_bits_hex": "0x41100000000000000000000000000000",
+      "ibm_hfp128_bits_int": 86482896475756088980803946859489918976,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3FF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "ibm_hfp128_bits_hex": "0xC1100000000000000000000000000000",
+      "ibm_hfp128_bits_int": 256624079936225320712491250575374024704,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_two",
+      "input_f64": 2.0,
+      "input_f64_hex": "0x4000000000000000",
+      "ibm_hfp128_bits_hex": "0x41200000000000000000000000000000",
+      "ibm_hfp128_bits_int": 86565973225492646222860434800757440512,
+      "decoded_f64": 2.0,
+      "decoded_f64_hex": "0x4000000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_three",
+      "input_f64": 3.0,
+      "input_f64_hex": "0x4008000000000000",
+      "ibm_hfp128_bits_hex": "0x41300000000000000000000000000000",
+      "ibm_hfp128_bits_int": 86649049975229203464916922742024962048,
+      "decoded_f64": 3.0,
+      "decoded_f64_hex": "0x4008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_half",
+      "input_f64": 0.5,
+      "input_f64_hex": "0x3FE0000000000000",
+      "ibm_hfp128_bits_hex": "0x40800000000000000000000000000000",
+      "ibm_hfp128_bits_int": 85735205728127073802295555388082225152,
+      "decoded_f64": 0.5,
+      "decoded_f64_hex": "0x3FE0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_four",
+      "input_f64": 4.0,
+      "input_f64_hex": "0x4010000000000000",
+      "ibm_hfp128_bits_hex": "0x41400000000000000000000000000000",
+      "ibm_hfp128_bits_int": 86732126724965760706973410683292483584,
+      "decoded_f64": 4.0,
+      "decoded_f64_hex": "0x4010000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_three",
+      "input_f64": -3.0,
+      "input_f64_hex": "0xC008000000000000",
+      "ibm_hfp128_bits_hex": "0xC1300000000000000000000000000000",
+      "ibm_hfp128_bits_int": 256790233435698435196604226457909067776,
+      "decoded_f64": -3.0,
+      "decoded_f64_hex": "0xC008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}

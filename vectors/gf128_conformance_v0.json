@@ -1,0 +1,184 @@
+{
+ "schema": "t27-conformance/v0.1",
+ "format": "gf128",
+ "format_name": "GoldenFloat128",
+ "bitexact": true,
+ "format_notes": "S1 E49 M78, BIAS=281474976710655 (=2^(E-1)-1, IEC 60559 interchange bias). Storage word: u128; vectors use the FORMAT bit-width 128. Decode law shared across all rungs; promoted to strict SW-bitexact by an INDEPENDENT second decoder (gf_wide_independent_witness.py, dyadic-exact, abs_error=0) and an analytic separation-bound (SEPARATION_BOUND.md, zero rounding on exact dyadics). PHI_BIAS is OPEN/RETRACTED per the spec and is NOT emitted; phi_distance is descriptive metadata only, never used in decode.",
+ "catalog": {
+  "id": "gf128",
+  "bits": 128,
+  "s": 1,
+  "e": 49,
+  "m": 78,
+  "bias": 281474976710655,
+  "bias_expr": "281474976710655",
+  "storage": "u128",
+  "cluster": "GoldenFloat",
+  "status": "Conj",
+  "standard": "this work; rule e=round((N-1)/phi^2)",
+  "gf_relation": "experimental",
+  "source": "specs/numeric/gf128.t27",
+  "phi_distance": 0.01
+ },
+ "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+ "preprint": "https://arxiv.org/abs/2606.05017",
+ "anchor_identity": "phi^2 + 1/phi^2 = 3",
+ "anchor_note": "3.0 is exactly representable in this rung (anchor_three vector); it decodes to exactly 3 with no rounding error.",
+ "governing_sentence": "The GoldenFloat ladder earns its place through breadth and toolchain coherence, NOT through per-rung superiority over any competitor format. Takum (Hunhold 2024, arXiv:2412.20273) is the standing counterexample and is not suppressed.",
+ "structural_reason": "Bit-precise round-trip defined; every finite value is an EXACT dyadic rational odd*2^k (M=78 > 52 -> no FP lowering, no rounding; see SEPARATION_BOUND.md). Confirmed by TWO structurally independent exact decode paths (dyadic integer normalizer + Fraction-significand symbolic-shift) agreeing on all pack vectors and a representative sweep.",
+ "n_vectors": 15,
+ "vectors": [
+  {
+   "label": "pos_zero",
+   "category": "zero",
+   "bits": 0,
+   "hex": "0x00000000000000000000000000000000",
+   "value": "0",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "neg_zero",
+   "category": "zero",
+   "bits": 170141183460469231731687303715884105728,
+   "hex": "0x80000000000000000000000000000000",
+   "value": "0",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "pos_inf",
+   "category": "inf",
+   "bits": 170141183460468929500232400058590429184,
+   "hex": "0x7fffffffffffc0000000000000000000",
+   "value": "INF(+)",
+   "abs_error": "0"
+  },
+  {
+   "label": "neg_inf",
+   "category": "inf",
+   "bits": 340282366920938161231919703774474534912,
+   "hex": "0xffffffffffffc0000000000000000000",
+   "value": "INF(-)",
+   "abs_error": "0"
+  },
+  {
+   "label": "nan",
+   "category": "nan",
+   "bits": 170141183460468929500232400058590429185,
+   "hex": "0x7fffffffffffc0000000000000000001",
+   "value": "NAN(+)",
+   "abs_error": "0"
+  },
+  {
+   "label": "smallest_subnormal",
+   "category": "subnormal",
+   "bits": 1,
+   "hex": "0x00000000000000000000000000000001",
+   "value": "1p-281474976710732",
+   "abs_error": "0",
+   "value_encoding": "dyadic"
+  },
+  {
+   "label": "largest_subnormal",
+   "category": "subnormal",
+   "bits": 302231454903657293676543,
+   "hex": "0x0000000000003fffffffffffffffffff",
+   "value": "302231454903657293676543p-281474976710732",
+   "abs_error": "0",
+   "value_encoding": "dyadic"
+  },
+  {
+   "label": "smallest_normal",
+   "category": "normal",
+   "bits": 302231454903657293676544,
+   "hex": "0x00000000000040000000000000000000",
+   "value": "1p-281474976710654",
+   "abs_error": "0",
+   "value_encoding": "dyadic"
+  },
+  {
+   "label": "one",
+   "category": "normal",
+   "bits": 85070591730234313634388748200648376320,
+   "hex": "0x3fffffffffffc0000000000000000000",
+   "value": "1",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "two",
+   "category": "normal",
+   "bits": 85070591730234615865843651857942052864,
+   "hex": "0x40000000000000000000000000000000",
+   "value": "2",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "anchor_three",
+   "category": "normal",
+   "bits": 85070591730234766981571103686588891136,
+   "hex": "0x40000000000020000000000000000000",
+   "value": "3",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "neg_one",
+   "category": "normal",
+   "bits": 255211775190703545366076051916532482048,
+   "hex": "0xbfffffffffffc0000000000000000000",
+   "value": "-1",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "one_point_five",
+   "category": "normal",
+   "bits": 85070591730234464750116200029295214592,
+   "hex": "0x3fffffffffffe0000000000000000000",
+   "value": "1.5",
+   "abs_error": "0",
+   "value_encoding": "decimal"
+  },
+  {
+   "label": "largest_normal",
+   "category": "normal",
+   "bits": 170141183460468929500232400058590429183,
+   "hex": "0x7fffffffffffbfffffffffffffffffff",
+   "value": "604462909807314587353087p281474976710577",
+   "abs_error": "0",
+   "value_encoding": "dyadic"
+  },
+  {
+   "label": "neg_largest_normal",
+   "category": "normal",
+   "bits": 340282366920938161231919703774474534911,
+   "hex": "0xffffffffffffbfffffffffffffffffff",
+   "value": "-604462909807314587353087p281474976710577",
+   "abs_error": "0",
+   "value_encoding": "dyadic"
+  }
+ ],
+ "witnesses": [
+  {
+   "kind": "sw_independent_dyadic",
+   "decoder": "gf_wide_independent_witness.py (from-scratch dyadic normalizer, integer (2^M+mant) -> odd*2^shift; does NOT reuse the encoder)",
+   "scope": "all 15 pack vectors",
+   "result": "15/15 pack vectors bit-exact, abs_error=0"
+  },
+  {
+   "kind": "sw_golden_fraction_oracle",
+   "decoder": "conformance/witness/gf128/gf128_decode_ref.py (fractions.Fraction significand + symbolic integer shift; exact-dyadic target, no FP lowering)",
+   "scope": "all 15 pack vectors",
+   "result": "15/15 pack vectors exact, abs_error=0"
+  },
+  {
+   "kind": "analytic_separation_bound",
+   "decoder": "conformance/witness/gf128/SEPARATION_BOUND.md (zero-rounding lemma)",
+   "scope": "entire 2^128 domain (analytic; 2^128 exhaustive infeasible)",
+   "result": "decode has NO rounding: every finite value is an exact dyadic odd*2^k; max rounding error 0 < ULP/2 -> deterministic, abs_error=0"
+  }
+ ]
+}

@@ -8,6 +8,7 @@ checks its proofs. Neither quotes a stored record — both recompute.
 python3 verify.py                          # recomputes the paper's tables from the oracle
 coqc -Q proofs Trinity proofs/CorePhi.v    # checks the algebra
 python3 make_vector_manifest.py --check    # verifies the conformance vector digests
+python3 tests/test_direct_tnf_artifact.py  # checks the direct TNF MAC against an exact oracle
 ```
 
 `verify.py` exits non-zero if any number moves. `coqc` returns 0 on a file with
@@ -26,6 +27,59 @@ one addition, no multiplier — and a layer's linear path is **exact**.
 What it costs: **precision per bit**. Posit holds more representable values and a
 finer step at unity at every matched physical width. That is the paper's own
 second negative result and it is not hedged.
+
+---
+
+## Direct TNF RTL and a fresh measurement
+
+The repository now contains the hardware artefact that the original paper
+submission did not make inspectable: a packed **TNF(E_t=4, M=8)** datapath that
+applies one ternary weight and accumulates the result with round-to-nearest-even.
+Weight application is a sign-select for `+1`/`-1` and canonical zero for both
+zero codes; there is no multiplier operator in that path. The adder handles
+zero, the reserved special row, and binary offset codes that have no four-trit
+preimage.
+
+The checked boundary is deliberately narrow and exact: **one weight application
+plus one TNF addition**, not a fan-in neuron and not any of the historical rows
+below. A deterministic test generated 5,000 directed and random cases and
+compared the packed RTL output with an exact rational oracle: **5,000 checked,
+0 errors**.
+
+Fresh open-flow result on `xc7a200tsbg484-1`, with a register bank on each side,
+all 54 package pins constrained, DSP inference disabled, and five placement
+seeds:
+
+| stage | LUT | CARRY4 | FF | DSP48E1 | Fmax |
+|---|---:|---:|---:|---:|---:|
+| Yosys synthesis | 452 | 46 | 52 | **0** | — |
+| nextpnr packing/routing | 854 `SLICE_LUTX` | 46 | 52 | **0** | 22.24–23.90 MHz; median 23.14 MHz |
+
+These are different stage metrics and must not be merged. The nextpnr number is
+device utilisation after packing and routing; the Yosys number counts logical
+LUT cells in the synthesized JSON. The requested 50 MHz constraint was **not
+met** in any seed. Raw logs, per-seed values, tool versions,
+commands, source hashes, and the chip database hash are under
+`measurements/direct-tnf-mac-e4m8/`.
+
+Reproduce the simulation and synthesis with:
+
+```bash
+python3 measure_tnf_rtl.py
+```
+
+Add five-seed place-and-route when a compatible chip database is available:
+
+```bash
+python3 measure_tnf_rtl.py \
+  --chipdb /path/to/xc7a200tsbg484-1.bin --seeds 5
+```
+
+The arithmetic descends from `fpga/tef/tef_add_full.v` in
+[`gHashTag/trinity-fpga`](https://github.com/gHashTag/trinity-fpga/tree/a0fb00685c437d14c5a2578689c0dc31fde1738e/fpga/tef).
+This artefact closes the older module's undefined zero, special-value, and
+unencodable-offset boundaries, and then remeasures it. It does **not** retrofit
+raw evidence onto the old TNF8/TNF16/TNF32 neuron figures.
 
 ---
 
@@ -149,6 +203,10 @@ re-running something that had already passed.
 | `proofs/CorePhi.v` | the φ identities and the closure of Z[φ], machine-checked |
 | `data/compare_w991.json` | the matched-width comparison against posit and takum |
 | `rtl/` | the formal-equivalence modules for the multiply-free datapath |
+| `rtl/tnf_weight_apply.v`, `rtl/tnf_add_full.v`, `rtl/tnf_mac.v` | the direct packed TNF MAC datapath |
+| `tests/test_direct_tnf_artifact.py` | 5,000-case exact-oracle RTL conformance test |
+| `measure_tnf_rtl.py` | simulation, synthesis, DSP/latch gates, and optional multi-seed P&R |
+| `measurements/direct-tnf-mac-e4m8/` | fresh result JSON, raw synthesis/P&R logs, and checkpoint journal |
 | `verify.py` | every table in the paper, recomputed and asserted |
 | `freq_provenance.py` | which frequency literals in the paper are stated in no record file |
 | `data/freq_provenance.json` | that registry's output on the cited revision |
@@ -162,6 +220,8 @@ re-running something that had already passed.
 | applying a weight is the Fibonacci step `(a,b) → (b,a+b)` | `proofs/CorePhi.v`, `fib_step_is_phi_mul` |
 | accumulation is componentwise, so Z[φ] is closed | `zphi_add_closed`, `zphi_opp_closed`, `zphi_zero` |
 | a layer's linear path is exact | `dot_exact` |
+| direct TNF weight-apply plus RNE accumulation matches the oracle | `tests/test_direct_tnf_artifact.py` |
+| direct TNF MAC uses zero DSP in the fresh XC7A200T run | `measurements/direct-tnf-mac-e4m8/result.json` and raw logs |
 | φ² = φ + 1 and φ² + φ⁻² = 3 | `phi_square`, `trinity_identity` |
 | φⁿ = F(n)·φ + F(n−1) | `phi_cubed_fib`, `phi_fourth_fib`, `phi_fifth_fib` |
 | TNF16 (4t,11m) holds 323,584 values across 79 binades | `verify.py`, first block |
@@ -201,13 +261,21 @@ experiment's generator and JSON record, the withdrawal note said to be under
 existed on any remote — all vector files carry the `_v0` suffix and the manifest
 above names the one set that exists. Quote the commit, never a version name.
 
+The historical TNF8/TNF16/TNF32 neuron rows above still have no raw P&R logs in
+this repository. The direct MAC artefact is new evidence with a separately named
+boundary; it is not evidence for those older rows. A direct fan-in TNF neuron
+and matched direct-TNF baselines remain future experiments.
+
 ## Requirements
 
-Python 3.9+ (no third-party packages) and Rocq/Coq 9.x for the proofs. The
-FPGA numbers were produced with Yosys 0.65, nextpnr-xilinx 1743d0f, Icarus
-Verilog 13.0 and Python 3.14 — all open-source, none requiring a licence, which
-is the point: a result nobody can reproduce without buying something is not a
-public result.
+Python 3.9+ (no third-party packages) and Rocq/Coq 9.x for the proofs. Direct RTL
+verification additionally needs Icarus Verilog; synthesis needs Yosys; P&R needs
+nextpnr-xilinx and a compatible Project X-Ray chip database. The historical FPGA
+numbers were produced with Yosys 0.65, nextpnr-xilinx 1743d0f, Icarus Verilog
+13.0 and Python 3.14. The fresh direct-TNF record carries its own exact versions
+and hashes in `measurements/direct-tnf-mac-e4m8/result.json`. All are open-source
+and require no licence, which is the point: a result nobody can reproduce without
+buying something is not a public result.
 
 ## Provenance
 

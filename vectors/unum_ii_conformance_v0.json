@@ -1,0 +1,30 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "UNUM_II",
+  "format_name": "Unum II (SORN projective)",
+  "bitexact": false,
+  "format_notes": "Unum II (SORN projective) -- Gustafson 2016",
+  "catalog": {
+    "id": "unum_ii",
+    "bits": 0,
+    "s": 0,
+    "e": 0,
+    "m": 0,
+    "bias": 0,
+    "storage": "lookup_table",
+    "cluster": "Theoretical",
+    "status": "Experimental",
+    "standard": "Gustafson 2016",
+    "use_case": "lookup-table real arithmetic; not GF-comparable",
+    "gf_relation": "orthogonal",
+    "source": "Gustafson 2016",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "structural_reason": "This format has no single fixed bit layout (parametric / technique / variable-width). A bit-precise round-trip vector table is not well-defined; the catalog metadata and anchor note are recorded instead.",
+  "anchor_note": "Anchor identity phi^2 + 1/phi^2 = 3 recorded per shared schema.",
+  "n_vectors": 0,
+  "vectors": []
+}

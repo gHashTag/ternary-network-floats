@@ -1,0 +1,82 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "GFTERNARY",
+  "format_name": "GFTernary",
+  "bitexact": true,
+  "format_notes": "GFTernary 2-bit discrete set {-phi, 0, +phi}; codes 00=0, 01=+phi, 10=-phi, 11=reserved (duplicate +phi). no inf/nan; discrete ternary levels",
+  "catalog": {
+    "id": "gfternary",
+    "bits": 2,
+    "s": 1,
+    "e": 0,
+    "m": 2,
+    "bias": 0,
+    "storage": "u2",
+    "cluster": "GoldenFloat",
+    "status": "Verified",
+    "standard": "this work; {-phi, 0, +phi}",
+    "use_case": "bulk layers (hybrid)",
+    "gf_relation": "self",
+    "source": "BENCH-007",
+    "phi_distance": 0.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": null,
+    "expected": 3.0,
+    "ieee754_exact": false,
+    "note": "3.0 is not an exact grid point of this format at this width"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (exhaustive). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "exhaustive",
+  "n_vectors": 4,
+  "max_finite": 1.618033988749895,
+  "vectors": [
+    {
+      "name": "code_0x00",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "gfternary_bits_hex": "0x0",
+      "gfternary_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "code_0x01",
+      "input_f64": 1.618033988749895,
+      "input_f64_hex": "0x3FF9E3779B97F4A8",
+      "gfternary_bits_hex": "0x1",
+      "gfternary_bits_int": 1,
+      "decoded_f64": 1.618033988749895,
+      "decoded_f64_hex": "0x3FF9E3779B97F4A8",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "code_0x02",
+      "input_f64": -1.618033988749895,
+      "input_f64_hex": "0xBFF9E3779B97F4A8",
+      "gfternary_bits_hex": "0x2",
+      "gfternary_bits_int": 2,
+      "decoded_f64": -1.618033988749895,
+      "decoded_f64_hex": "0xBFF9E3779B97F4A8",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "code_0x03",
+      "input_f64": 1.618033988749895,
+      "input_f64_hex": "0x3FF9E3779B97F4A8",
+      "gfternary_bits_hex": "0x3",
+      "gfternary_bits_int": 3,
+      "decoded_f64": 1.618033988749895,
+      "decoded_f64_hex": "0x3FF9E3779B97F4A8",
+      "abs_error": 0.0,
+      "category": "reserved"
+    }
+  ]
+}

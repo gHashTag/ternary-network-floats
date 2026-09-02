@@ -1,0 +1,224 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "TAKUM64",
+  "format_name": "takum64",
+  "bitexact": true,
+  "format_notes": "takum64 logarithmic (Hunhold 2024, arXiv:2404.18603): value = exp(ell/2). CURATED-BACKED (NOT exhaustive: 2^64 codes infeasible to enumerate) - distinct from takum16 which is exhaustive-backed (2^16). Each named vector is correctly-rounded f64 via an independent 400+-bit mpmath oracle (abs_error=0). Supporting evidence (NOT part of the bitexact claim): a 400k+ randomized+structured sample probe at 1200-bit found min midpoint gap 8.78e-7 ULP >> oracle floor 6.1e-356, 0 ambiguous codes - no table-maker's dilemma observed on the sample. Exhaustive guarantee would require libtakum C-parity or an analytic separation bound (Variant B, separate step). zero at 0x0; NaR at MSB-set.",
+  "catalog": {
+    "id": "takum64",
+    "bits": 64,
+    "s": 1,
+    "e": 0,
+    "m": 0,
+    "bias": 0,
+    "storage": "u64",
+    "cluster": "PositUnumIII",
+    "status": "Verified",
+    "standard": "Hunhold 2024",
+    "use_case": "tapered fp64-class",
+    "gf_relation": "ally",
+    "source": "Hunhold 2024 (arXiv:2404.18603)",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": null,
+    "expected": 3.0,
+    "ieee754_exact": false,
+    "note": "3.0 is not an exact grid point of this format at this width"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "witnesses": [
+    {
+      "kind": "python_mpmath_oracle",
+      "oracle": "witness_takum_wide.py: value = exp(ell/2), ell exact dyadic; mpmath 1200-bit (arXiv:2404.18603). Decoder validated against all 3 known takum16 codes.",
+      "result": "15/15 abs_error=0 on curated named vectors (Witness #1)"
+    },
+    {
+      "kind": "python_independent_math_exp",
+      "oracle": "decode values cross-checked bit-for-bit against math.exp(+/-k/2) (independent reimplementation, not the mpmath path)",
+      "result": "10/10 grid values match to the bit (independent second reproduction of the value claim)"
+    },
+    {
+      "kind": "sample_probe_supporting_evidence",
+      "oracle": "400k+ randomized+structured codes at 1200-bit; min midpoint gap 8.78e-7 ULP >> oracle floor 6.1e-356, 0 ambiguous",
+      "result": "supporting evidence only -- NOT part of the bitexact claim (curated-backed, not exhaustive)"
+    },
+    {
+      "kind": "libtakum_c_parity",
+      "oracle": "libtakum (Hunhold, ISO C99 reference, ISC) takum_log64_to_float64 via ctypes; independent 2nd implementation of the takum decode law.",
+      "result": "PARTIAL (honest limitation). DECODE-VALUE parity at f64: all 15 curated decoded_f64 equal the correctly-rounded f64 of the true takum decode (mpmath 1200-bit), and libtakum decodes the same codes to the same f64 (<=1 ULP long-double noise). ENCODE bit-pattern parity does NOT hold and is NOT claimed: curated vectors use the canonical mantissa=0 code for value=exp(c/2); libtakum's encoder returns a different nearest code (nonzero low mantissa bits) that decodes to the SAME f64. Both codes valid; ours is the definitional grid anchor, not the unique round-to-nearest code of the 52-bit f64 input. The 59-bit takum64 mantissa makes these distinct; at takum32 (shorter mantissa) they coincide bit-for-bit."
+    }
+  ],
+  "n_vectors": 15,
+  "vectors": [
+    {
+      "name": "pos_zero",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "takum64_bits_hex": "0x0000000000000000",
+      "takum64_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "pos_one",
+      "input_f64": 1.0,
+      "input_f64_hex": "0x3FF0000000000000",
+      "takum64_bits_hex": "0x4000000000000000",
+      "takum64_bits_int": 4611686018427387904,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3FF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "takum64_bits_hex": "0xC000000000000000",
+      "takum64_bits_int": 13835058055282163712,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_exp_c2",
+      "input_f64": 2.718281828459045,
+      "input_f64_hex": "0x4005BF0A8B145769",
+      "takum64_bits_hex": "0x4C00000000000000",
+      "takum64_bits_int": 5476377146882523136,
+      "decoded_f64": 2.718281828459045,
+      "decoded_f64_hex": "0x4005BF0A8B145769",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_exp_c2",
+      "input_f64": -0.36787944117144233,
+      "input_f64_hex": "0xBFD78B56362CEF38",
+      "takum64_bits_hex": "0xCC00000000000000",
+      "takum64_bits_int": 14699749183737298944,
+      "decoded_f64": -0.36787944117144233,
+      "decoded_f64_hex": "0xBFD78B56362CEF38",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_exp_c-2",
+      "input_f64": 0.36787944117144233,
+      "input_f64_hex": "0x3FD78B56362CEF38",
+      "takum64_bits_hex": "0x3400000000000000",
+      "takum64_bits_int": 3746994889972252672,
+      "decoded_f64": 0.36787944117144233,
+      "decoded_f64_hex": "0x3FD78B56362CEF38",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_exp_c-2",
+      "input_f64": -2.718281828459045,
+      "input_f64_hex": "0xC005BF0A8B145769",
+      "takum64_bits_hex": "0xB400000000000000",
+      "takum64_bits_int": 12970366926827028480,
+      "decoded_f64": -2.718281828459045,
+      "decoded_f64_hex": "0xC005BF0A8B145769",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_exp_c4",
+      "input_f64": 7.38905609893065,
+      "input_f64_hex": "0x401D8E64B8D4DDAE",
+      "takum64_bits_hex": "0x5200000000000000",
+      "takum64_bits_int": 5908722711110090752,
+      "decoded_f64": 7.38905609893065,
+      "decoded_f64_hex": "0x401D8E64B8D4DDAE",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_exp_c4",
+      "input_f64": -0.1353352832366127,
+      "input_f64_hex": "0xBFC152AAA3BF81CC",
+      "takum64_bits_hex": "0xD200000000000000",
+      "takum64_bits_int": 15132094747964866560,
+      "decoded_f64": -0.1353352832366127,
+      "decoded_f64_hex": "0xBFC152AAA3BF81CC",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_exp_c-4",
+      "input_f64": 0.1353352832366127,
+      "input_f64_hex": "0x3FC152AAA3BF81CC",
+      "takum64_bits_hex": "0x2E00000000000000",
+      "takum64_bits_int": 3314649325744685056,
+      "decoded_f64": 0.1353352832366127,
+      "decoded_f64_hex": "0x3FC152AAA3BF81CC",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_exp_c-4",
+      "input_f64": -7.38905609893065,
+      "input_f64_hex": "0xC01D8E64B8D4DDAE",
+      "takum64_bits_hex": "0xAE00000000000000",
+      "takum64_bits_int": 12538021362599460864,
+      "decoded_f64": -7.38905609893065,
+      "decoded_f64_hex": "0xC01D8E64B8D4DDAE",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_exp_c6",
+      "input_f64": 20.085536923187668,
+      "input_f64_hex": "0x403415E5BF6FB106",
+      "takum64_bits_hex": "0x5600000000000000",
+      "takum64_bits_int": 6196953087261802496,
+      "decoded_f64": 20.085536923187668,
+      "decoded_f64_hex": "0x403415E5BF6FB106",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_exp_c6",
+      "input_f64": -0.049787068367863944,
+      "input_f64_hex": "0xBFA97DB0CCCEB0AF",
+      "takum64_bits_hex": "0xD600000000000000",
+      "takum64_bits_int": 15420325124116578304,
+      "decoded_f64": -0.049787068367863944,
+      "decoded_f64_hex": "0xBFA97DB0CCCEB0AF",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_exp_c-6",
+      "input_f64": 0.049787068367863944,
+      "input_f64_hex": "0x3FA97DB0CCCEB0AF",
+      "takum64_bits_hex": "0x2A00000000000000",
+      "takum64_bits_int": 3026418949592973312,
+      "decoded_f64": 0.049787068367863944,
+      "decoded_f64_hex": "0x3FA97DB0CCCEB0AF",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_exp_c-6",
+      "input_f64": -20.085536923187668,
+      "input_f64_hex": "0xC03415E5BF6FB106",
+      "takum64_bits_hex": "0xAA00000000000000",
+      "takum64_bits_int": 12249790986447749120,
+      "decoded_f64": -20.085536923187668,
+      "decoded_f64_hex": "0xC03415E5BF6FB106",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}

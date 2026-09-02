@@ -1,0 +1,30 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "MINIFLOAT",
+  "format_name": "minifloat (arbitrary E:M, <=16 bits)",
+  "bitexact": false,
+  "format_notes": "minifloat (arbitrary E:M, <=16 bits) -- parametric framework",
+  "catalog": {
+    "id": "minifloat",
+    "bits": 0,
+    "s": 1,
+    "e": 0,
+    "m": 0,
+    "bias": 0,
+    "storage": "varies",
+    "cluster": "Theoretical",
+    "status": "Experimental",
+    "standard": "parametric framework",
+    "use_case": "design space of GF4/GF8/GF12/GF16",
+    "gf_relation": "ally",
+    "source": "Higham 1996",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "structural_reason": "This format has no single fixed bit layout (parametric / technique / variable-width). A bit-precise round-trip vector table is not well-defined; the catalog metadata and anchor note are recorded instead.",
+  "anchor_note": "Anchor identity phi^2 + 1/phi^2 = 3 recorded per shared schema.",
+  "n_vectors": 0,
+  "vectors": []
+}

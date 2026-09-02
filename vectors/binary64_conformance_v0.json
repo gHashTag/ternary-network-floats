@@ -1,0 +1,125 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "BINARY64",
+  "format_name": "binary64 (fp64, double)",
+  "bitexact": true,
+  "format_notes": "IEEE 754 binary64, S1E11M52, bias 1023. inf at max exp m=0, nan at max exp m!=0",
+  "catalog": {
+    "id": "binary64",
+    "bits": 64,
+    "s": 1,
+    "e": 11,
+    "m": 52,
+    "bias": 1023,
+    "storage": "u64",
+    "cluster": "Ieee754Binary",
+    "status": "Verified",
+    "standard": "IEEE 754-1985",
+    "use_case": "scientific computing",
+    "gf_relation": "competitor",
+    "source": "IEEE 754-1985",
+    "phi_distance": 0.406
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": 3.0,
+    "expected": 3.0,
+    "ieee754_exact": true,
+    "binary64_bits_hex": "0x4008000000000000"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "n_vectors": 8,
+  "vectors": [
+    {
+      "name": "pos_zero",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "binary64_bits_hex": "0x0000000000000000",
+      "binary64_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "pos_one",
+      "input_f64": 1.0,
+      "input_f64_hex": "0x3FF0000000000000",
+      "binary64_bits_hex": "0x3FF0000000000000",
+      "binary64_bits_int": 4607182418800017408,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3FF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "binary64_bits_hex": "0xBFF0000000000000",
+      "binary64_bits_int": 13830554455654793216,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_two",
+      "input_f64": 2.0,
+      "input_f64_hex": "0x4000000000000000",
+      "binary64_bits_hex": "0x4000000000000000",
+      "binary64_bits_int": 4611686018427387904,
+      "decoded_f64": 2.0,
+      "decoded_f64_hex": "0x4000000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_three",
+      "input_f64": 3.0,
+      "input_f64_hex": "0x4008000000000000",
+      "binary64_bits_hex": "0x4008000000000000",
+      "binary64_bits_int": 4613937818241073152,
+      "decoded_f64": 3.0,
+      "decoded_f64_hex": "0x4008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_half",
+      "input_f64": 0.5,
+      "input_f64_hex": "0x3FE0000000000000",
+      "binary64_bits_hex": "0x3FE0000000000000",
+      "binary64_bits_int": 4602678819172646912,
+      "decoded_f64": 0.5,
+      "decoded_f64_hex": "0x3FE0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_four",
+      "input_f64": 4.0,
+      "input_f64_hex": "0x4010000000000000",
+      "binary64_bits_hex": "0x4010000000000000",
+      "binary64_bits_int": 4616189618054758400,
+      "decoded_f64": 4.0,
+      "decoded_f64_hex": "0x4010000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_three",
+      "input_f64": -3.0,
+      "input_f64_hex": "0xC008000000000000",
+      "binary64_bits_hex": "0xC008000000000000",
+      "binary64_bits_int": 13837309855095848960,
+      "decoded_f64": -3.0,
+      "decoded_f64_hex": "0xC008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "VAX_H",
+  "format_name": "VAX H-float",
+  "bitexact": true,
+  "format_notes": "vendor radix-2 float S1E15M112, bias 16384 (DEC VAX). vendor-specific specials",
+  "catalog": {
+    "id": "vax_h",
+    "bits": 128,
+    "s": 1,
+    "e": 15,
+    "m": 112,
+    "bias": 16384,
+    "storage": "u128",
+    "cluster": "HistoricalVendor",
+    "status": "Historical",
+    "standard": "DEC VAX",
+    "use_case": "DEC quad",
+    "gf_relation": "orthogonal",
+    "source": "VAX Architecture Reference",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": 3.0,
+    "expected": 3.0,
+    "ieee754_exact": true,
+    "vax_h_bits_hex": "0x40018000000000000000000000000000"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "n_vectors": 8,
+  "vectors": [
+    {
+      "name": "pos_zero",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "vax_h_bits_hex": "0x00000000000000000000000000000000",
+      "vax_h_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "pos_one",
+      "input_f64": 1.0,
+      "input_f64_hex": "0x3FF0000000000000",
+      "vax_h_bits_hex": "0x40000000000000000000000000000000",
+      "vax_h_bits_int": 85070591730234615865843651857942052864,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3FF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "vax_h_bits_hex": "0xC0000000000000000000000000000000",
+      "vax_h_bits_int": 255211775190703847597530955573826158592,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_two",
+      "input_f64": 2.0,
+      "input_f64_hex": "0x4000000000000000",
+      "vax_h_bits_hex": "0x40010000000000000000000000000000",
+      "vax_h_bits_int": 85075784027093150693472182354271272960,
+      "decoded_f64": 2.0,
+      "decoded_f64_hex": "0x4000000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_three",
+      "input_f64": 3.0,
+      "input_f64_hex": "0x4008000000000000",
+      "vax_h_bits_hex": "0x40018000000000000000000000000000",
+      "vax_h_bits_int": 85078380175522418107286447602435883008,
+      "decoded_f64": 3.0,
+      "decoded_f64_hex": "0x4008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_half",
+      "input_f64": 0.5,
+      "input_f64_hex": "0x3FE0000000000000",
+      "vax_h_bits_hex": "0x3FFF0000000000000000000000000000",
+      "vax_h_bits_int": 85065399433376081038215121361612832768,
+      "decoded_f64": 0.5,
+      "decoded_f64_hex": "0x3FE0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_four",
+      "input_f64": 4.0,
+      "input_f64_hex": "0x4010000000000000",
+      "vax_h_bits_hex": "0x40020000000000000000000000000000",
+      "vax_h_bits_int": 85080976323951685521100712850600493056,
+      "decoded_f64": 4.0,
+      "decoded_f64_hex": "0x4010000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_three",
+      "input_f64": -3.0,
+      "input_f64_hex": "0xC008000000000000",
+      "vax_h_bits_hex": "0xC0018000000000000000000000000000",
+      "vax_h_bits_int": 255219563635991649838973751318319988736,
+      "decoded_f64": -3.0,
+      "decoded_f64_hex": "0xC008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}

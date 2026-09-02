@@ -1,0 +1,132 @@
+{
+  "schema": "tnf-direct-rtl-measurement-v1",
+  "generated_utc": "2026-09-02T04:33:24.673182+00:00",
+  "design": {
+    "top": "tnf_mac_e4m8_pnr_top",
+    "format": "TNF(E_t=4,M=8)",
+    "stored_width_bits": 16,
+    "operation": "one ternary weight application plus one TNF RNE add",
+    "boundary": "Register-to-register top including both register banks and package I/O; this is a fresh direct-TNF measurement, not the historical paper neuron harness.",
+    "source_sha256": {
+      "rtl/tnf_weight_apply.v": "fc792c550f966a9b393eccac2eb9562869787fffbfb9670ecb229797acb48d1a",
+      "rtl/tnf_add_full.v": "c928e3a18e4220b150150253b31c918ab17f390abcebca6af6521a01804eac94",
+      "rtl/tnf_mac.v": "9fcf33184e4b94b3ce7afc1b6ed0ce10744fc60f70265310ff8bfeed42d82bf9",
+      "rtl/tnf_mac_e4m8_top.v": "e10251853c42291a46c8266a1a8448f051b7d3a38a59a6db1b824173149d9263",
+      "rtl/tnf_mac_e4m8_pnr_top.v": "d58802639601c22c5d3e9bcd60e422b31296f2859e95901cde60b1b7749f412a",
+      "tests/tnf_mac_e4m8_tb.v": "2349e7f728113978b6a9aa52791b6352055f3f4009e7a4dc32c0a0680247ceb0",
+      "tests/test_direct_tnf_artifact.py": "27b263343719f30e877a333f13ce0cd5a13688f4342ae1d4a05d3ee5ac043372",
+      "oracle/tnf_ref.py": "44a6620f4d889c26801c4c84a39a8e3716626655f243fc6b55b78f225b26e938",
+      "measure_tnf_rtl.py": "57b0f872c0167e6f96a1bceab88f1aa2fbb69b113a4d7a162bf95eb4a3591ed6",
+      "constraints/tnf_mac_e4m8.xdc": "52bdd090e0f3bf9fe25ba57d6045289e7543423f290e75f3e525af44b15d6ea1"
+    }
+  },
+  "tools": {
+    "yosys": "Yosys 0.67+post (git sha1 b8e7da6f40ae8f552c116bf6c359b07c6533e159, Release, AppleClang clang++ 21.0.0.21000099)",
+    "iverilog": "Icarus Verilog version 12.0 (stable) ()",
+    "nextpnr_xilinx": "\"nextpnr-xilinx\" -- Next Generation Place and Route (Version 0.9.2-44-ga70ae4a8)",
+    "chipdb": "/Users/playra/openxc7-src/chipdb/xc7a200tsbg484-1.bin",
+    "part": "xc7a200tsbg484-1",
+    "chipdb_sha256": "108ee03a1cc9bd2093d9f3db512474072c79bd7ef18cdbfa849ab25b5a63622f"
+  },
+  "commands": {
+    "simulation": "python3 tests/test_direct_tnf_artifact.py",
+    "synthesis": "yosys -p 'read_verilog -sv rtl/tnf_weight_apply.v rtl/tnf_add_full.v rtl/tnf_mac.v rtl/tnf_mac_e4m8_top.v rtl/tnf_mac_e4m8_pnr_top.v; synth_xilinx -family xc7 -top tnf_mac_e4m8_pnr_top -flatten -nodsp; write_json <tmp>/tnf_mac.json; stat'",
+    "place_and_route": "nextpnr-xilinx --placer heap --router router2 --freq 50 --seed <1..N> --chipdb <path> --json <netlist> --xdc constraints/tnf_mac_e4m8.xdc --fasm <output>"
+  },
+  "simulation": {
+    "vectors": 5000,
+    "errors": 0
+  },
+  "synthesis": {
+    "lut": 452,
+    "carry4": 46,
+    "ff": 52,
+    "dsp48e1": 0,
+    "cells_by_type": {
+      "$scopeinfo": 4,
+      "BUFG": 1,
+      "CARRY4": 46,
+      "FDRE": 52,
+      "IBUF": 37,
+      "INV": 81,
+      "LUT1": 42,
+      "LUT2": 66,
+      "LUT3": 132,
+      "LUT4": 36,
+      "LUT5": 62,
+      "LUT6": 114,
+      "MUXF7": 82,
+      "MUXF8": 30,
+      "OBUF": 17
+    },
+    "raw_log": "measurements/direct-tnf-mac-e4m8/yosys.log",
+    "raw_log_sha256": "58dc438d6af2289561d31e2788d512b1c570399744cba7ad02ed977de2732811"
+  },
+  "place_and_route": {
+    "seeds": [
+      {
+        "seed": 1,
+        "lut": 854,
+        "ff": 52,
+        "carry4": 46,
+        "dsp48e1": 0,
+        "fmax_mhz": 22.24,
+        "target_mhz": 50.0,
+        "raw_log": "measurements/direct-tnf-mac-e4m8/nextpnr-seed1.log",
+        "raw_log_sha256": "194c1298df8c312d208dd4a79f8a2fbaca519c91d29634fab973a8ec9d5648b8",
+        "target_met": false
+      },
+      {
+        "seed": 2,
+        "lut": 854,
+        "ff": 52,
+        "carry4": 46,
+        "dsp48e1": 0,
+        "fmax_mhz": 23.14,
+        "target_mhz": 50.0,
+        "raw_log": "measurements/direct-tnf-mac-e4m8/nextpnr-seed2.log",
+        "raw_log_sha256": "39c601ad61fb7051f396d69ee30d1e86e3be541fa22d2fa75b975a29a99471e1",
+        "target_met": false
+      },
+      {
+        "seed": 3,
+        "lut": 854,
+        "ff": 52,
+        "carry4": 46,
+        "dsp48e1": 0,
+        "fmax_mhz": 22.31,
+        "target_mhz": 50.0,
+        "raw_log": "measurements/direct-tnf-mac-e4m8/nextpnr-seed3.log",
+        "raw_log_sha256": "62e4f63735e8b3cc1a909b081c5b98085d5a4ec93f13c768d57ea55a79c2c35d",
+        "target_met": false
+      },
+      {
+        "seed": 4,
+        "lut": 854,
+        "ff": 52,
+        "carry4": 46,
+        "dsp48e1": 0,
+        "fmax_mhz": 23.9,
+        "target_mhz": 50.0,
+        "raw_log": "measurements/direct-tnf-mac-e4m8/nextpnr-seed4.log",
+        "raw_log_sha256": "71d2c151d9d30a4fb2fee5fbb0b93d1d56e335199ea673540af6ddfbedd4b191",
+        "target_met": false
+      },
+      {
+        "seed": 5,
+        "lut": 854,
+        "ff": 52,
+        "carry4": 46,
+        "dsp48e1": 0,
+        "fmax_mhz": 23.23,
+        "target_mhz": 50.0,
+        "raw_log": "measurements/direct-tnf-mac-e4m8/nextpnr-seed5.log",
+        "raw_log_sha256": "2e88fc1f8aa8567c5464cc20c913e7dff613c7be2260b79bb9f560439f7b2be1",
+        "target_met": false
+      }
+    ],
+    "fmax_median_mhz": 23.14,
+    "fmax_min_mhz": 22.24,
+    "fmax_max_mhz": 23.9
+  }
+}

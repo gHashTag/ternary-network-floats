@@ -1,0 +1,125 @@
+{
+  "schema": "t27-conformance/v0.1",
+  "format": "VAX_D",
+  "format_name": "VAX D-float",
+  "bitexact": true,
+  "format_notes": "vendor radix-2 float S1E8M55, bias 128 (DEC VAX). vendor-specific specials",
+  "catalog": {
+    "id": "vax_d",
+    "bits": 64,
+    "s": 1,
+    "e": 8,
+    "m": 55,
+    "bias": 128,
+    "storage": "u64",
+    "cluster": "HistoricalVendor",
+    "status": "Historical",
+    "standard": "DEC VAX",
+    "use_case": "DEC legacy double",
+    "gf_relation": "orthogonal",
+    "source": "VAX Architecture Reference",
+    "phi_distance": -1.0
+  },
+  "ssot": "https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json",
+  "preprint": "https://arxiv.org/abs/2606.05017",
+  "anchor_identity": "phi^2 + 1/phi^2 = 3",
+  "anchor_check": {
+    "value": 3.0,
+    "expected": 3.0,
+    "ieee754_exact": true,
+    "vax_d_bits_hex": "0x40C0000000000000"
+  },
+  "round_trip_policy": "decode: exact bits->f64 (curated_named). encode (reference): round-nearest-ties-even; overflow per format convention. abs_error 0 for representable values.",
+  "vector_mode": "curated_named",
+  "n_vectors": 8,
+  "vectors": [
+    {
+      "name": "pos_zero",
+      "input_f64": 0.0,
+      "input_f64_hex": "0x0000000000000000",
+      "vax_d_bits_hex": "0x0000000000000000",
+      "vax_d_bits_int": 0,
+      "decoded_f64": 0.0,
+      "decoded_f64_hex": "0x0000000000000000",
+      "abs_error": 0.0,
+      "category": "zero"
+    },
+    {
+      "name": "pos_one",
+      "input_f64": 1.0,
+      "input_f64_hex": "0x3FF0000000000000",
+      "vax_d_bits_hex": "0x4000000000000000",
+      "vax_d_bits_int": 4611686018427387904,
+      "decoded_f64": 1.0,
+      "decoded_f64_hex": "0x3FF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_one",
+      "input_f64": -1.0,
+      "input_f64_hex": "0xBFF0000000000000",
+      "vax_d_bits_hex": "0xC000000000000000",
+      "vax_d_bits_int": 13835058055282163712,
+      "decoded_f64": -1.0,
+      "decoded_f64_hex": "0xBFF0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_two",
+      "input_f64": 2.0,
+      "input_f64_hex": "0x4000000000000000",
+      "vax_d_bits_hex": "0x4080000000000000",
+      "vax_d_bits_int": 4647714815446351872,
+      "decoded_f64": 2.0,
+      "decoded_f64_hex": "0x4000000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_three",
+      "input_f64": 3.0,
+      "input_f64_hex": "0x4008000000000000",
+      "vax_d_bits_hex": "0x40C0000000000000",
+      "vax_d_bits_int": 4665729213955833856,
+      "decoded_f64": 3.0,
+      "decoded_f64_hex": "0x4008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_half",
+      "input_f64": 0.5,
+      "input_f64_hex": "0x3FE0000000000000",
+      "vax_d_bits_hex": "0x3F80000000000000",
+      "vax_d_bits_int": 4575657221408423936,
+      "decoded_f64": 0.5,
+      "decoded_f64_hex": "0x3FE0000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "pos_four",
+      "input_f64": 4.0,
+      "input_f64_hex": "0x4010000000000000",
+      "vax_d_bits_hex": "0x4100000000000000",
+      "vax_d_bits_int": 4683743612465315840,
+      "decoded_f64": 4.0,
+      "decoded_f64_hex": "0x4010000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    },
+    {
+      "name": "neg_three",
+      "input_f64": -3.0,
+      "input_f64_hex": "0xC008000000000000",
+      "vax_d_bits_hex": "0xC0C0000000000000",
+      "vax_d_bits_int": 13889101250810609664,
+      "decoded_f64": -3.0,
+      "decoded_f64_hex": "0xC008000000000000",
+      "abs_error": 0.0,
+      "category": "normal"
+    }
+  ]
+}
