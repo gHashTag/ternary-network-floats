@@ -44,6 +44,29 @@ are occupied on both models, against 255 usable codes. The occupied window moves
 between models — SmolLM2-135M runs E in [-8, +1], Qwen2.5-0.5B in [-11, -2] —
 while its width does not.
 
+## The decisive check, and the controls
+
+Perplexity agreeing to four decimals between an E8M0 field and a 4-bit one is
+a checksum on the encoder, not evidence that the two assign the same scale.
+`scale_code_diff.py` diffs the two scale-code arrays directly and counts the
+blocks where they differ. `scale_code_diff.json` is the record.
+
+A 4-bit field places its bias at each tensor's minimum and has fifteen usable
+codes, one reserved for NaN, because E2M1 elements carry no NaN encoding of
+their own. A block differs when its code falls outside that window.
+
+**Zero blocks differ, in all eighteen configurations** -- both models, block
+sizes 16, 32 and 64, and all three rounding rules for the shared exponent
+(floor, which the specification recommends, plus ceil and round-to-nearest-even).
+
+| model | K=16 | K=32 | K=64 |
+|---|---:|---:|---:|
+| SmolLM2-135M | 0 / 6,635,520 | 0 / 3,317,760 | 0 / 1,658,880 |
+| Qwen2.5-0.5B | 0 / 22,364,160 | 0 / 11,182,080 | 0 / 5,591,040 |
+
+The distinct-exponent count stays between nine and eleven across every one of
+those configurations. The rounding rule moves it by at most one.
+
 ## What this does not show
 
 Weights only. Activations and gradients share the same scale encoding across
