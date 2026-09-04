@@ -1,0 +1,109 @@
+{
+  "measurement": "binade census of MX-style block scales over LLM weight tensors",
+  "produced": "2026-09-05",
+  "tooling": {
+    "python": "3.14.6",
+    "numpy": "2.4.2",
+    "torch": "not used"
+  },
+  "definitions": {
+    "continuous_span_binades": "log2(max_b absmax_b / min_b absmax_b) over all blocks",
+    "quantised_span_binades": "max_b E_b - min_b E_b with E_b = floor(log2(absmax_b)) - emax_elem",
+    "emax_elem": "maximum element exponent, 2 for E2M1 (MXFP4)",
+    "per_tensor_span_binades": "the same continuous span computed within one tensor"
+  },
+  "results": [
+    {
+      "model": "HuggingFaceTB/SmolLM2-135M",
+      "block_size": 32,
+      "emax_elem": 2,
+      "include_embeddings": false,
+      "blocks": 3317760,
+      "weights_covered": 106168320,
+      "nonzero_blocks": 3317760,
+      "continuous_span_binades": 8.3183,
+      "quantised_span_binades": 9,
+      "shared_exp_min": -8,
+      "shared_exp_max": 1,
+      "distinct_shared_exponents": 10,
+      "per_tensor_span_max_binades": 6.2536,
+      "per_tensor_span_median_binades": 4.3042,
+      "per_tensor_span_p99_binades": 6.0839,
+      "tensors": 210,
+      "provenance": {
+        "file": "model.safetensors",
+        "hf_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+        "sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1"
+      }
+    },
+    {
+      "model": "HuggingFaceTB/SmolLM2-135M",
+      "block_size": 32,
+      "emax_elem": 2,
+      "include_embeddings": true,
+      "blocks": 4202496,
+      "weights_covered": 134479872,
+      "nonzero_blocks": 4202496,
+      "continuous_span_binades": 8.3183,
+      "quantised_span_binades": 9,
+      "shared_exp_min": -8,
+      "shared_exp_max": 1,
+      "distinct_shared_exponents": 10,
+      "per_tensor_span_max_binades": 6.2536,
+      "per_tensor_span_median_binades": 4.3081,
+      "per_tensor_span_p99_binades": 6.0832,
+      "tensors": 211,
+      "provenance": {
+        "file": "model.safetensors",
+        "hf_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+        "sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "block_size": 32,
+      "emax_elem": 2,
+      "include_embeddings": false,
+      "blocks": 11182080,
+      "weights_covered": 357826560,
+      "nonzero_blocks": 11182080,
+      "continuous_span_binades": 9.12,
+      "quantised_span_binades": 9,
+      "shared_exp_min": -11,
+      "shared_exp_max": -2,
+      "distinct_shared_exponents": 10,
+      "per_tensor_span_max_binades": 7.335,
+      "per_tensor_span_median_binades": 5.283,
+      "per_tensor_span_p99_binades": 7.0915,
+      "tensors": 168,
+      "provenance": {
+        "file": "model.safetensors",
+        "hf_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "block_size": 32,
+      "emax_elem": 2,
+      "include_embeddings": true,
+      "blocks": 15436288,
+      "weights_covered": 493961216,
+      "nonzero_blocks": 15436288,
+      "continuous_span_binades": 9.12,
+      "quantised_span_binades": 9,
+      "shared_exp_min": -11,
+      "shared_exp_max": -2,
+      "distinct_shared_exponents": 10,
+      "per_tensor_span_max_binades": 7.335,
+      "per_tensor_span_median_binades": 5.2813,
+      "per_tensor_span_p99_binades": 7.089,
+      "tensors": 169,
+      "provenance": {
+        "file": "model.safetensors",
+        "hf_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342"
+      }
+    }
+  ]
+}
