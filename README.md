@@ -33,6 +33,24 @@ second negative result and it is not hedged.
 
 ---
 
+## Block-scale binade census
+
+How much of an MX shared-scale field do LLM weight tensors actually occupy?
+
+**[measurements/block-scale-census/](https://github.com/gHashTag/ternary-network-floats/tree/main/measurements/block-scale-census)**
+
+| model | blocks | continuous span | quantised span | distinct E | max per-tensor span |
+|---|---:|---:|---:|---:|---:|
+| SmolLM2-135M | 3,317,760 | 8.3183 | 9 | 10 | 6.2536 |
+| Qwen2.5-0.5B | 11,182,080 | 9.1200 | 9 | 10 | 7.3350 |
+
+Ten distinct shared exponents are occupied on both models, against 255 usable
+E8M0 codes; the width of the occupied window does not move between them, only
+its position. Weights only — activations and gradients share the same scale
+encoding, are wider, and are not measured here. The script recomputes the
+census from the weights; the record carries the model revisions and file
+hashes it was computed from.
+
 ## Direct TNF RTL and a fresh measurement
 
 The repository now contains the hardware artefact that the original paper
@@ -281,6 +299,7 @@ re-running something that had already passed.
 | `rtl/zphi_dot_tree.v` | exact theorem-derived two-coordinate `Z[phi]` dot-product tree |
 | `tests/test_zphi_fanin_artifact.py`, `measure_zphi_fanin.py` | integer-pair oracle regression and synthesis sweep |
 | `measurements/exact-zphi-fanin/` | exact-coordinate contract, result, logs, and checkpoints |
+| `measurements/block-scale-census/` | binade census of MX block scales: script, record, model revisions and hashes |
 | `verify.py` | every table in the paper, recomputed and asserted |
 | `freq_provenance.py` | which frequency literals in the paper are stated in no record file |
 | `data/freq_provenance.json` | that registry's output on the cited revision |
