@@ -1,8 +1,10 @@
 # Ternary Network Floats — artefacts
 
 Everything needed to check the claims in *Ternary Network Floats: a datapath with
-no multiplier anywhere*. One command reproduces the paper's numbers; one command
-checks its proofs. Neither quotes a stored record — both recompute.
+no multiplier anywhere* (under review, Microprocessors and Microsystems (Elsevier),
+submitted 3 Sep 2026; manuscript source:
+[`gHashTag/trinity-fpga` `research/arxiv_tnf/`](https://github.com/gHashTag/trinity-fpga/tree/main/research/arxiv_tnf)).
+One command reproduces the paper's numbers; one command checks its proofs. Neither quotes a stored record — both recompute.
 
 ```bash
 python3 verify.py                          # recomputes the paper's tables from the oracle
