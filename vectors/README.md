@@ -1,8 +1,9 @@
 # t27 numeric-format conformance vector packs (v0)
 
 Bit-precise (and, where bit-precision is undefined, structural) conformance
-vectors for the **complete t27 numeric-format catalog**, in a single shared row
-schema so one differ runs across all packs.
+vectors for the **t27 numeric-format catalog** (complete at the snapshot the
+packs were generated from; see Coverage below), in a single shared row schema
+so one differ runs across all packs.
 
 - SSOT: https://github.com/gHashTag/t27/blob/master/specs/numeric/formats_catalog.t27
 - Format spec: https://github.com/gHashTag/t27/blob/master/conformance/FORMAT-SPEC-001.json
@@ -13,15 +14,18 @@ schema so one differ runs across all packs.
 
 ## Coverage at a glance
 
-The catalog defines **83 numeric formats** across 13 families. This directory
-ships **83 conformance packs — one per format**, with no gaps:
+This directory ships **83 conformance packs**, one per format of the catalog
+snapshot it was generated from (83 formats in 13 families at
+arXiv:2606.09686v2, 22 Jun 2026). The catalog is a living SSOT whose format
+count grows between revisions (109 formats at v3, Sep 2026, retitled *Golden
+Ruler*); formats added after that snapshot do not yet have a pack here:
 
 | Class | Packs | Meaning |
 |---|---|---|
 | **Bit-precise** | **69** | Native bits decode to f64 with an independent reference codec (a second witness distinct from the encoder that produced the vectors); `abs_error = 0` by construction for every representable value. Values not exactly representable in a format report a nonzero `abs_error` **honestly** (e.g. 0.1 in bf16) — nothing is hidden. |
 | **Self-consistent** | **6** | Wide GoldenFloat rungs (`gf48/96/128/512/1024`) plus the open-bias `gf256` that re-derive under a single dyadic-exact decode law but have **no independent second witness**, so they are deliberately **not** promoted to the stronger bit-precise label (honesty rule #10). |
 | **Structural** | **8** | The format has no single fixed radix-2 S:E:M round-trip (parametric / technique / variable-width). These packs carry full catalog metadata plus an explicit `structural_reason` and are marked `bitexact: false`. They are honest placeholders, **not** bit-exact claims. |
-| **Total** | **83** | One pack per catalog format. |
+| **Total** | **83** | One pack per format of the generating snapshot (see above). |
 
 > **encoding != compute != FPGA.** This bit-precise label is a **software**
 > round-trip claim (decode/encode). A "second witness" here means an independent
